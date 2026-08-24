@@ -13,6 +13,12 @@ from ..models import CharacterRef, CharacterSnapshot, Run, RunQuery
 from .base import APIClient, ProviderError
 
 
+def _rating(value: Any) -> int | None:
+    if isinstance(value, dict):
+        value = value.get("rating") or value.get("rating_normalized") or value.get("value")
+    return int(value) if isinstance(value, int | float) else None
+
+
 class BlizzardProvider:
     """Official Battle.net API provider; leaderboards discover runs, profiles enrich them."""
 
@@ -88,15 +94,15 @@ class BlizzardProvider:
                 observed_at=run.completed_at,
                 season=run.season,
                 crit=(
-                    statistics.get("melee_crit", {})
-                    or statistics.get("spell_crit", {})
-                ).get("rating"),
+                    _rating(statistics.get("melee_crit"))
+                    or _rating(statistics.get("spell_crit"))
+                ),
                 haste=(
-                    statistics.get("melee_haste", {})
-                    or statistics.get("spell_haste", {})
-                ).get("rating"),
-                mastery=statistics.get("mastery", {}).get("rating"),
-                versatility=statistics.get("versatility"),
+                    _rating(statistics.get("melee_haste"))
+                    or _rating(statistics.get("spell_haste"))
+                ),
+                mastery=_rating(statistics.get("mastery")),
+                versatility=_rating(statistics.get("versatility")),
                 snapshot_quality=0.55,
             )
         try:
@@ -124,9 +130,9 @@ class BlizzardProvider:
             character=character, spec_id=spec_id, level=int(profile.get("level", character.level)),
             observed_at=datetime.fromtimestamp(run.completed_at.timestamp(), run.completed_at.tzinfo),
             season=run.season,
-            crit=(stats.get("melee_crit", {}) or stats.get("spell_crit", {})).get("rating"),
-            haste=(stats.get("melee_haste", {}) or stats.get("spell_haste", {})).get("rating"),
-            mastery=stats.get("mastery", {}).get("rating"),
-            versatility=stats.get("versatility"),
+            crit=_rating(stats.get("melee_crit")) or _rating(stats.get("spell_crit")),
+            haste=_rating(stats.get("melee_haste")) or _rating(stats.get("spell_haste")),
+            mastery=_rating(stats.get("mastery")),
+            versatility=_rating(stats.get("versatility")),
             trinkets=trinkets, talent_import=None, snapshot_quality=0.55,
         )

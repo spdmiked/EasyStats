@@ -7,7 +7,13 @@ import pytest
 from specmeta_pipeline.cache import DiskCache
 from specmeta_pipeline.config import Settings
 from specmeta_pipeline.providers.base import APIClient
-from specmeta_pipeline.providers.blizzard import BlizzardProvider
+from specmeta_pipeline.providers.blizzard import BlizzardProvider, _rating
+
+
+def test_midnight_normalized_ratings() -> None:
+    assert _rating({"rating_normalized": 4321.9, "value": 22.0}) == 4321
+    assert _rating({"rating": 1234, "value": 10.0}) == 1234
+    assert _rating(987.6) == 987
 
 
 @pytest.mark.asyncio
