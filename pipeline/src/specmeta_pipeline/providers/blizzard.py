@@ -69,6 +69,29 @@ class BlizzardProvider:
         name = character.name.lower()
         base = f"/profile/wow/character/{realm}/{name}"
         params = {"namespace": f"profile-{region}", "locale": "en_US"}
+        if character.spec_id > 0 and character.level > 0:
+            try:
+                statistics = await self._get(region, f"{base}/statistics", params)
+            except (ProviderError, httpx.HTTPStatusError):
+                return None
+            return CharacterSnapshot(
+                character=character,
+                spec_id=character.spec_id,
+                level=character.level,
+                observed_at=run.completed_at,
+                season=run.season,
+                crit=(
+                    statistics.get("melee_crit", {})
+                    or statistics.get("spell_crit", {})
+                ).get("rating"),
+                haste=(
+                    statistics.get("melee_haste", {})
+                    or statistics.get("spell_haste", {})
+                ).get("rating"),
+                mastery=statistics.get("mastery", {}).get("rating"),
+                versatility=statistics.get("versatility"),
+                snapshot_quality=0.55,
+            )
         try:
             profile = await self._get(region, base, params)
             statistics = await self._get(region, f"{base}/statistics", params)

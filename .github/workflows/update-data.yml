@@ -34,10 +34,9 @@ jobs:
           path: reports/latest-update.*
       - name: Commit valid changes
         run: |
-          if git diff --quiet -- addon/EasyStats/GeneratedData.lua reports; then exit 0; fi
+          if git diff --quiet -- addon/EasyStats/GeneratedData.lua pipeline/state.json reports; then exit 0; fi
           git config user.name 'easystats-data-bot'
           git config user.email 'easystats-data-bot@users.noreply.github.com'
-          git add addon/EasyStats/GeneratedData.lua reports
+          git add addon/EasyStats/GeneratedData.lua pipeline/state.json reports
           git commit -m 'data: refresh Mythic+ aggregates [skip ci]'
           git push
-

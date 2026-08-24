@@ -8,5 +8,6 @@ __pycache__/
 *.py[cod]
 pipeline/.venv/
 pipeline/state.json
+!pipeline/state.json
 dist/*.zip
 reports/latest-update.*

@@ -46,10 +46,10 @@ async def _collect(
         cursor = 0
         for run in eligible:
             for _member in run.members:
-                snapshot = snapshots[cursor]
+                snapshot_result = snapshots[cursor]
                 cursor += 1
-                if not isinstance(snapshot, BaseException) and snapshot is not None:
-                    observations.append(Observation(snapshot, run))
+                if not isinstance(snapshot_result, BaseException) and snapshot_result is not None:
+                    observations.append(Observation(snapshot_result, run))
     return observations
 
 
