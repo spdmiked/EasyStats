@@ -1,0 +1,591 @@
+{
+  "game_version": "retail",
+  "generated_at": 1787583217,
+  "schema_version": 1,
+  "season_slug": "season-mn-2",
+  "source_mode": "hybrid",
+  "specs": {
+    "62": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": {
+        "generated_at": 1787583217,
+        "sample_size": 94,
+        "stale": false,
+        "value": {
+          "importString": "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
+          "support": 0.2747610445374102
+        }
+      },
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 94,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 250215,
+              "usage": 0.667633616937786
+            },
+            {
+              "itemID": 270164,
+              "usage": 0.18311002403549823
+            },
+            {
+              "itemID": 273796,
+              "usage": 0.17916041045595513
+            },
+            {
+              "itemID": 249343,
+              "usage": 0.12594548466408248
+            }
+          ]
+        }
+      }
+    },
+    "64": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "65": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 65,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 270162,
+              "usage": 0.32348134510181686
+            },
+            {
+              "itemID": 273796,
+              "usage": 0.2579667574320913
+            },
+            {
+              "itemID": 250214,
+              "usage": 0.2490924340648699
+            },
+            {
+              "itemID": 250215,
+              "usage": 0.21666940947531815
+            }
+          ]
+        }
+      }
+    },
+    "66": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "70": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "71": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 112,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 249342,
+              "usage": 0.41577639596266336
+            },
+            {
+              "itemID": 273796,
+              "usage": 0.3300546896572177
+            },
+            {
+              "itemID": 260235,
+              "usage": 0.17107027535981684
+            },
+            {
+              "itemID": 250229,
+              "usage": 0.15396697890527394
+            }
+          ]
+        }
+      }
+    },
+    "72": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "73": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "102": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "103": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "104": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "105": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "250": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 85,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 250229,
+              "usage": 0.2472569027404903
+            },
+            {
+              "itemID": 249344,
+              "usage": 0.23340677740936772
+            },
+            {
+              "itemID": 250245,
+              "usage": 0.19997957605384353
+            },
+            {
+              "itemID": 273796,
+              "usage": 0.16515099399459057
+            }
+          ]
+        }
+      }
+    },
+    "251": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "252": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 52,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 249344,
+              "usage": 0.6748002742175593
+            },
+            {
+              "itemID": 249343,
+              "usage": 0.6641658790778943
+            },
+            {
+              "itemID": 270175,
+              "usage": 0.1325636972007055
+            },
+            {
+              "itemID": 273797,
+              "usage": 0.09783099787151502
+            }
+          ]
+        }
+      }
+    },
+    "253": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "254": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "255": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "256": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "257": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "258": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "259": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "260": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": {
+        "generated_at": 1787583217,
+        "sample_size": 42,
+        "stale": false,
+        "value": {
+          "importString": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbLzMzwMzMziZmZbAAAAYMAYMLGGyAzCL0CbMAzMYGMA",
+          "support": 0.21470806151191507
+        }
+      },
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 42,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 249343,
+              "usage": 0.4161785643063515
+            },
+            {
+              "itemID": 260235,
+              "usage": 0.32741798914015174
+            },
+            {
+              "itemID": 250259,
+              "usage": 0.29539296392095304
+            },
+            {
+              "itemID": 250215,
+              "usage": 0.26076554880955727
+            }
+          ]
+        }
+      }
+    },
+    "261": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "262": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 47,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 273796,
+              "usage": 0.6674514634507156
+            },
+            {
+              "itemID": 250214,
+              "usage": 0.5091476707109321
+            },
+            {
+              "itemID": 250215,
+              "usage": 0.12439908691146748
+            },
+            {
+              "itemID": 250144,
+              "usage": 0.12372551672508593
+            }
+          ]
+        }
+      }
+    },
+    "263": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "264": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 84,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 273796,
+              "usage": 0.2380548338523191
+            },
+            {
+              "itemID": 270162,
+              "usage": 0.19030794917161994
+            },
+            {
+              "itemID": 193757,
+              "usage": 0.15933057569401407
+            },
+            {
+              "itemID": 264507,
+              "usage": 0.15527256533561334
+            }
+          ]
+        }
+      }
+    },
+    "266": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "267": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "268": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "269": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "270": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "577": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "581": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "1467": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "1468": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "1473": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": null,
+      "trinkets": null
+    },
+    "1480": {
+      "metadata": {
+        "methodologyVersion": 1,
+        "regionCount": 4
+      },
+      "stats": null,
+      "talents": {
+        "generated_at": 1787583217,
+        "sample_size": 41,
+        "stale": false,
+        "value": {
+          "importString": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAAMmthZGAAAAAAAAmxMMzMzMzMzMDzsYGjFZhZmZmt2mZmBwwAQgZMYMD",
+          "support": 0.17057650068679153
+        }
+      },
+      "trinkets": {
+        "generated_at": 1787583217,
+        "sample_size": 41,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 250215,
+              "usage": 0.5699363433653507
+            },
+            {
+              "itemID": 249343,
+              "usage": 0.4306086916286445
+            },
+            {
+              "itemID": 249346,
+              "usage": 0.3339527542960966
+            },
+            {
+              "itemID": 270167,
+              "usage": 0.14941858423336027
+            }
+          ]
+        }
+      }
+    }
+  }
+}
