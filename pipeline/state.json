@@ -1,6 +1,6 @@
 {
   "game_version": "retail",
-  "generated_at": 1787583217,
+  "generated_at": 1787583685,
   "schema_version": 1,
   "season_slug": "season-mn-2",
   "source_mode": "hybrid",
@@ -12,35 +12,35 @@
       },
       "stats": null,
       "talents": {
-        "generated_at": 1787583217,
-        "sample_size": 94,
+        "generated_at": 1787583685,
+        "sample_size": 96,
         "stale": false,
         "value": {
           "importString": "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
-          "support": 0.2747610445374102
+          "support": 0.2691974319989242
         }
       },
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 94,
+        "generated_at": 1787583685,
+        "sample_size": 96,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 250215,
-              "usage": 0.667633616937786
-            },
-            {
-              "itemID": 270164,
-              "usage": 0.18311002403549823
+              "usage": 0.6454187479403489
             },
             {
               "itemID": 273796,
-              "usage": 0.17916041045595513
+              "usage": 0.1758525626229247
+            },
+            {
+              "itemID": 270164,
+              "usage": 0.16925040082047396
             },
             {
               "itemID": 249343,
-              "usage": 0.12594548466408248
+              "usage": 0.13245374524842876
             }
           ]
         }
@@ -63,26 +63,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 65,
+        "generated_at": 1787583685,
+        "sample_size": 62,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 270162,
-              "usage": 0.32348134510181686
+              "usage": 0.3062415490484106
             },
             {
               "itemID": 273796,
-              "usage": 0.2579667574320913
+              "usage": 0.27018871149275475
             },
             {
               "itemID": 250214,
-              "usage": 0.2490924340648699
+              "usage": 0.24503452626944017
             },
             {
               "itemID": 250215,
-              "usage": 0.21666940947531815
+              "usage": 0.2121215147148565
             }
           ]
         }
@@ -114,26 +114,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 112,
+        "generated_at": 1787583685,
+        "sample_size": 106,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 249342,
-              "usage": 0.41577639596266336
+              "usage": 0.43943118038933265
             },
             {
               "itemID": 273796,
-              "usage": 0.3300546896572177
+              "usage": 0.31100280713437406
             },
             {
               "itemID": 260235,
-              "usage": 0.17107027535981684
+              "usage": 0.17127293438694596
             },
             {
               "itemID": 250229,
-              "usage": 0.15396697890527394
+              "usage": 0.16272823759914298
             }
           ]
         }
@@ -201,26 +201,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 85,
+        "generated_at": 1787583685,
+        "sample_size": 79,
         "stale": false,
         "value": {
           "items": [
             {
-              "itemID": 250229,
-              "usage": 0.2472569027404903
+              "itemID": 249344,
+              "usage": 0.23853641955308755
             },
             {
-              "itemID": 249344,
-              "usage": 0.23340677740936772
+              "itemID": 250229,
+              "usage": 0.22880585180545296
             },
             {
               "itemID": 250245,
-              "usage": 0.19997957605384353
+              "usage": 0.21505357775655284
             },
             {
-              "itemID": 273796,
-              "usage": 0.16515099399459057
+              "itemID": 250228,
+              "usage": 0.16320694475997788
             }
           ]
         }
@@ -243,26 +243,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583217,
+        "generated_at": 1787583685,
         "sample_size": 52,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 249344,
-              "usage": 0.6748002742175593
+              "usage": 0.6546586439571158
             },
             {
               "itemID": 249343,
-              "usage": 0.6641658790778943
+              "usage": 0.6440111682269476
             },
             {
               "itemID": 270175,
-              "usage": 0.1325636972007055
+              "usage": 0.13271345386642555
             },
             {
               "itemID": 273797,
-              "usage": 0.09783099787151502
+              "usage": 0.09794154177852535
             }
           ]
         }
@@ -338,35 +338,35 @@
       },
       "stats": null,
       "talents": {
-        "generated_at": 1787583217,
+        "generated_at": 1787583685,
         "sample_size": 42,
         "stale": false,
         "value": {
-          "importString": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAAbLzMzwMzMziZmZbAAAAYMAYMLGGyAzCL0CbMAzMYGMA",
-          "support": 0.21470806151191507
+          "importString": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAgZZZmZGmZmZWMzMbDAAAAjBAjZxwQGYWYhWYjBYmBDMA",
+          "support": 0.2112374373088147
         }
       },
       "trinkets": {
-        "generated_at": 1787583217,
+        "generated_at": 1787583685,
         "sample_size": 42,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 249343,
-              "usage": 0.4161785643063515
+              "usage": 0.4159781184420204
             },
             {
               "itemID": 260235,
-              "usage": 0.32741798914015174
+              "usage": 0.32726134389852474
             },
             {
               "itemID": 250259,
-              "usage": 0.29539296392095304
+              "usage": 0.29525609591058016
             },
             {
               "itemID": 250215,
-              "usage": 0.26076554880955727
+              "usage": 0.2611135146715493
             }
           ]
         }
@@ -389,26 +389,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 47,
+        "generated_at": 1787583685,
+        "sample_size": 45,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 273796,
-              "usage": 0.6674514634507156
+              "usage": 0.6531624895491036
             },
             {
               "itemID": 250214,
-              "usage": 0.5091476707109321
+              "usage": 0.5332974865546588
             },
             {
               "itemID": 250215,
-              "usage": 0.12439908691146748
+              "usage": 0.1297441331377424
             },
             {
               "itemID": 250144,
-              "usage": 0.12372551672508593
+              "usage": 0.12904138333850299
             }
           ]
         }
@@ -431,26 +431,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 84,
+        "generated_at": 1787583685,
+        "sample_size": 81,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 273796,
-              "usage": 0.2380548338523191
+              "usage": 0.22152517694058105
             },
             {
               "itemID": 270162,
-              "usage": 0.19030794917161994
-            },
-            {
-              "itemID": 193757,
-              "usage": 0.15933057569401407
+              "usage": 0.1970396343793961
             },
             {
               "itemID": 264507,
-              "usage": 0.15527256533561334
+              "usage": 0.16100738056272595
+            },
+            {
+              "itemID": 193757,
+              "usage": 0.15255977564307177
             }
           ]
         }
