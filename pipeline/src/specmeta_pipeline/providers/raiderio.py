@@ -1,7 +1,7 @@
 from __future__ import annotations
 
-from datetime import datetime, timezone
 import asyncio
+from datetime import UTC, datetime
 from typing import Any
 
 from ..config import Settings
@@ -72,7 +72,7 @@ class RaiderIOProvider:
             if isinstance(detail, BaseException):
                 continue
             run = detail.get("run", detail)
-            completed = datetime.fromisoformat(str(run["completed_at"]).replace("Z", "+00:00"))
+            completed = datetime.fromisoformat(str(run["completed_at"]))
             members_list: list[CharacterRef] = []
             for member in run.get("roster", run.get("members", [])):
                 character = member.get("character", member)
@@ -100,7 +100,7 @@ class RaiderIOProvider:
             members = tuple(member for member in members_list if member.name and member.realm)
             result.append(Run(
                 run_id=str(run.get("id", run.get("keystone_run_id", ""))), season=request.season,
-                completed_at=completed.astimezone(timezone.utc),
+                completed_at=completed.astimezone(UTC),
                 key_level=int(run.get("mythic_level", run.get("keystone_level", 0))),
                 timed=float(run.get("clear_time_ms", 1)) <= float(
                     run.get("keystone_time_ms", run.get("par_time_ms", 0))

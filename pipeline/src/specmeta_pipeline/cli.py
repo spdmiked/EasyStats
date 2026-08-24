@@ -11,9 +11,9 @@ from .config import DEFAULT_OUTPUT, DEFAULT_REPORTS, DEFAULT_STATE, Settings
 from .fixtures import sample_observations
 from .lua import render, validate_text, write_atomic
 from .models import Database
+from .pipeline import collect_live
 from .report import write_report
 from .state import load_database, merge_lkg, save_database
-from .pipeline import collect_live
 
 
 def build_fixture_database(settings: Settings) -> Database:

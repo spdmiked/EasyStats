@@ -30,7 +30,7 @@ class Settings:
     raiderio_api_key: str | None = None
 
     @classmethod
-    def from_env(cls) -> "Settings":
+    def from_env(cls) -> Settings:
         provider = os.getenv("DATA_PROVIDER", "hybrid").lower()
         if provider not in {"hybrid", "raiderio", "blizzard", "fixture"}:
             raise ValueError(f"Unsupported DATA_PROVIDER: {provider}")

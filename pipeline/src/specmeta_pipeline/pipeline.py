@@ -7,7 +7,15 @@ from pathlib import Path
 
 from .cache import DiskCache
 from .config import Settings
-from .models import CharacterRef, CharacterSnapshot, Observation, Run, RunProvider, RunQuery, utc_now
+from .models import (
+    CharacterRef,
+    CharacterSnapshot,
+    Observation,
+    Run,
+    RunProvider,
+    RunQuery,
+    utc_now,
+)
 from .providers import BlizzardProvider, RaiderIOProvider
 from .providers.base import APIClient, ProviderError
 

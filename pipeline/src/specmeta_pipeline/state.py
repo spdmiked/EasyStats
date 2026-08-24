@@ -9,16 +9,23 @@ from .config import Settings
 from .models import CategoryResult, Database, SpecResult
 
 
+def _category(value: dict[str, Any], name: str) -> CategoryResult | None:
+    item = value.get(name)
+    return CategoryResult(**item) if isinstance(item, dict) else None
+
+
 def load_database(path: Path) -> Database | None:
     if not path.exists():
         return None
     raw = json.loads(path.read_text(encoding="utf-8"))
     specs: dict[int, SpecResult] = {}
     for key, value in raw.get("specs", {}).items():
-        def category(name: str) -> CategoryResult | None:
-            item = value.get(name)
-            return CategoryResult(**item) if item else None
-        specs[int(key)] = SpecResult(category("stats"), category("trinkets"), category("talents"), value.get("metadata", {}))
+        specs[int(key)] = SpecResult(
+            _category(value, "stats"),
+            _category(value, "trinkets"),
+            _category(value, "talents"),
+            value.get("metadata", {}),
+        )
     return Database(raw["schema_version"], raw["generated_at"], raw["game_version"], raw["season_slug"], raw["source_mode"], specs)
 
 
@@ -48,4 +55,3 @@ def merge_lkg(new: Database, old: Database | None, settings: Settings, now: int 
         raise ValueError("Refusing to publish an empty database")
     new.specs = merged
     return new
-

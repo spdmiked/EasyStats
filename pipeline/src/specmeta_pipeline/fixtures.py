@@ -1,12 +1,12 @@
 from __future__ import annotations
 
-from datetime import datetime, timedelta, timezone
+from datetime import UTC, datetime, timedelta
 
 from .models import CharacterRef, CharacterSnapshot, Observation, Run
 
 
 def sample_observations(size: int = 48, spec_id: int = 253) -> list[Observation]:
-    now = datetime.now(timezone.utc).replace(microsecond=0)
+    now = datetime.now(UTC).replace(microsecond=0)
     result = []
     builds = ("B" + "A" * 30, "B" + "C" * 30, "B" + "D" * 30)
     for index in range(size):

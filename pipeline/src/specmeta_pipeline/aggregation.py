@@ -3,8 +3,8 @@ from __future__ import annotations
 import math
 import re
 from collections import defaultdict
-from datetime import datetime, timezone
-from typing import Iterable, Sequence
+from collections.abc import Iterable, Sequence
+from datetime import UTC, datetime
 
 from .config import Settings
 from .models import CategoryResult, Observation, SpecResult
@@ -34,7 +34,7 @@ def _percentile(values: Sequence[int], fraction: float) -> int:
 
 
 def prepare_observations(rows: Iterable[Observation], settings: Settings, season: str) -> list[Observation]:
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     candidates = [r for r in rows if r.run.timed and r.run.season == season]
     thresholds: dict[int, int] = {}
     by_spec: dict[int, list[int]] = defaultdict(list)

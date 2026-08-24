@@ -1,8 +1,13 @@
-from datetime import datetime, timezone
+from datetime import UTC, datetime
 
 from specmeta_pipeline.aggregation import (
-    add_stat_separators, aggregate_stats, aggregate_talents, aggregate_trinkets,
-    normalize_talent, prepare_observations, weighted_median,
+    add_stat_separators,
+    aggregate_stats,
+    aggregate_talents,
+    aggregate_trinkets,
+    normalize_talent,
+    prepare_observations,
+    weighted_median,
 )
 from specmeta_pipeline.config import Settings
 from specmeta_pipeline.fixtures import sample_observations
@@ -52,9 +57,8 @@ def test_talents_select_complete_loadout() -> None:
 
 
 def test_zero_stats_are_rejected() -> None:
-    now = datetime.now(timezone.utc)
+    now = datetime.now(UTC)
     ref = CharacterRef("eu", "r", "n")
     run = Run("1", "s", now, 10, True, (ref,))
     snap = CharacterSnapshot(ref, 253, 80, now, "s", 0, 0, 0, 0)
     assert aggregate_stats([Observation(snap, run)], 1) is None
-
