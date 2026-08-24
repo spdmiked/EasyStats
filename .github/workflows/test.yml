@@ -28,6 +28,4 @@ jobs:
       - run: DATA_PROVIDER=fixture python -m specmeta_pipeline update --dry-run >/dev/null
       - run: bash scripts/validate_package.sh
       - name: Secret scan
-        run: |
-          ! grep -RIE 'Authorization: Bearer [A-Za-z0-9]|BLIZZARD_CLIENT_SECRET=.+|RAIDERIO_API_KEY=.+' --exclude-dir=.git .
-
+        run: bash scripts/validate_package.sh
