@@ -7,6 +7,36 @@ EasyStatsGeneratedDB = {
                     methodologyVersion = 1,
                     regionCount = 4,
                 },
+                talents = {
+                    generatedAt = 1787584043,
+                    importString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgxMLzsYmZswyMLjxMjNMAYstNzgxsNCMBAAAYhZmZGsZMjxAAwMDWGA",
+                    sampleSize = 40,
+                    stale = false,
+                    support = 0.163763,
+                },
+                trinkets = {
+                    generatedAt = 1787584043,
+                    items = {
+                        {
+                            itemID = 273796,
+                            usage = 0.417081,
+                        },
+                        {
+                            itemID = 249343,
+                            usage = 0.244267,
+                        },
+                        {
+                            itemID = 249346,
+                            usage = 0.164478,
+                        },
+                        {
+                            itemID = 270164,
+                            usage = 0.162442,
+                        },
+                    },
+                    sampleSize = 40,
+                    stale = false,
+                },
             },
             [103] = {
                 metadata = {
@@ -57,26 +87,26 @@ EasyStatsGeneratedDB = {
                     support = 0.170577,
                 },
                 trinkets = {
-                    generatedAt = 1787583217,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 250215,
-                            usage = 0.569936,
+                            usage = 0.562486,
                         },
                         {
                             itemID = 249343,
-                            usage = 0.430609,
+                            usage = 0.437914,
                         },
                         {
                             itemID = 249346,
-                            usage = 0.333953,
+                            usage = 0.353579,
                         },
                         {
                             itemID = 270167,
-                            usage = 0.149419,
+                            usage = 0.174919,
                         },
                     },
-                    sampleSize = 41,
+                    sampleSize = 47,
                     stale = false,
                 },
             },
@@ -86,26 +116,26 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
-                            itemID = 249344,
-                            usage = 0.238536,
+                            itemID = 250229,
+                            usage = 0.251092,
                         },
                         {
-                            itemID = 250229,
-                            usage = 0.228806,
+                            itemID = 249344,
+                            usage = 0.238924,
                         },
                         {
                             itemID = 250245,
-                            usage = 0.215054,
+                            usage = 0.222016,
                         },
                         {
-                            itemID = 250228,
-                            usage = 0.163207,
+                            itemID = 273796,
+                            usage = 0.145035,
                         },
                     },
-                    sampleSize = 79,
+                    sampleSize = 104,
                     stale = false,
                 },
             },
@@ -121,26 +151,26 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 249344,
-                            usage = 0.654659,
+                            usage = 0.675471,
                         },
                         {
                             itemID = 249343,
-                            usage = 0.644011,
+                            usage = 0.624839,
                         },
                         {
                             itemID = 270175,
-                            usage = 0.132713,
+                            usage = 0.124715,
                         },
                         {
-                            itemID = 273797,
-                            usage = 0.097942,
+                            itemID = 250228,
+                            usage = 0.096799,
                         },
                     },
-                    sampleSize = 52,
+                    sampleSize = 55,
                     stale = false,
                 },
             },
@@ -192,33 +222,33 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 talents = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     importString = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAgZZZmZGmZmZWMzMbDAAAAjBAjZxwQGYWYhWYjBYmBDMA",
-                    sampleSize = 42,
+                    sampleSize = 46,
                     stale = false,
-                    support = 0.211237,
+                    support = 0.235452,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 249343,
-                            usage = 0.415978,
+                            usage = 0.399237,
                         },
                         {
                             itemID = 260235,
-                            usage = 0.327261,
+                            usage = 0.298552,
                         },
                         {
                             itemID = 250259,
-                            usage = 0.295256,
+                            usage = 0.292352,
                         },
                         {
                             itemID = 250215,
-                            usage = 0.261114,
+                            usage = 0.260855,
                         },
                     },
-                    sampleSize = 42,
+                    sampleSize = 46,
                     stale = false,
                 },
             },
@@ -234,26 +264,26 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 273796,
-                            usage = 0.653162,
+                            usage = 0.674026,
                         },
                         {
                             itemID = 250214,
-                            usage = 0.533297,
-                        },
-                        {
-                            itemID = 250215,
-                            usage = 0.129744,
+                            usage = 0.454593,
                         },
                         {
                             itemID = 250144,
-                            usage = 0.129041,
+                            usage = 0.137538,
+                        },
+                        {
+                            itemID = 250215,
+                            usage = 0.118536,
                         },
                     },
-                    sampleSize = 45,
+                    sampleSize = 57,
                     stale = false,
                 },
             },
@@ -269,26 +299,26 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 273796,
-                            usage = 0.221525,
+                            usage = 0.223428,
                         },
                         {
                             itemID = 270162,
-                            usage = 0.19704,
-                        },
-                        {
-                            itemID = 264507,
-                            usage = 0.161007,
+                            usage = 0.170307,
                         },
                         {
                             itemID = 193757,
-                            usage = 0.15256,
+                            usage = 0.161014,
+                        },
+                        {
+                            itemID = 264507,
+                            usage = 0.138946,
                         },
                     },
-                    sampleSize = 81,
+                    sampleSize = 94,
                     stale = false,
                 },
             },
@@ -308,6 +338,29 @@ EasyStatsGeneratedDB = {
                 metadata = {
                     methodologyVersion = 1,
                     regionCount = 4,
+                },
+                trinkets = {
+                    generatedAt = 1787584043,
+                    items = {
+                        {
+                            itemID = 250215,
+                            usage = 0.308526,
+                        },
+                        {
+                            itemID = 249343,
+                            usage = 0.28889,
+                        },
+                        {
+                            itemID = 250245,
+                            usage = 0.176541,
+                        },
+                        {
+                            itemID = 273797,
+                            usage = 0.171804,
+                        },
+                    },
+                    sampleSize = 41,
+                    stale = false,
                 },
             },
             [269] = {
@@ -340,33 +393,33 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 talents = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     importString = "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
-                    sampleSize = 96,
+                    sampleSize = 107,
                     stale = false,
-                    support = 0.269197,
+                    support = 0.279439,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 250215,
-                            usage = 0.645419,
-                        },
-                        {
-                            itemID = 273796,
-                            usage = 0.175853,
+                            usage = 0.65392,
                         },
                         {
                             itemID = 270164,
-                            usage = 0.16925,
+                            usage = 0.179084,
+                        },
+                        {
+                            itemID = 273796,
+                            usage = 0.166469,
                         },
                         {
                             itemID = 249343,
-                            usage = 0.132454,
+                            usage = 0.129503,
                         },
                     },
-                    sampleSize = 96,
+                    sampleSize = 107,
                     stale = false,
                 },
             },
@@ -382,26 +435,26 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 270162,
-                            usage = 0.306242,
+                            usage = 0.295811,
                         },
                         {
                             itemID = 273796,
-                            usage = 0.270189,
-                        },
-                        {
-                            itemID = 250214,
-                            usage = 0.245035,
+                            usage = 0.265549,
                         },
                         {
                             itemID = 250215,
-                            usage = 0.212122,
+                            usage = 0.232238,
+                        },
+                        {
+                            itemID = 250214,
+                            usage = 0.208097,
                         },
                     },
-                    sampleSize = 62,
+                    sampleSize = 78,
                     stale = false,
                 },
             },
@@ -423,26 +476,26 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 trinkets = {
-                    generatedAt = 1787583685,
+                    generatedAt = 1787584043,
                     items = {
                         {
                             itemID = 249342,
-                            usage = 0.439431,
+                            usage = 0.417411,
                         },
                         {
                             itemID = 273796,
-                            usage = 0.311003,
-                        },
-                        {
-                            itemID = 260235,
-                            usage = 0.171273,
+                            usage = 0.34483,
                         },
                         {
                             itemID = 250229,
-                            usage = 0.162728,
+                            usage = 0.182123,
+                        },
+                        {
+                            itemID = 260235,
+                            usage = 0.165616,
                         },
                     },
-                    sampleSize = 106,
+                    sampleSize = 128,
                     stale = false,
                 },
             },
@@ -461,7 +514,7 @@ EasyStatsGeneratedDB = {
         },
     },
     gameVersion = "retail",
-    generatedAt = 1787583685,
+    generatedAt = 1787584043,
     schemaVersion = 1,
     seasonSlug = "season-mn-2",
     sourceMode = "hybrid",

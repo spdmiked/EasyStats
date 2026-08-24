@@ -1,6 +1,6 @@
 {
   "game_version": "retail",
-  "generated_at": 1787583685,
+  "generated_at": 1787584043,
   "schema_version": 1,
   "season_slug": "season-mn-2",
   "source_mode": "hybrid",
@@ -12,35 +12,35 @@
       },
       "stats": null,
       "talents": {
-        "generated_at": 1787583685,
-        "sample_size": 96,
+        "generated_at": 1787584043,
+        "sample_size": 107,
         "stale": false,
         "value": {
           "importString": "C4DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzQzMGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
-          "support": 0.2691974319989242
+          "support": 0.2794392582144407
         }
       },
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 96,
+        "generated_at": 1787584043,
+        "sample_size": 107,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 250215,
-              "usage": 0.6454187479403489
-            },
-            {
-              "itemID": 273796,
-              "usage": 0.1758525626229247
+              "usage": 0.6539202589123292
             },
             {
               "itemID": 270164,
-              "usage": 0.16925040082047396
+              "usage": 0.17908401843595137
+            },
+            {
+              "itemID": 273796,
+              "usage": 0.16646895729009945
             },
             {
               "itemID": 249343,
-              "usage": 0.13245374524842876
+              "usage": 0.12950304418786932
             }
           ]
         }
@@ -63,26 +63,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 62,
+        "generated_at": 1787584043,
+        "sample_size": 78,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 270162,
-              "usage": 0.3062415490484106
+              "usage": 0.2958112883814817
             },
             {
               "itemID": 273796,
-              "usage": 0.27018871149275475
-            },
-            {
-              "itemID": 250214,
-              "usage": 0.24503452626944017
+              "usage": 0.265548659772604
             },
             {
               "itemID": 250215,
-              "usage": 0.2121215147148565
+              "usage": 0.23223786928668502
+            },
+            {
+              "itemID": 250214,
+              "usage": 0.20809659390508337
             }
           ]
         }
@@ -114,26 +114,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 106,
+        "generated_at": 1787584043,
+        "sample_size": 128,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 249342,
-              "usage": 0.43943118038933265
+              "usage": 0.41741095625451896
             },
             {
               "itemID": 273796,
-              "usage": 0.31100280713437406
-            },
-            {
-              "itemID": 260235,
-              "usage": 0.17127293438694596
+              "usage": 0.3448304402477843
             },
             {
               "itemID": 250229,
-              "usage": 0.16272823759914298
+              "usage": 0.18212317657555388
+            },
+            {
+              "itemID": 260235,
+              "usage": 0.16561572933881827
             }
           ]
         }
@@ -163,8 +163,40 @@
         "regionCount": 4
       },
       "stats": null,
-      "talents": null,
-      "trinkets": null
+      "talents": {
+        "generated_at": 1787584043,
+        "sample_size": 40,
+        "stale": false,
+        "value": {
+          "importString": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNMmZgxsMzMzMLMgxMLzsYmZswyMLjxMjNMAYstNzgxsNCMBAAAYhZmZGsZMjxAAwMDWGA",
+          "support": 0.1637632081320823
+        }
+      },
+      "trinkets": {
+        "generated_at": 1787584043,
+        "sample_size": 40,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 273796,
+              "usage": 0.4170810471701863
+            },
+            {
+              "itemID": 249343,
+              "usage": 0.24426698061947524
+            },
+            {
+              "itemID": 249346,
+              "usage": 0.16447774053385136
+            },
+            {
+              "itemID": 270164,
+              "usage": 0.16244211670379083
+            }
+          ]
+        }
+      }
     },
     "103": {
       "metadata": {
@@ -201,26 +233,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 79,
+        "generated_at": 1787584043,
+        "sample_size": 104,
         "stale": false,
         "value": {
           "items": [
             {
-              "itemID": 249344,
-              "usage": 0.23853641955308755
+              "itemID": 250229,
+              "usage": 0.2510921094771528
             },
             {
-              "itemID": 250229,
-              "usage": 0.22880585180545296
+              "itemID": 249344,
+              "usage": 0.238924381951126
             },
             {
               "itemID": 250245,
-              "usage": 0.21505357775655284
+              "usage": 0.22201626814738418
             },
             {
-              "itemID": 250228,
-              "usage": 0.16320694475997788
+              "itemID": 273796,
+              "usage": 0.1450347652620679
             }
           ]
         }
@@ -243,26 +275,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 52,
+        "generated_at": 1787584043,
+        "sample_size": 55,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 249344,
-              "usage": 0.6546586439571158
+              "usage": 0.6754705709169865
             },
             {
               "itemID": 249343,
-              "usage": 0.6440111682269476
+              "usage": 0.6248393103318137
             },
             {
               "itemID": 270175,
-              "usage": 0.13271345386642555
+              "usage": 0.12471524738740307
             },
             {
-              "itemID": 273797,
-              "usage": 0.09794154177852535
+              "itemID": 250228,
+              "usage": 0.0967987215696718
             }
           ]
         }
@@ -338,35 +370,35 @@
       },
       "stats": null,
       "talents": {
-        "generated_at": 1787583685,
-        "sample_size": 42,
+        "generated_at": 1787584043,
+        "sample_size": 46,
         "stale": false,
         "value": {
           "importString": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAgZZZmZGmZmZWMzMbDAAAAjBAjZxwQGYWYhWYjBYmBDMA",
-          "support": 0.2112374373088147
+          "support": 0.2354517564418261
         }
       },
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 42,
+        "generated_at": 1787584043,
+        "sample_size": 46,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 249343,
-              "usage": 0.4159781184420204
+              "usage": 0.39923667063371265
             },
             {
               "itemID": 260235,
-              "usage": 0.32726134389852474
+              "usage": 0.298552116322718
             },
             {
               "itemID": 250259,
-              "usage": 0.29525609591058016
+              "usage": 0.2923518346478854
             },
             {
               "itemID": 250215,
-              "usage": 0.2611135146715493
+              "usage": 0.26085477455105754
             }
           ]
         }
@@ -389,26 +421,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 45,
+        "generated_at": 1787584043,
+        "sample_size": 57,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 273796,
-              "usage": 0.6531624895491036
+              "usage": 0.674025647736082
             },
             {
               "itemID": 250214,
-              "usage": 0.5332974865546588
-            },
-            {
-              "itemID": 250215,
-              "usage": 0.1297441331377424
+              "usage": 0.4545925538869831
             },
             {
               "itemID": 250144,
-              "usage": 0.12904138333850299
+              "usage": 0.13753784397540345
+            },
+            {
+              "itemID": 250215,
+              "usage": 0.11853628992821674
             }
           ]
         }
@@ -431,26 +463,26 @@
       "stats": null,
       "talents": null,
       "trinkets": {
-        "generated_at": 1787583685,
-        "sample_size": 81,
+        "generated_at": 1787584043,
+        "sample_size": 94,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 273796,
-              "usage": 0.22152517694058105
+              "usage": 0.2234278008430189
             },
             {
               "itemID": 270162,
-              "usage": 0.1970396343793961
-            },
-            {
-              "itemID": 264507,
-              "usage": 0.16100738056272595
+              "usage": 0.17030735221906113
             },
             {
               "itemID": 193757,
-              "usage": 0.15255977564307177
+              "usage": 0.1610138222201585
+            },
+            {
+              "itemID": 264507,
+              "usage": 0.13894621118411263
             }
           ]
         }
@@ -481,7 +513,31 @@
       },
       "stats": null,
       "talents": null,
-      "trinkets": null
+      "trinkets": {
+        "generated_at": 1787584043,
+        "sample_size": 41,
+        "stale": false,
+        "value": {
+          "items": [
+            {
+              "itemID": 250215,
+              "usage": 0.3085262761825627
+            },
+            {
+              "itemID": 249343,
+              "usage": 0.2888898668377834
+            },
+            {
+              "itemID": 250245,
+              "usage": 0.1765407821039396
+            },
+            {
+              "itemID": 273797,
+              "usage": 0.1718044618107753
+            }
+          ]
+        }
+      }
     },
     "269": {
       "metadata": {
@@ -562,26 +618,26 @@
         }
       },
       "trinkets": {
-        "generated_at": 1787583217,
-        "sample_size": 41,
+        "generated_at": 1787584043,
+        "sample_size": 47,
         "stale": false,
         "value": {
           "items": [
             {
               "itemID": 250215,
-              "usage": 0.5699363433653507
+              "usage": 0.5624859175283871
             },
             {
               "itemID": 249343,
-              "usage": 0.4306086916286445
+              "usage": 0.43791438011276596
             },
             {
               "itemID": 249346,
-              "usage": 0.3339527542960966
+              "usage": 0.3535787331642968
             },
             {
               "itemID": 270167,
-              "usage": 0.14941858423336027
+              "usage": 0.1749190513804306
             }
           ]
         }
