@@ -24,11 +24,22 @@ class RaiderIOProvider:
 
     async def get_current_season(self) -> str:
         data = await self.client.request_json(
-            "raiderio", f"{self.BASE}/mythic-plus/season-cutoffs",
-            params=self._params({"region": "world", "season": "current"}),
-            cache_key="season:current",
+            "raiderio", f"{self.BASE}/mythic-plus/runs",
+            params=self._params({"region": "us", "page": 0}),
+            cache_key="season:current-runs",
         )
-        return str(data.get("season", "current"))
+        season = data.get("season")
+        if isinstance(season, dict):
+            season = season.get("slug") or season.get("name")
+        rankings = data.get("rankings", data.get("runs", []))
+        if not season and rankings:
+            first = rankings[0].get("run", rankings[0])
+            season = first.get("season") or first.get("season_slug")
+            if isinstance(season, dict):
+                season = season.get("slug") or season.get("name")
+        if not season:
+            raise ValueError("Raider.IO did not expose the current season in its runs response")
+        return str(season)
 
     async def get_top_runs(self, request: RunQuery) -> list[Run]:
         data = await self.client.request_json(
@@ -82,4 +93,3 @@ class RaiderIOProvider:
             versatility=stats.get("versatility"), trinkets=trinkets,
             talent_import=data.get("talent_loadout_code"), snapshot_quality=0.65,
         )
-
