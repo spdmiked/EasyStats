@@ -51,7 +51,7 @@ def merge_lkg(new: Database, old: Database | None, settings: Settings, now: int 
                     category.stale = age > settings.soft_stale_days
                     setattr(result, name, category)
         merged[spec_id] = result
-    if not any(s.stats or s.trinkets or s.talents for s in merged.values()):
+    if old is None and not any(s.stats or s.trinkets or s.talents for s in merged.values()):
         raise ValueError("Refusing to publish an empty database")
     new.specs = merged
     return new
