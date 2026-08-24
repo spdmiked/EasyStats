@@ -17,8 +17,16 @@ async def test_oauth_token_is_reused(tmp_path: Path) -> None:
     def handler(request: httpx.Request) -> httpx.Response:
         nonlocal calls
         calls += 1
-        assert request.headers["Authorization"].startswith("Basic ")
-        return httpx.Response(200, json={"access_token": "fixture-token", "expires_in": 3600}, request=request)
+        if request.url.path == "/token":
+            assert request.headers["Authorization"].startswith("Basic ")
+            return httpx.Response(
+                200,
+                json={"access_token": "fixture-token", "expires_in": 3600},
+                request=request,
+            )
+        assert request.headers["Authorization"] == "Bearer fixture-token"
+        assert "access_token" not in request.url.params
+        return httpx.Response(200, json={"melee_crit": {"rating": 123}}, request=request)
 
     api = APIClient(DiskCache(tmp_path), 1, 0, 1)
     await api.client.aclose()
@@ -26,5 +34,11 @@ async def test_oauth_token_is_reused(tmp_path: Path) -> None:
     provider = BlizzardProvider(Settings(blizzard_client_id="id", blizzard_client_secret="secret"), api)
     tokens = await asyncio.gather(*(provider._access_token() for _ in range(20)))
     assert tokens == ["fixture-token"] * 20
-    assert calls == 1
+    stats = await provider._get(
+        "us",
+        "/profile/wow/character/realm/name/statistics",
+        {"namespace": "profile-us"},
+    )
+    assert stats["melee_crit"]["rating"] == 123
+    assert calls == 2
     await api.close()

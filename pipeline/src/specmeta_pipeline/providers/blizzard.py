@@ -46,10 +46,12 @@ class BlizzardProvider:
 
     async def _get(self, region: str, path: str, params: dict[str, Any]) -> Any:
         token = await self._access_token()
-        params = {**params, "access_token": token}
         return await self.client.request_json(
-            "blizzard", f"https://{region}.api.blizzard.com{path}", params=params,
-            cache_key=f"{region}:{path}:{sorted((k, v) for k, v in params.items() if k != 'access_token')}",
+            "blizzard",
+            f"https://{region}.api.blizzard.com{path}",
+            params=params,
+            headers={"Authorization": f"Bearer {token}"},
+            cache_key=f"{region}:{path}:{sorted(params.items())}",
         )
 
     async def get_current_season(self) -> str:
