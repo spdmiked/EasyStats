@@ -17,6 +17,10 @@ class CharacterRef:
     region: str
     realm: str
     name: str
+    spec_id: int = 0
+    level: int = 0
+    talent_import: str | None = None
+    trinkets: tuple[int, ...] = ()
 
     @property
     def privacy_key(self) -> str:
@@ -95,4 +99,3 @@ class Database:
 
 def utc_now() -> datetime:
     return datetime.now(timezone.utc)
-

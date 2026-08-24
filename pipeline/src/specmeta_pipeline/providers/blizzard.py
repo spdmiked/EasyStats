@@ -76,7 +76,12 @@ class BlizzardProvider:
             specs = await self._get(region, f"{base}/specializations", params)
         except (ProviderError, httpx.HTTPStatusError):
             return None
-        active = next((s for s in specs.get("specializations", []) if s.get("loadouts")), None)
+        active = next((
+            s for s in specs.get("specializations", [])
+            if int(s.get("specialization", {}).get("id", 0)) == character.spec_id
+        ), None)
+        if active is None:
+            active = next((s for s in specs.get("specializations", []) if s.get("loadouts")), None)
         spec_id = int((active or {}).get("specialization", {}).get("id", 0))
         items = equipment.get("equipped_items", [])
         trinkets = tuple(
@@ -86,10 +91,11 @@ class BlizzardProvider:
         )
         stats = statistics
         return CharacterSnapshot(
-            character=character, spec_id=spec_id, level=int(profile.get("level", 0)),
+            character=character, spec_id=spec_id, level=int(profile.get("level", character.level)),
             observed_at=datetime.fromtimestamp(run.completed_at.timestamp(), run.completed_at.tzinfo),
-            season=run.season, crit=stats.get("melee_crit", {}).get("rating"),
-            haste=stats.get("melee_haste", {}).get("rating"),
+            season=run.season,
+            crit=(stats.get("melee_crit", {}) or stats.get("spell_crit", {})).get("rating"),
+            haste=(stats.get("melee_haste", {}) or stats.get("spell_haste", {})).get("rating"),
             mastery=stats.get("mastery", {}).get("rating"),
             versatility=stats.get("versatility"),
             trinkets=trinkets, talent_import=None, snapshot_quality=0.55,

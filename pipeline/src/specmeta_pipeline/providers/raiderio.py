@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import datetime, timezone
+import asyncio
 from typing import Any
 
 from ..config import Settings
@@ -42,28 +43,68 @@ class RaiderIOProvider:
         return str(season)
 
     async def get_top_runs(self, request: RunQuery) -> list[Run]:
-        data = await self.client.request_json(
-            "raiderio", f"{self.BASE}/mythic-plus/runs",
-            params=self._params({"region": request.region, "season": request.season}),
-            cache_key=f"runs:{request.region}:{request.season}",
-        )
-        result: list[Run] = []
-        for raw in data.get("rankings", data.get("runs", [])):
-            run = raw.get("run", raw)
-            completed = datetime.fromisoformat(str(run["completed_at"]).replace("Z", "+00:00"))
-            members = tuple(
-                CharacterRef(
-                    region=str(m.get("region", request.region)),
-                    realm=str(m.get("realm", {}).get("slug", m.get("realm", ""))),
-                    name=str(m.get("name", m.get("character", {}).get("name", ""))),
-                )
-                for m in run.get("roster", run.get("members", []))
+        pages = await asyncio.gather(*(
+            self.client.request_json(
+                "raiderio", f"{self.BASE}/mythic-plus/runs",
+                params=self._params({
+                    "region": request.region, "season": request.season, "page": page,
+                }),
+                cache_key=f"runs:{request.region}:{request.season}:{page}",
             )
+            for page in range(self.settings.raiderio_pages_per_region)
+        ))
+        summaries = [
+            raw.get("run", raw)
+            for data in pages
+            for raw in data.get("rankings", data.get("runs", []))
+        ]
+        details = await asyncio.gather(*(
+            self.client.request_json(
+                "raiderio", f"{self.BASE}/mythic-plus/run-details",
+                params=self._params({"season": request.season, "id": int(run["keystone_run_id"])}),
+                cache_key=f"run-details:{request.season}:{run['keystone_run_id']}",
+            )
+            for run in summaries
+            if run.get("keystone_run_id")
+        ), return_exceptions=True)
+        result: list[Run] = []
+        for detail in details:
+            if isinstance(detail, BaseException):
+                continue
+            run = detail.get("run", detail)
+            completed = datetime.fromisoformat(str(run["completed_at"]).replace("Z", "+00:00"))
+            members_list: list[CharacterRef] = []
+            for member in run.get("roster", run.get("members", [])):
+                character = member.get("character", member)
+                region = character.get("region", request.region)
+                if isinstance(region, dict):
+                    region = region.get("slug", request.region)
+                realm = character.get("realm", "")
+                if isinstance(realm, dict):
+                    realm = realm.get("slug", realm.get("name", ""))
+                spec = character.get("spec", {})
+                loadout = character.get("talentLoadout", {})
+                items = member.get("items", {}).get("items", {})
+                trinkets = tuple(
+                    int(items[slot]["item_id"])
+                    for slot in ("trinket1", "trinket2")
+                    if items.get(slot, {}).get("item_id")
+                )
+                members_list.append(CharacterRef(
+                    region=str(region), realm=str(realm), name=str(character.get("name", "")),
+                    spec_id=int(spec.get("id", loadout.get("specId", 0))),
+                    level=int(character.get("level", 0)),
+                    talent_import=loadout.get("loadoutText") or member.get("loadout"),
+                    trinkets=trinkets,
+                ))
+            members = tuple(member for member in members_list if member.name and member.realm)
             result.append(Run(
                 run_id=str(run.get("id", run.get("keystone_run_id", ""))), season=request.season,
                 completed_at=completed.astimezone(timezone.utc),
                 key_level=int(run.get("mythic_level", run.get("keystone_level", 0))),
-                timed=float(run.get("clear_time_ms", 1)) <= float(run.get("par_time_ms", 0)),
+                timed=float(run.get("clear_time_ms", 1)) <= float(
+                    run.get("keystone_time_ms", run.get("par_time_ms", 0))
+                ),
                 members=members,
             ))
         return result
@@ -71,25 +112,8 @@ class RaiderIOProvider:
     async def get_character_snapshot(
         self, character: CharacterRef, run: Run
     ) -> CharacterSnapshot | None:
-        data = await self.client.request_json(
-            "raiderio", f"{self.BASE}/characters/profile",
-            params=self._params({
-                "region": character.region, "realm": character.realm, "name": character.name,
-                "fields": "gear,talents",
-            }),
-            cache_key=f"character:{character.privacy_key}",
-        )
-        gear = data.get("gear", {})
-        items = gear.get("items", {})
-        trinkets = tuple(
-            int(items[k].get("item_id", 0)) for k in ("trinket1", "trinket2")
-            if items.get(k, {}).get("item_id")
-        )
-        stats = gear.get("stats", {})
         return CharacterSnapshot(
-            character=character, spec_id=int(data.get("active_spec_id", 0)),
-            level=int(data.get("level", 0)), observed_at=run.completed_at, season=run.season,
-            crit=stats.get("crit"), haste=stats.get("haste"), mastery=stats.get("mastery"),
-            versatility=stats.get("versatility"), trinkets=trinkets,
-            talent_import=data.get("talent_loadout_code"), snapshot_quality=0.65,
+            character=character, spec_id=character.spec_id, level=character.level,
+            observed_at=run.completed_at, season=run.season, trinkets=character.trinkets,
+            talent_import=character.talent_import, snapshot_quality=0.9,
         )

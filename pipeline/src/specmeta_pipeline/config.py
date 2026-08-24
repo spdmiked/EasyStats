@@ -24,6 +24,7 @@ class Settings:
     request_timeout: float = 20.0
     max_concurrency: int = 8
     max_retries: int = 4
+    raiderio_pages_per_region: int = 10
     blizzard_client_id: str | None = None
     blizzard_client_secret: str | None = None
     raiderio_api_key: str | None = None
@@ -39,6 +40,7 @@ class Settings:
             min_per_spec=int(os.getenv("MIN_UNIQUE_CHARACTERS_PER_SPEC", "40")),
             max_per_spec=int(os.getenv("MAX_UNIQUE_CHARACTERS_PER_SPEC", "300")),
             max_character_level=int(os.getenv("MAX_CHARACTER_LEVEL", "90")),
+            raiderio_pages_per_region=int(os.getenv("RAIDERIO_PAGES_PER_REGION", "10")),
             blizzard_client_id=os.getenv("BLIZZARD_CLIENT_ID"),
             blizzard_client_secret=os.getenv("BLIZZARD_CLIENT_SECRET"),
             raiderio_api_key=os.getenv("RAIDERIO_API_KEY"),
