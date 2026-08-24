@@ -1,0 +1,43 @@
+name: Update data
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 */8 * * *'
+
+concurrency:
+  group: easystats-data-update
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e './pipeline[dev]'
+      - name: Aggregate live data
+        env:
+          DATA_PROVIDER: hybrid
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+          RAIDERIO_API_KEY: ${{ secrets.RAIDERIO_API_KEY }}
+        run: python -m specmeta_pipeline update
+      - run: python -m specmeta_pipeline validate
+      - uses: actions/upload-artifact@v4
+        with:
+          name: easystats-update-report
+          path: reports/latest-update.*
+      - name: Commit valid changes
+        run: |
+          if git diff --quiet -- addon/EasyStats/GeneratedData.lua reports; then exit 0; fi
+          git config user.name 'easystats-data-bot'
+          git config user.email 'easystats-data-bot@users.noreply.github.com'
+          git add addon/EasyStats/GeneratedData.lua reports
+          git commit -m 'data: refresh Mythic+ aggregates [skip ci]'
+          git push
+

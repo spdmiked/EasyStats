@@ -1,0 +1,12 @@
+.env
+.cache/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.validation/
+__pycache__/
+*.py[cod]
+pipeline/.venv/
+pipeline/state.json
+dist/*.zip
+reports/latest-update.*

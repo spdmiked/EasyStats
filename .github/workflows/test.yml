@@ -1,0 +1,33 @@
+name: Test
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: pip
+          cache-dependency-path: pipeline/pyproject.toml
+      - run: pip install -e './pipeline[dev]'
+      - run: ruff check pipeline/src pipeline/tests
+      - run: mypy pipeline/src
+      - run: pytest pipeline
+      - name: Install Lua
+        run: sudo apt-get update && sudo apt-get install -y lua5.4
+      - run: find addon/EasyStats -name '*.lua' -print0 | xargs -0 -n1 luac -p
+      - run: lua tests/lua/test_pure.lua
+      - run: DATA_PROVIDER=fixture python -m specmeta_pipeline update --dry-run >/dev/null
+      - run: bash scripts/validate_package.sh
+      - name: Secret scan
+        run: |
+          ! grep -RIE 'Authorization: Bearer [A-Za-z0-9]|BLIZZARD_CLIENT_SECRET=.+|RAIDERIO_API_KEY=.+' --exclude-dir=.git .
+

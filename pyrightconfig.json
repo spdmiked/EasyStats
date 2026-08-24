@@ -1,0 +1,6 @@
+{
+  "include": ["pipeline/src", "pipeline/tests"],
+  "extraPaths": ["pipeline/src"],
+  "pythonVersion": "3.12",
+  "reportMissingImports": false
+}

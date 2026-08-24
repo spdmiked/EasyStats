@@ -1,0 +1,33 @@
+name: Release
+on:
+  push:
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e './pipeline[dev]'
+      - run: pytest pipeline && python -m specmeta_pipeline validate --production
+      - run: sudo apt-get update && sudo apt-get install -y lua5.4 zip
+      - run: bash scripts/validate_package.sh && bash scripts/package_addon.sh
+      - name: Create GitHub release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release create "${GITHUB_REF_NAME}" dist/*.zip --generate-notes --title "EasyStats ${GITHUB_REF_NAME}"
+      - name: Upload to CurseForge when configured
+        env:
+          CF_API_KEY: ${{ secrets.CF_API_KEY }}
+          CF_PROJECT_ID: ${{ secrets.CF_PROJECT_ID }}
+          CF_GAME_VERSION_ID: ${{ secrets.CF_GAME_VERSION_ID }}
+        run: bash scripts/upload_curseforge.sh

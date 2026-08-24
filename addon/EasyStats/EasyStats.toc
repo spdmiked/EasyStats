@@ -1,0 +1,22 @@
+## Interface: 120100
+## Title: EasyStats
+## Notes: Mythic+ meta stats, trinkets and talent loadouts.
+## Author: EasyStats contributors
+## Version: 1.0.0
+## SavedVariables: EasyStatsDB
+## X-Category: Combat
+## X-License: MIT
+## X-AI-Assisted: OpenAI Codex
+## X-Website: https://www.curseforge.com/wow/addons/easystats
+## X-Data-Attribution: https://raider.io and Blizzard Battle.net API
+
+Localization/enUS.lua
+GeneratedData.lua
+Init.lua
+DataAccess.lua
+Core.lua
+ItemLoader.lua
+Talents.lua
+UI.lua
+Events.lua
+SlashCommands.lua
