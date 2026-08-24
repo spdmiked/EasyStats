@@ -45,6 +45,15 @@ def main(argv: list[str] | None = None) -> int:
         validate_text(text)
         if args.production and 'sourceMode = "fixture"' in text:
             raise SystemExit("Refusing to release fixture data")
+        if args.production:
+            missing = [
+                name for name in ("stats", "trinkets", "talents")
+                if f"{name} = {{" not in text
+            ]
+            if missing:
+                raise SystemExit(
+                    "Refusing to release incomplete live data: " + ", ".join(missing)
+                )
         return 0
     errors: list[str] = []
     if settings.provider == "fixture":
