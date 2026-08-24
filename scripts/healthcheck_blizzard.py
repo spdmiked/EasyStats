@@ -24,7 +24,12 @@ def main() -> int:
         )
         print(f"statistics_status={stats_response.status_code}")
         if stats_response.is_success:
-            print("statistics_keys=" + ",".join(sorted(stats_response.json())))
+            payload = stats_response.json()
+            print("statistics_keys=" + ",".join(sorted(payload)))
+            for name in ("melee_crit", "melee_haste", "mastery", "versatility"):
+                value = payload.get(name)
+                detail = ",".join(sorted(value)) if isinstance(value, dict) else "scalar"
+                print(f"{name}_shape={type(value).__name__}:{detail}")
         return 0 if stats_response.is_success else 1
 
 
