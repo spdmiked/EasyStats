@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import asyncio
 import base64
 import time
 from datetime import datetime
@@ -22,22 +23,26 @@ class BlizzardProvider:
         self.client = client
         self._token: str | None = None
         self._expires_at = 0.0
+        self._token_lock = asyncio.Lock()
 
     async def _access_token(self) -> str:
         if self._token and time.time() < self._expires_at - 60:
             return self._token
-        raw = f"{self.settings.blizzard_client_id}:{self.settings.blizzard_client_secret}"
-        auth = base64.b64encode(raw.encode()).decode()
-        response = await self.client.client.post(
-            "https://oauth.battle.net/token",
-            data={"grant_type": "client_credentials"},
-            headers={"Authorization": f"Basic {auth}"},
-        )
-        response.raise_for_status()
-        payload = response.json()
-        self._token = str(payload["access_token"])
-        self._expires_at = time.time() + int(payload.get("expires_in", 86400))
-        return self._token
+        async with self._token_lock:
+            if self._token and time.time() < self._expires_at - 60:
+                return self._token
+            raw = f"{self.settings.blizzard_client_id}:{self.settings.blizzard_client_secret}"
+            auth = base64.b64encode(raw.encode()).decode()
+            response = await self.client.client.post(
+                "https://oauth.battle.net/token",
+                data={"grant_type": "client_credentials"},
+                headers={"Authorization": f"Basic {auth}"},
+            )
+            response.raise_for_status()
+            payload = response.json()
+            self._token = str(payload["access_token"])
+            self._expires_at = time.time() + int(payload.get("expires_in", 86400))
+            return self._token
 
     async def _get(self, region: str, path: str, params: dict[str, Any]) -> Any:
         token = await self._access_token()
