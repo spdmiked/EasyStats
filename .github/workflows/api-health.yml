@@ -1,0 +1,21 @@
+name: API health
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  blizzard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install -e ./pipeline
+      - name: Check Blizzard OAuth and profile statistics
+        env:
+          BLIZZARD_CLIENT_ID: ${{ secrets.BLIZZARD_CLIENT_ID }}
+          BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
+        run: python scripts/healthcheck_blizzard.py
