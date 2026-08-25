@@ -1,7 +1,7 @@
 EasyStats = EasyStats or {}
 local ES = EasyStats
 ES.name = "EasyStats"
-ES.version = "1.0.1"
+ES.version = "1.0.2"
 ES.schemaVersion = 1
 ES.debugEnabled = false
 
@@ -10,6 +10,7 @@ ES.L = EasyStats_Locales[locale] or EasyStats_Locales.enUS
 
 ES.defaults = {
     schemaVersion = 1,
+    lootSources = {},
     profile = { point = "TOPRIGHT", relativePoint = "TOPRIGHT", x = -40, y = -220,
         scale = 1.0, collapsed = false, locked = false, showSampleSize = false },
 }
@@ -25,6 +26,7 @@ end
 function ES:MigrateSettings(saved)
     if type(saved) ~= "table" then saved = {} end
     if type(saved.profile) ~= "table" then saved.profile = {} end
+    if type(saved.lootSources) ~= "table" then saved.lootSources = {} end
     for key, value in pairs(self.defaults.profile) do
         if saved.profile[key] == nil then saved.profile[key] = value end
     end

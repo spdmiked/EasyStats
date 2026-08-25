@@ -15,7 +15,7 @@ end
 
 local function sectionLabel(parent, text, y)
     local label = parent:CreateFontString(nil, "OVERLAY", "GameFontNormalSmall")
-    label:SetPoint("TOPLEFT", 14, y); label:SetText(text); label:SetTextColor(0.35, 0.8, 1)
+    label:SetPoint("TOPLEFT", 16, y); label:SetText(text); label:SetTextColor(0.35, 0.8, 1)
     return label
 end
 
@@ -37,35 +37,37 @@ end
 
 function ES:CreateUI()
     local frame = CreateFrame("Frame", "EasyStatsFrame", UIParent, "BackdropTemplate")
-    frame:SetSize(310, 330); frame:SetMovable(true); frame:EnableMouse(true); frame:SetClampedToScreen(true)
+    frame:SetSize(380, 403); frame:SetMovable(true); frame:EnableMouse(true); frame:SetClampedToScreen(true)
     frame:SetBackdrop({ bgFile = "Interface/Tooltips/UI-Tooltip-Background", edgeFile = "Interface/Tooltips/UI-Tooltip-Border", edgeSize = 12 })
-    frame:SetBackdropColor(0.025, 0.04, 0.065, 0.94); frame:SetScale(self.db.profile.scale)
+    frame:SetBackdropColor(0.025, 0.04, 0.065, 0.94); frame:SetBackdropBorderColor(0.72, 0.60, 0.32, 1); frame:SetScale(self.db.profile.scale)
     frame:SetPoint(self.db.profile.point, UIParent, self.db.profile.relativePoint, self.db.profile.x, self.db.profile.y)
     frame:RegisterForDrag("LeftButton")
     frame:SetScript("OnDragStart", function(f) if not ES.db.profile.locked then f:StartMoving() end end)
     frame:SetScript("OnDragStop", function(f) f:StopMovingOrSizing(); ES:SavePosition(f) end)
 
-    local icon = frame:CreateTexture(nil, "ARTWORK"); icon:SetSize(28, 28); icon:SetPoint("TOPLEFT", 12, -10)
-    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge"); title:SetPoint("LEFT", icon, "RIGHT", 8, 0); title:SetWidth(192); title:SetJustifyH("LEFT")
-    local context = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal"); context:SetPoint("TOPRIGHT", -40, -17); context:SetText(self.L.CONTEXT); context:SetTextColor(0.3, 0.85, 1)
+    local icon = frame:CreateTexture(nil, "ARTWORK"); icon:SetSize(34, 34); icon:SetPoint("TOPLEFT", 16, -11)
+    local title = frame:CreateFontString(nil, "OVERLAY", "GameFontNormalLarge"); title:SetPoint("LEFT", icon, "RIGHT", 10, 0); title:SetJustifyH("LEFT")
+    local brand = frame:CreateFontString(nil, "OVERLAY", "GameFontNormal"); brand:SetPoint("LEFT", title, "RIGHT", 8, 0); brand:SetText(self.L.HEADER_SUFFIX); brand:SetTextColor(0.35, 0.8, 1)
     local eye = CreateFrame("Button", nil, frame); eye:SetSize(24, 24); eye:SetPoint("TOPRIGHT", -8, -9)
     eye:SetNormalTexture("Interface/Buttons/UI-Panel-HideButton-Up"); eye:SetScript("OnClick", function() ES:SetCollapsed(true) end)
 
-    local statsLabel = sectionLabel(frame, self.L.STATS, -52)
-    local stats = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight"); stats:SetPoint("TOPLEFT", 14, -70); stats:SetWidth(282); stats:SetJustifyH("LEFT")
+    local divider = frame:CreateTexture(nil, "ARTWORK"); divider:SetColorTexture(0.22, 0.27, 0.31, 0.65); divider:SetSize(348, 1); divider:SetPoint("TOPLEFT", 16, -48)
+
+    local statsLabel = sectionLabel(frame, self.L.STATS, -62)
+    local stats = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight"); stats:SetPoint("TOPLEFT", 16, -82); stats:SetWidth(348); stats:SetJustifyH("LEFT")
     statsLabel:SetScript("OnEnter", function(owner) tooltip(owner, ES.L.STATS, ES.L.META_TOOLTIP, ES.activeData and ES.activeData.stats) end)
     statsLabel:SetScript("OnLeave", GameTooltip_Hide); statsLabel:EnableMouse(true)
 
-    local trinketLabel = sectionLabel(frame, self.L.TRINKETS, -96); trinketLabel:EnableMouse(true)
+    local trinketLabel = sectionLabel(frame, self.L.TRINKETS, -116); trinketLabel:EnableMouse(true)
     trinketLabel:SetScript("OnEnter", function(owner) tooltip(owner, ES.L.TRINKETS, ES.L.TRINKET_TOOLTIP, ES.activeData and ES.activeData.trinkets) end)
     trinketLabel:SetScript("OnLeave", GameTooltip_Hide)
     local rows = {}
     for index = 1, 4 do
-        local row = CreateFrame("Button", nil, frame); row:SetSize(282, 38); row:SetPoint("TOPLEFT", 14, -110 - (index - 1) * 39)
-        local rank = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall"); rank:SetPoint("LEFT"); rank:SetText(index .. ".")
-        local itemIcon = row:CreateTexture(nil, "ARTWORK"); itemIcon:SetSize(28, 28); itemIcon:SetPoint("LEFT", 20, 0)
-        local name = row:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall"); name:SetPoint("TOPLEFT", itemIcon, "TOPRIGHT", 6, -1); name:SetWidth(224); name:SetJustifyH("LEFT")
-        local source = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall"); source:SetPoint("BOTTOMLEFT", itemIcon, "BOTTOMRIGHT", 6, 1); source:SetWidth(224); source:SetJustifyH("LEFT")
+        local row = CreateFrame("Button", nil, frame); row:SetSize(348, 52); row:SetPoint("TOPLEFT", 16, -137 - (index - 1) * 54)
+        local rank = row:CreateFontString(nil, "OVERLAY", "GameFontHighlight"); rank:SetPoint("TOPLEFT", 0, -5); rank:SetText(index .. ".")
+        local itemIcon = row:CreateTexture(nil, "ARTWORK"); itemIcon:SetSize(34, 34); itemIcon:SetPoint("TOPLEFT", 24, -1)
+        local name = row:CreateFontString(nil, "OVERLAY", "GameFontHighlight"); name:SetPoint("TOPLEFT", itemIcon, "TOPRIGHT", 8, -1); name:SetWidth(282); name:SetJustifyH("LEFT")
+        local source = row:CreateFontString(nil, "OVERLAY", "GameFontDisableSmall"); source:SetPoint("TOPLEFT", name, "BOTTOMLEFT", 0, -2); source:SetWidth(282); source:SetJustifyH("LEFT"); source:SetJustifyV("TOP")
         row.icon, row.name, row.source = itemIcon, name, source
         row:SetScript("OnEnter", function(r)
             if r.itemID then GameTooltip:SetOwner(r, "ANCHOR_RIGHT")
@@ -78,11 +80,11 @@ function ES:CreateUI()
         rows[index] = row
     end
 
-    local talentLabel = sectionLabel(frame, self.L.TALENTS, -270); talentLabel:EnableMouse(true)
+    local talentLabel = sectionLabel(frame, self.L.TALENTS, -351); talentLabel:EnableMouse(true)
     talentLabel:SetScript("OnEnter", function(owner) tooltip(owner, ES.L.TALENTS, ES.L.TALENT_TOOLTIP, ES.activeData and ES.activeData.talents) end)
     talentLabel:SetScript("OnLeave", GameTooltip_Hide)
-    local support = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlightSmall"); support:SetPoint("TOPLEFT", 14, -287)
-    local apply = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate"); apply:SetSize(112, 24); apply:SetPoint("BOTTOMRIGHT", -10, 9); apply:SetText(self.L.APPLY)
+    local support = frame:CreateFontString(nil, "OVERLAY", "GameFontHighlight"); support:SetPoint("TOPLEFT", 16, -371)
+    local apply = CreateFrame("Button", nil, frame, "UIPanelButtonTemplate"); apply:SetSize(112, 24); apply:SetPoint("BOTTOMRIGHT", -12, 11); apply:SetText(self.L.APPLY)
     apply:SetScript("OnClick", function() ES:ApplyTalentBuild() end)
 
     local mini = CreateFrame("Button", "EasyStatsMiniButton", UIParent, "BackdropTemplate")
@@ -97,14 +99,14 @@ function ES:CreateUI()
     mini:SetScript("OnEnter", function(owner) GameTooltip:SetOwner(owner, "ANCHOR_RIGHT"); GameTooltip:SetText(ES.L.SHOW); GameTooltip:Show() end)
     mini:SetScript("OnLeave", GameTooltip_Hide)
 
-    local ui = { frame = frame, mini = mini, icon = icon, title = title, stats = stats, rows = rows, support = support, apply = apply }
+    local ui = { frame = frame, mini = mini, icon = icon, title = title, brand = brand, stats = stats, rows = rows, support = support, apply = apply }
     function ui:SetUnavailable(message, preserveHeader)
-        if not preserveHeader then self.title:SetText(ES.L.ADDON_NAME); self.icon:SetTexture(134400) end
+        if not preserveHeader then self.title:SetText(ES.L.ADDON_NAME); self.brand:SetText(ES.L.HEADER_FALLBACK); self.icon:SetTexture(134400) end
         self.stats:SetText(message); self.support:SetText(message); self.apply:Disable()
         for _, row in ipairs(self.rows) do row.name:SetText("—"); row.source:SetText(""); row.icon:SetTexture(nil); row.itemID = nil; row.itemLink = nil end
     end
     function ui:Render(spec, data)
-        self.title:SetText(spec.name); self.icon:SetTexture(spec.icon); self.mini.icon:SetTexture(spec.icon)
+        self.title:SetText(spec.name); self.brand:SetText(ES.L.HEADER_SUFFIX); self.icon:SetTexture(spec.icon); self.mini.icon:SetTexture(spec.icon)
         if not data then self:SetUnavailable(ES.L.NO_DATA, true); return end
         self.stats:SetText(data.stats and not data.stats._hardStale and ES:FormatStats(data.stats) or ES.L.NO_DATA)
         for index, row in ipairs(self.rows) do

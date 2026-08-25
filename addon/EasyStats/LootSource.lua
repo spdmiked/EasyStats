@@ -2,6 +2,10 @@ local ES = EasyStats
 
 ES.lootSourceCache = ES.lootSourceCache or {}
 ES.lootSourceCallbacks = ES.lootSourceCallbacks or {}
+ES.lootSourceQueue = ES.lootSourceQueue or {}
+
+local START_DELAY = 2
+local STEP_DELAY = 0.04
 
 local function loadEncounterJournal()
     if C_AddOns and C_AddOns.IsAddOnLoaded and C_AddOns.IsAddOnLoaded("Blizzard_EncounterJournal") then
@@ -26,21 +30,54 @@ end
 
 function ES:PublishLootSource(itemID, source)
     self.lootSourceCache[itemID] = source
+    if source ~= self.L.SOURCE_UNKNOWN and self.db and self.db.lootSources then
+        self.db.lootSources[itemID] = source
+    end
     local callbacks = self.lootSourceCallbacks[itemID] or {}
     self.lootSourceCallbacks[itemID] = nil
     for _, callback in ipairs(callbacks) do callback(source) end
 end
 
 function ES:ResolveLootSource(itemID, callback)
-    if self.lootSourceCache[itemID] then callback(self.lootSourceCache[itemID]); return end
+    local cached = self.lootSourceCache[itemID]
+        or (self.db and self.db.lootSources and self.db.lootSources[itemID])
+    if cached then
+        self.lootSourceCache[itemID] = cached
+        callback(cached)
+        return
+    end
     self.lootSourceCallbacks[itemID] = self.lootSourceCallbacks[itemID] or {}
     table.insert(self.lootSourceCallbacks[itemID], callback)
     if self.lootSourceScan then
         self.lootSourceScan.targets[itemID] = true
         return
     end
+    self.lootSourceQueue[itemID] = true
+    if self.lootSourceStartPending then return end
+    self.lootSourceStartPending = true
+    C_Timer.After(START_DELAY, function()
+        ES.lootSourceStartPending = false
+        ES:StartLootSourceScan()
+    end)
+end
+
+function ES:StartLootSourceScan()
+    if self.lootSourceScan then return end
+    if not next(self.lootSourceQueue) then return end
+    if InCombatLockdown and InCombatLockdown() then
+        if not self.lootSourceStartPending then
+            self.lootSourceStartPending = true
+            C_Timer.After(START_DELAY, function()
+                ES.lootSourceStartPending = false
+                ES:StartLootSourceScan()
+            end)
+        end
+        return
+    end
     if not loadEncounterJournal() then
-        self:PublishLootSource(itemID, self.L.SOURCE_UNKNOWN)
+        local queued = self.lootSourceQueue
+        self.lootSourceQueue = {}
+        for itemID in pairs(queued) do self:PublishLootSource(itemID, self.L.SOURCE_UNKNOWN) end
         return
     end
 
@@ -50,12 +87,23 @@ function ES:ResolveLootSource(itemID, callback)
     local _, _, classID = UnitClass("player")
     local spec = self:GetActiveSpecialization()
     if EJ_SetLootFilter then EJ_SetLootFilter(classID or 0, spec and spec.id or 0) end
+    local targets = self.lootSourceQueue
+    self.lootSourceQueue = {}
     self.lootSourceScan = {
-        targets = { [itemID] = true }, tier = EJ_GetNumTiers(), instance = 1,
+        targets = targets, tier = EJ_GetNumTiers(), instance = 1,
         isRaid = false, originalTier = originalTier, originalDifficulty = originalDifficulty,
         originalInstance = originalInstance,
     }
     self:ContinueLootSourceScan()
+end
+
+function ES:HasPendingLootTargets(scan)
+    scan = scan or self.lootSourceScan
+    if not scan then return false end
+    for itemID in pairs(scan.targets) do
+        if not self.lootSourceCache[itemID] then return true end
+    end
+    return false
 end
 
 function ES:FinishLootSourceScan()
@@ -76,6 +124,7 @@ end
 function ES:ContinueLootSourceScan()
     local scan = self.lootSourceScan
     if not scan then return end
+    if not self:HasPendingLootTargets(scan) then self:FinishLootSourceScan(); return end
     if EncounterJournal and EncounterJournal:IsShown() then
         C_Timer.After(1, function() ES:ContinueLootSourceScan() end)
         return
@@ -89,7 +138,7 @@ function ES:ContinueLootSourceScan()
         else
             scan.isRaid, scan.instance, scan.tier = false, 1, scan.tier - 1
         end
-        C_Timer.After(0, function() ES:ContinueLootSourceScan() end)
+        C_Timer.After(STEP_DELAY, function() ES:ContinueLootSourceScan() end)
         return
     end
 
@@ -102,6 +151,7 @@ function ES:ContinueLootSourceScan()
             self:PublishLootSource(foundItemID, source)
         end
     end
+    if not self:HasPendingLootTargets(scan) then self:FinishLootSourceScan(); return end
     scan.instance = scan.instance + 1
-    C_Timer.After(0, function() ES:ContinueLootSourceScan() end)
+    C_Timer.After(STEP_DELAY, function() ES:ContinueLootSourceScan() end)
 end

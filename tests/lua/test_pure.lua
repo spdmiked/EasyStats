@@ -9,11 +9,13 @@ dofile("addon/EasyStats/Init.lua")
 dofile("addon/EasyStats/DataAccess.lua")
 dofile("addon/EasyStats/Talents.lua")
 dofile("addon/EasyStats/ItemLoader.lua")
+dofile("addon/EasyStats/LootSource.lua")
 
 local ES = EasyStats
 local migrated = ES:MigrateSettings({})
 assert(migrated.schemaVersion == 1)
 assert(migrated.profile.scale == 1.0)
+assert(type(migrated.lootSources) == "table")
 assert(ES:IsTalentStringValid("BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"))
 assert(not ES:IsTalentStringValid("bad string"))
 assert(ES:FormatStats({ order = { "HASTE", "MASTERY" }, separators = { "≈" } }) == "Haste ≈ Mastery")
@@ -35,6 +37,16 @@ ES:OnItemLoaded(100001, true)
 assert(received == "Fixture Trinket")
 assert(ES:BuildItemLink({ itemID = 250144, bonuses = { 13440, 12806 } }) ==
     "item:250144::::::::::::2:13440:12806")
+
+ES.db = { lootSources = {} }
+ES.lootSourceCache = {}
+ES.lootSourceCallbacks = {}
+ES:PublishLootSource(250144, "Emberdawn (The Dreamrift)")
+assert(ES.db.lootSources[250144] == "Emberdawn (The Dreamrift)")
+local scan = { targets = { [250144] = true, [250145] = true } }
+assert(ES:HasPendingLootTargets(scan))
+ES.lootSourceCache[250145] = "Boss (Raid)"
+assert(not ES:HasPendingLootTargets(scan))
 
 EasyStatsGeneratedDB = { schemaVersion = 1, contexts = { mythicplus = { [253] = {
     stats = { generatedAt = 1787529600 }, trinkets = { generatedAt = 1787529600 }, talents = { generatedAt = 1787529600 },

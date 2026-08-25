@@ -1,6 +1,6 @@
 EasyStats_Locales = EasyStats_Locales or {}
 EasyStats_Locales.enUS = {
-    ADDON_NAME = "EasyStats", CONTEXT = "M+", STATS = "STATS", TRINKETS = "TOP 4 TRINKETS",
+    ADDON_NAME = "EasyStats", CONTEXT = "M+", HEADER_SUFFIX = "— EasyStats for M+", HEADER_FALLBACK = "for M+", STATS = "STATS", TRINKETS = "TOP 4 TRINKETS",
     TALENTS = "M+ TALENTS", APPLY = "APPLY BUILD", LOADING_ITEM = "Loading item…",
     NO_DATA = "No current data for this specialization.", SHOW = "Show EasyStats",
     SOURCE_FORMAT = "Source: %s", SOURCE_LOADING = "Source: looking up...",

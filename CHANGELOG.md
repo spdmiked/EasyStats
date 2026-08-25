@@ -1,5 +1,14 @@
 # Changelog
 
+## 1.0.2 — 2026-08-26
+
+### Fixed
+
+- Gives every trinket source enough vertical space to wrap without overlapping the next item.
+- Displays `EasyStats for M+` beside the active specialization name.
+- Defers and time-slices Adventure Guide lookups, stops scanning as soon as all visible sources are found, and caches results between sessions.
+- Removes redundant login and post-combat refreshes that could repeatedly rebuild the panel.
+
 ## 1.0.1 — 2026-08-25
 
 ### Fixed

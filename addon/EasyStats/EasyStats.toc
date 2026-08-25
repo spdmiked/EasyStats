@@ -2,7 +2,7 @@
 ## Title: EasyStats
 ## Notes: Mythic+ meta stats, trinkets and talent loadouts.
 ## Author: EasyStats contributors
-## Version: 1.0.1
+## Version: 1.0.2
 ## SavedVariables: EasyStatsDB
 ## X-Category: Combat
 ## X-License: MIT
