@@ -99,6 +99,7 @@ def aggregate_trinkets(
 ) -> CategoryResult | None:
     canonical = canonical or {}
     counts: dict[int, float] = defaultdict(float)
+    strongest: dict[int, tuple[int, tuple[int, ...]]] = {}
     voters = 0
     for row in rows:
         items = {canonical.get(item, item) for item in row.snapshot.trinkets if item > 0}
@@ -107,13 +108,23 @@ def aggregate_trinkets(
         voters += 1
         for item in items:
             counts[item] += row.weight
+        for variant in row.snapshot.trinket_variants:
+            item = canonical.get(variant.item_id, variant.item_id)
+            candidate = (variant.item_level, variant.bonuses)
+            if candidate > strongest.get(item, (0, ())):
+                strongest[item] = candidate
     if not voters:
         return None
     total_weight = sum(row.weight for row in rows if row.snapshot.trinkets)
     ranked = sorted(counts.items(), key=lambda pair: (-pair[1], pair[0]))[:4]
-    return CategoryResult({"items": [
-        {"itemID": item, "usage": weight / total_weight} for item, weight in ranked
-    ]}, voters, now)
+    rendered = []
+    for item, weight in ranked:
+        item_level, bonuses = strongest.get(item, (0, ()))
+        rendered.append({
+            "itemID": item, "usage": weight / total_weight,
+            "itemLevel": item_level, "bonuses": list(bonuses),
+        })
+    return CategoryResult({"items": rendered}, voters, now)
 
 
 def normalize_talent(value: str | None) -> str | None:

@@ -7,7 +7,7 @@ from dataclasses import replace
 from pathlib import Path
 
 from .aggregation import aggregate_by_spec, prepare_observations
-from .config import DEFAULT_OUTPUT, DEFAULT_REPORTS, DEFAULT_STATE, Settings
+from .config import DEFAULT_OUTPUT, DEFAULT_REPORTS, DEFAULT_STATE, RETAIL_SPEC_IDS, Settings
 from .fixtures import sample_observations
 from .lua import render, validate_text, write_atomic
 from .models import Database
@@ -46,10 +46,19 @@ def main(argv: list[str] | None = None) -> int:
         if args.production and 'sourceMode = "fixture"' in text:
             raise SystemExit("Refusing to release fixture data")
         if args.production:
-            missing = [
-                name for name in ("stats", "trinkets", "talents")
-                if f"{name} = {{" not in text
-            ]
+            database = load_database(DEFAULT_STATE)
+            if database is None:
+                raise SystemExit("Refusing to release without pipeline state")
+            missing = []
+            for spec_id in RETAIL_SPEC_IDS:
+                spec = database.specs.get(spec_id)
+                for name in ("stats", "trinkets", "talents"):
+                    category = getattr(spec, name, None) if spec else None
+                    minimum = settings.min_talent_sample if name == "talents" else settings.min_per_spec
+                    if category is None or category.sample_size < minimum:
+                        missing.append(f"{spec_id}:{name}")
+                if spec and spec.trinkets and len(spec.trinkets.value.get("items", [])) != 4:
+                    missing.append(f"{spec_id}:trinkets-not-four")
             if missing:
                 raise SystemExit(
                     "Refusing to release incomplete live data: " + ", ".join(missing)

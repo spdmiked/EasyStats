@@ -1,7 +1,7 @@
 EasyStats = EasyStats or {}
 local ES = EasyStats
 ES.name = "EasyStats"
-ES.version = "1.0.0"
+ES.version = "1.0.1"
 ES.schemaVersion = 1
 ES.debugEnabled = false
 
@@ -36,4 +36,3 @@ function ES:InitializeSettings()
     EasyStatsDB = self:MigrateSettings(EasyStatsDB)
     self.db = EasyStatsDB
 end
-

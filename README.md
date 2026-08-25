@@ -47,7 +47,7 @@ The ZIP is written to `dist/EasyStats-<version>.zip` with the required top-level
 
 ## Talent import safety
 
-EasyStats attempts the current public `C_ClassTalents.ImportLoadout` API only out of combat and behind feature detection and `pcall`. If the client rejects or changes that API, EasyStats opens the native talent UI and displays a selectable import string. The player completes the native confirmation. The addon does not simulate clicks, bypass protected functions, or retry automatically after combat.
+EasyStats uses Blizzard's native talent-frame import flow only out of combat and behind feature detection and `pcall`. If direct staging is unavailable, it opens the native import dialog with the code filled in. A selectable copy field is the final fallback. The player retains the native confirmation step; the addon does not simulate clicks, bypass protected functions, or retry automatically after combat.
 
 ## AI disclosure
 

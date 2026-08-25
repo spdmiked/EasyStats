@@ -2,7 +2,7 @@
 ## Title: EasyStats
 ## Notes: Mythic+ meta stats, trinkets and talent loadouts.
 ## Author: EasyStats contributors
-## Version: 1.0.0
+## Version: 1.0.1
 ## SavedVariables: EasyStatsDB
 ## X-Category: Combat
 ## X-License: MIT
@@ -16,6 +16,7 @@ Init.lua
 DataAccess.lua
 Core.lua
 ItemLoader.lua
+LootSource.lua
 Talents.lua
 UI.lua
 Events.lua

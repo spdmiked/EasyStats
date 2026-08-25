@@ -25,6 +25,7 @@ async def _collect(
     enrichment: RunProvider | None = None,
 ) -> list[Observation]:
     observations: list[Observation] = []
+    selected: dict[int, set[str]] = {}
     for region in settings.regions:
         runs = await provider.get_top_runs(RunQuery(season, region, utc_now() - timedelta(days=settings.max_age_days)))
         eligible = [run for run in runs if run.timed and run.completed_at >= utc_now() - timedelta(days=settings.max_age_days)]
@@ -38,18 +39,25 @@ async def _collect(
             return replace(
                 primary, crit=secondary.crit, haste=secondary.haste,
                 mastery=secondary.mastery, versatility=secondary.versatility,
+                trinkets=primary.trinkets or secondary.trinkets,
+                trinket_variants=primary.trinket_variants or secondary.trinket_variants,
                 snapshot_quality=min(primary.snapshot_quality, secondary.snapshot_quality),
             )
 
-        tasks = [snapshot(member, run) for run in eligible for member in run.members]
-        snapshots = await asyncio.gather(*tasks, return_exceptions=True)
-        cursor = 0
+        pairs: list[tuple[CharacterRef, Run]] = []
         for run in eligible:
-            for _member in run.members:
-                snapshot_result = snapshots[cursor]
-                cursor += 1
-                if not isinstance(snapshot_result, BaseException) and snapshot_result is not None:
-                    observations.append(Observation(snapshot_result, run))
+            for member in run.members:
+                spec_seen = selected.setdefault(member.spec_id, set())
+                if (member.spec_id <= 0 or member.privacy_key in spec_seen
+                        or len(spec_seen) >= settings.target_per_spec):
+                    continue
+                spec_seen.add(member.privacy_key)
+                pairs.append((member, run))
+        tasks = [snapshot(member, run) for member, run in pairs]
+        snapshots = await asyncio.gather(*tasks, return_exceptions=True)
+        for (_, run), snapshot_result in zip(pairs, snapshots, strict=True):
+            if not isinstance(snapshot_result, BaseException) and snapshot_result is not None:
+                observations.append(Observation(snapshot_result, run))
     return observations
 
 

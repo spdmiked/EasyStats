@@ -11,7 +11,7 @@ from specmeta_pipeline.aggregation import (
 )
 from specmeta_pipeline.config import Settings
 from specmeta_pipeline.fixtures import sample_observations
-from specmeta_pipeline.models import CharacterRef, CharacterSnapshot, Observation, Run
+from specmeta_pipeline.models import CharacterRef, CharacterSnapshot, ItemVariant, Observation, Run
 
 
 def test_weighted_median() -> None:
@@ -41,11 +41,26 @@ def test_stats_tie_detection() -> None:
 
 def test_trinkets_are_unique_and_variants_merge() -> None:
     rows = sample_observations(48)
+    first = rows[0]
+    rows[0] = Observation(
+        CharacterSnapshot(
+            first.snapshot.character, first.snapshot.spec_id, first.snapshot.level,
+            first.snapshot.observed_at, first.snapshot.season,
+            crit=first.snapshot.crit, haste=first.snapshot.haste,
+            mastery=first.snapshot.mastery, versatility=first.snapshot.versatility,
+            trinkets=first.snapshot.trinkets,
+            trinket_variants=(ItemVariant(100001, 289, (13440, 12806)),),
+            talent_import=first.snapshot.talent_import,
+        ),
+        first.run,
+    )
     result = aggregate_trinkets(rows, 123, {100006: 100001})
     assert result is not None
     ids = [item["itemID"] for item in result.value["items"]]
     assert len(ids) == len(set(ids)) == 4
     assert ids[0] == 100001
+    assert result.value["items"][0]["itemLevel"] == 289
+    assert result.value["items"][0]["bonuses"] == [13440, 12806]
 
 
 def test_talents_select_complete_loadout() -> None:

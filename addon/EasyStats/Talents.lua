@@ -25,11 +25,31 @@ function ES:ShowTalentCopy(code)
 end
 
 function ES:OpenTalentUI()
-    if PlayerSpellsUtil and PlayerSpellsUtil.OpenToClassSpecializationsTab then
-        pcall(PlayerSpellsUtil.OpenToClassSpecializationsTab)
+    if not PlayerSpellsFrame then
+        local loader = C_AddOns and C_AddOns.LoadAddOn or UIParentLoadAddOn
+        if loader then pcall(loader, "Blizzard_PlayerSpells") end
+    end
+    if PlayerSpellsUtil and (PlayerSpellsUtil.OpenToClassTalentsTab or PlayerSpellsUtil.OpenToClassSpecializationsTab) then
+        local open = PlayerSpellsUtil.OpenToClassTalentsTab or PlayerSpellsUtil.OpenToClassSpecializationsTab
+        pcall(open)
     elseif ToggleTalentFrame then
         pcall(ToggleTalentFrame)
     end
+end
+
+function ES:OpenNativeTalentImport(code)
+    self:OpenTalentUI()
+    local dialog = ClassTalentLoadoutImportDialog
+    if not dialog or not dialog.ShowDialog then return false end
+    local ok = pcall(dialog.ShowDialog, dialog)
+    if not ok then return false end
+    local importBox = dialog.ImportControl and dialog.ImportControl.InputContainer
+        and dialog.ImportControl.InputContainer.EditBox
+    local nameBox = dialog.NameControl and dialog.NameControl.EditBox
+    if not importBox then return false end
+    importBox:SetText(code)
+    if nameBox then nameBox:SetText("EasyStats - M+") end
+    return true
 end
 
 function ES:ApplyTalentBuild()
@@ -40,23 +60,21 @@ function ES:ApplyTalentBuild()
     local spec = self:GetActiveSpecialization()
     if not spec or spec.id ~= self.activeSpec.id then self:Print(self.L.IMPORT_FAILED); return end
 
-    local attempted = false
-    if C_ClassTalents and C_ClassTalents.ImportLoadout and C_ClassTalents.GetActiveConfigID then
-        local configID = C_ClassTalents.GetActiveConfigID()
-        if configID then
-            attempted = true
-            local ok, success = pcall(C_ClassTalents.ImportLoadout, configID, {}, "EasyStats - M+", code)
-            if ok and success then
-                self:Print(self.L.IMPORT_READY)
-                self:OpenTalentUI()
-                return
-            end
-            self:Debug("ImportLoadout rejected the import; using copy fallback")
-        end
-    end
     self:OpenTalentUI()
+    local talentFrame = PlayerSpellsFrame and PlayerSpellsFrame.TalentsFrame
+    if talentFrame and talentFrame.ImportLoadout then
+        local ok, success = pcall(talentFrame.ImportLoadout, talentFrame, code, "EasyStats - M+")
+        if ok and success ~= false then
+            self:Print(self.L.IMPORT_READY)
+            return
+        end
+        self:Debug("Native talent frame rejected the direct import")
+    end
+    if self:OpenNativeTalentImport(code) then
+        self:Print(self.L.IMPORT_READY)
+        return
+    end
     self:ShowTalentCopy(code)
     self:Print(self.L.IMPORT_FAILED)
-    if not attempted then self:Debug("ImportLoadout API not available") end
+    self:Debug("Native talent importer was unavailable; using copy fallback")
 end
-

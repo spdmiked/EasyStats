@@ -33,6 +33,8 @@ assert(requested == 100001 and received == nil)
 loaded = true
 ES:OnItemLoaded(100001, true)
 assert(received == "Fixture Trinket")
+assert(ES:BuildItemLink({ itemID = 250144, bonuses = { 13440, 12806 } }) ==
+    "item:250144::::::::::::2:13440:12806")
 
 EasyStatsGeneratedDB = { schemaVersion = 1, contexts = { mythicplus = { [253] = {
     stats = { generatedAt = 1787529600 }, trinkets = { generatedAt = 1787529600 }, talents = { generatedAt = 1787529600 },

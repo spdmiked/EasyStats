@@ -9,7 +9,7 @@ from typing import Any
 import httpx
 
 from ..config import Settings
-from ..models import CharacterRef, CharacterSnapshot, Run, RunQuery
+from ..models import CharacterRef, CharacterSnapshot, ItemVariant, Run, RunQuery
 from .base import APIClient, ProviderError
 
 
@@ -84,9 +84,26 @@ class BlizzardProvider:
         params = {"namespace": f"profile-{region}", "locale": "en_US"}
         if character.spec_id > 0 and character.level > 0:
             try:
-                statistics = await self._get(region, f"{base}/statistics", params)
+                profile, statistics, equipment = await asyncio.gather(
+                    self._get(region, base, params),
+                    self._get(region, f"{base}/statistics", params),
+                    self._get(region, f"{base}/equipment", params),
+                )
             except (ProviderError, httpx.HTTPStatusError):
                 return None
+            active_spec = int(profile.get("active_spec", {}).get("id", 0))
+            if active_spec and active_spec != character.spec_id:
+                return None
+            items = equipment.get("equipped_items", [])
+            variants = tuple(
+                ItemVariant(
+                    item_id=int(item["item"]["id"]),
+                    item_level=int(item.get("level", {}).get("value", 0)),
+                    bonuses=tuple(int(value) for value in item.get("bonus_list", []) if int(value) > 0),
+                )
+                for item in items
+                if item.get("slot", {}).get("type") in {"TRINKET_1", "TRINKET_2"}
+            )
             return CharacterSnapshot(
                 character=character,
                 spec_id=character.spec_id,
@@ -103,6 +120,8 @@ class BlizzardProvider:
                 ),
                 mastery=_rating(statistics.get("mastery")),
                 versatility=_rating(statistics.get("versatility")),
+                trinkets=tuple(item.item_id for item in variants),
+                trinket_variants=variants,
                 snapshot_quality=0.55,
             )
         try:

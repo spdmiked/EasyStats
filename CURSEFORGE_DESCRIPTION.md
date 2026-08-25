@@ -1,26 +1,33 @@
-# EasyStats — Mythic+ Meta at a Glance
+# EasyStats
 
-EasyStats is a compact World of Warcraft Retail addon for **Midnight 12.1.0**. It automatically detects your current specialization and keeps the most useful Mythic+ meta information in a small movable panel:
+Make faster gearing decisions and keep your Mythic+ setup close at hand.
 
-- aggregated secondary-stat priority;
-- four most-used trinkets, with native icons and item tooltips;
-- the most popular complete Mythic+ talent loadout;
-- freshness date and sample size;
-- automatic refresh after a specialization change;
-- collapsible 30×30 icon, saved position, scale, and lock state.
+EasyStats automatically recognizes your active specialization and displays a compact overview of what successful Mythic+ players are using in the current season.
 
-EasyStats is intentionally simple. It does not claim to replace SimulationCraft or a character-specific gear comparison. Recommendations summarize anonymized usage patterns from top timed Mythic+ runs.
+## What you get
 
-## Safe by design
+- A clear secondary-stat priority for your current specialization.
+- Four popular trinkets ranked from aggregated top timed Mythic+ runs.
+- The strongest observed version of each trinket in its tooltip.
+- The boss and dungeon or raid source shown directly below each trinket.
+- A complete, popular Mythic+ talent build ready for the native WoW talent importer.
+- Automatic updates when you change specialization.
+- A movable, scalable panel that remembers its position.
 
-The addon never connects to external services from the game client and contains no API keys. Data is collected before release by an open-source Python pipeline using the documented [Raider.IO Developer API](https://raider.io/api) and Blizzard Battle.net APIs. Only aggregates are shipped; character names, realms, profile links, BattleTags, and raw profiles are excluded.
+## Talent builds
 
-Talent application uses the public WoW API when available and permitted. If direct import is unavailable, EasyStats opens the native talent interface and provides a copyable code for player confirmation. It never bypasses combat lockdown or protected UI functions.
+Select **Apply Build** to send the recommended loadout to World of Warcraft's native talent interface. You can review the build before confirming it. If the direct route is unavailable, EasyStats opens the native import dialog with the code already filled in, or provides a copyable code as a final fallback.
+
+## Meta data, not a personal simulation
+
+EasyStats summarizes anonymized usage patterns from top timed Mythic+ runs. Its recommendations are a quick view of the current meta, not a replacement for SimulationCraft or character-specific optimization.
 
 ## Commands
 
-`/easystats` or `/es` toggles the panel. Available commands: `show`, `hide`, `toggle`, `reset`, `lock`, `unlock`, `scale 0.8-1.5`, `debug`, and `version`.
+Use `/easystats` or `/es` to toggle the panel. Additional commands include `show`, `hide`, `reset`, `lock`, `unlock`, `scale 0.8-1.5`, `debug`, and `version`.
+
+Data is aggregated from the documented Raider.IO Developer API and Blizzard Battle.net APIs. The addon does not connect to the internet while World of Warcraft is running.
 
 ## AI disclosure
 
-EasyStats was designed and initially implemented with assistance from OpenAI Codex. Every public release, generated dataset, and compliance decision remains the responsibility of the project maintainer. The project is not affiliated with or endorsed by OpenAI, Blizzard Entertainment, Raider.IO, or CurseForge.
+EasyStats was developed with assistance from OpenAI Codex. Every release is reviewed, tested, and published under the responsibility of the project maintainer.

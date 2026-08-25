@@ -3,9 +3,11 @@ EasyStats_Locales.enUS = {
     ADDON_NAME = "EasyStats", CONTEXT = "M+", STATS = "STATS", TRINKETS = "TOP 4 TRINKETS",
     TALENTS = "M+ TALENTS", APPLY = "APPLY BUILD", LOADING_ITEM = "Loading item…",
     NO_DATA = "No current data for this specialization.", SHOW = "Show EasyStats",
+    SOURCE_FORMAT = "Source: %s", SOURCE_LOADING = "Source: looking up...",
+    SOURCE_UNKNOWN = "Not listed in Adventure Guide",
     BUILD_SUPPORT = "Most popular build: %d%%", LOCKED_COMBAT = "EasyStats: talents can be applied after combat.",
     IMPORT_FAILED = "EasyStats: direct import was unavailable. Copy the code and use the native talent importer.",
-    IMPORT_READY = "EasyStats: the build was sent to the native talent importer; confirm it in the talent window.",
+    IMPORT_READY = "EasyStats: talent build imported. Review and confirm it in the talent window.",
     META_TOOLTIP = "This ordering comes from the stat distribution among top players of this specialization. It is not a personal simulation of your character.",
     TRINKET_TOOLTIP = "Ranked by usage in top timed Mythic+ runs. It is not a personal simulation of your gear.",
     TALENT_TOOLTIP = "The most frequently used complete loadout in the analyzed sample.",
@@ -16,4 +18,3 @@ EasyStats_Locales.enUS = {
     LOCKED = "EasyStats: panel locked.", UNLOCKED = "EasyStats: panel unlocked.",
     RESET = "EasyStats: settings reset.", VERSION = "EasyStats version %s", COPY = "Copy this talent code:",
 }
-

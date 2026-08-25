@@ -13,6 +13,13 @@ class RunQuery:
 
 
 @dataclass(frozen=True, slots=True)
+class ItemVariant:
+    item_id: int
+    item_level: int = 0
+    bonuses: tuple[int, ...] = ()
+
+
+@dataclass(frozen=True, slots=True)
 class CharacterRef:
     region: str
     realm: str
@@ -21,6 +28,7 @@ class CharacterRef:
     level: int = 0
     talent_import: str | None = None
     trinkets: tuple[int, ...] = ()
+    trinket_variants: tuple[ItemVariant, ...] = ()
 
     @property
     def privacy_key(self) -> str:
@@ -49,6 +57,7 @@ class CharacterSnapshot:
     mastery: int | None = None
     versatility: int | None = None
     trinkets: tuple[int, ...] = ()
+    trinket_variants: tuple[ItemVariant, ...] = ()
     talent_import: str | None = None
     snapshot_quality: float = 1.0
 

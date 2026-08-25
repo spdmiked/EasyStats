@@ -1,5 +1,12 @@
 local ES = EasyStats
 
+function ES:BuildItemLink(item)
+    if not item or not item.itemID then return nil end
+    local bonuses = item.bonuses
+    if type(bonuses) ~= "table" or #bonuses == 0 then return "item:" .. item.itemID end
+    return "item:" .. item.itemID .. string.rep(":", 12) .. #bonuses .. ":" .. table.concat(bonuses, ":")
+end
+
 ES.itemCallbacks = {}
 
 function ES:LoadItem(itemID, callback)
@@ -22,4 +29,3 @@ function ES:OnItemLoaded(itemID, success)
     if not success then return end
     for _, callback in ipairs(callbacks) do self:LoadItem(itemID, callback) end
 end
-
