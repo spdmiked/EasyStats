@@ -27,7 +27,7 @@ jobs:
           BLIZZARD_CLIENT_SECRET: ${{ secrets.BLIZZARD_CLIENT_SECRET }}
           RAIDERIO_API_KEY: ${{ secrets.RAIDERIO_API_KEY }}
         run: python -m specmeta_pipeline update
-      - run: python -m specmeta_pipeline validate
+      - run: python -m specmeta_pipeline validate --production
       - uses: actions/upload-artifact@v4
         with:
           name: easystats-update-report

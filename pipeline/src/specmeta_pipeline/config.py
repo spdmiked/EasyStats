@@ -21,6 +21,7 @@ class Settings:
     provider: str = "hybrid"
     regions: tuple[str, ...] = ("eu", "us", "kr", "tw")
     target_per_spec: int = 150
+    candidate_multiplier: float = 2.0
     min_per_spec: int = 40
     max_per_spec: int = 300
     max_character_level: int = 90
@@ -48,6 +49,7 @@ class Settings:
         return cls(
             provider=provider,
             target_per_spec=int(os.getenv("TARGET_UNIQUE_CHARACTERS_PER_SPEC", "150")),
+            candidate_multiplier=float(os.getenv("CANDIDATE_MULTIPLIER", "2.0")),
             min_per_spec=int(os.getenv("MIN_UNIQUE_CHARACTERS_PER_SPEC", "40")),
             max_per_spec=int(os.getenv("MAX_UNIQUE_CHARACTERS_PER_SPEC", "300")),
             max_character_level=int(os.getenv("MAX_CHARACTER_LEVEL", "90")),

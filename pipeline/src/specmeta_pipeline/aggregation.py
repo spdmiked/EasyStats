@@ -134,7 +134,9 @@ def normalize_talent(value: str | None) -> str | None:
     return normalized if TALENT_RE.fullmatch(normalized) else None
 
 
-def aggregate_talents(rows: Sequence[Observation], now: int) -> CategoryResult | None:
+def aggregate_talents(
+    rows: Sequence[Observation], now: int, voter_limit: int | None = None
+) -> CategoryResult | None:
     counts: dict[str, float] = defaultdict(float)
     voters = 0
     total_weight = 0.0
@@ -145,6 +147,8 @@ def aggregate_talents(rows: Sequence[Observation], now: int) -> CategoryResult |
         voters += 1
         total_weight += row.weight
         counts[code] += row.weight
+        if voter_limit is not None and voters >= voter_limit:
+            break
     if not voters:
         return None
     winner, weight = min(counts.items(), key=lambda pair: (-pair[1], pair[0]))
@@ -161,7 +165,10 @@ def aggregate_by_spec(rows: Sequence[Observation], settings: Settings, now: int)
         if stats:
             add_stat_separators(stats, settings.tie_threshold)
         trinkets = aggregate_trinkets(spec_rows, now)
-        talents = aggregate_talents(spec_rows, now)
+        # Exact import strings fragment quickly because optional utility choices vary.
+        # Compare the highest-ranked complete cohort required by the methodology,
+        # rather than diluting its winner with lower-ranked observations.
+        talents = aggregate_talents(spec_rows, now, settings.min_talent_sample)
         if len(spec_rows) < settings.min_per_spec:
             stats = trinkets = None
         if talents and (talents.sample_size < settings.min_talent_sample or

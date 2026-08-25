@@ -71,6 +71,13 @@ def test_talents_select_complete_loadout() -> None:
     assert normalize_talent("not valid nodes") is None
 
 
+def test_talents_can_limit_the_ranked_voter_cohort() -> None:
+    rows = sample_observations(48)
+    result = aggregate_talents(rows, 123, voter_limit=40)
+    assert result is not None
+    assert result.sample_size == 40
+
+
 def test_zero_stats_are_rejected() -> None:
     now = datetime.now(UTC)
     ref = CharacterRef("eu", "r", "n")

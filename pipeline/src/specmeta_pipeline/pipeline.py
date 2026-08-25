@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import asyncio
+import math
 from dataclasses import replace
 from datetime import timedelta
 from pathlib import Path
@@ -44,19 +45,25 @@ async def _collect(
                 snapshot_quality=min(primary.snapshot_quality, secondary.snapshot_quality),
             )
 
+        candidate_target = math.ceil(settings.target_per_spec * settings.candidate_multiplier)
         pairs: list[tuple[CharacterRef, Run]] = []
         for run in eligible:
             for member in run.members:
                 spec_seen = selected.setdefault(member.spec_id, set())
                 if (member.spec_id <= 0 or member.privacy_key in spec_seen
-                        or len(spec_seen) >= settings.target_per_spec):
+                        or len(spec_seen) >= candidate_target):
                     continue
                 spec_seen.add(member.privacy_key)
                 pairs.append((member, run))
         tasks = [snapshot(member, run) for member, run in pairs]
         snapshots = await asyncio.gather(*tasks, return_exceptions=True)
+        accepted_per_spec: dict[int, int] = {}
         for (_, run), snapshot_result in zip(pairs, snapshots, strict=True):
             if not isinstance(snapshot_result, BaseException) and snapshot_result is not None:
+                spec_id = snapshot_result.spec_id
+                if accepted_per_spec.get(spec_id, 0) >= settings.target_per_spec:
+                    continue
+                accepted_per_spec[spec_id] = accepted_per_spec.get(spec_id, 0) + 1
                 observations.append(Observation(snapshot_result, run))
     return observations
 
