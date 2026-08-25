@@ -4,7 +4,6 @@ import os
 from dataclasses import dataclass
 from pathlib import Path
 
-
 # All playable Retail specializations in Midnight. These are stable Blizzard spec IDs,
 # not recommendation data. Production validation uses this set so a release can never
 # silently ship empty records for under-represented specializations.
