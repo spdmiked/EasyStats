@@ -1,10 +1,22 @@
 # Data sources and retention
 
-EasyStats uses only documented APIs; it does not scrape HTML.
+EasyStats does not parse rendered HTML or browser UI elements.
+
+## Raider.IO public specialization leaderboards
+
+Candidate characters are selected from the public specialization leaderboard data
+used by Raider.IO's official ranking pages. This is necessary to select every class
+specialization directly instead of inferring a specialization from an overall run
+ranking. The pipeline validates the returned numeric Blizzard specialization ID and
+rejects mismatched rows. Character identifiers and raw leaderboard responses remain
+temporary cache inputs and are never shipped with the addon.
 
 ## Raider.IO Developer API
 
-The Raider.IO provider discovers top timed Mythic+ runs and reads the available roster, specialization, equipment, and talent snapshot fields. An API key is optional where the documented endpoint allows anonymous use. Disable it with `DATA_PROVIDER=blizzard`.
+The documented Raider.IO Developer API supplies current-season and fallback run
+context. It is also used when a newly added specialization is not yet correctly
+filtered by the public specialization leaderboard. An API key is optional where the
+documented endpoint allows anonymous use. Disable it with `DATA_PROVIDER=blizzard`.
 
 ## Blizzard Battle.net API
 

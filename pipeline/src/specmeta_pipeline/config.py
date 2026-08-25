@@ -15,6 +15,31 @@ RETAIL_SPEC_IDS: tuple[int, ...] = (
     577, 581, 1467, 1468, 1473, 1480,
 )
 
+# Raider.IO's public specialization leaderboard uses class/spec slugs while all
+# pipeline joins use Blizzard's stable numeric specialization IDs.
+RETAIL_SPEC_SLUGS: dict[int, tuple[str, str]] = {
+    62: ("mage", "arcane"), 63: ("mage", "fire"), 64: ("mage", "frost"),
+    65: ("paladin", "holy"), 66: ("paladin", "protection"),
+    70: ("paladin", "retribution"), 71: ("warrior", "arms"),
+    72: ("warrior", "fury"), 73: ("warrior", "protection"),
+    102: ("druid", "balance"), 103: ("druid", "feral"),
+    104: ("druid", "guardian"), 105: ("druid", "restoration"),
+    250: ("death-knight", "blood"), 251: ("death-knight", "frost"),
+    252: ("death-knight", "unholy"), 253: ("hunter", "beast-mastery"),
+    254: ("hunter", "marksmanship"), 255: ("hunter", "survival"),
+    256: ("priest", "discipline"), 257: ("priest", "holy"),
+    258: ("priest", "shadow"), 259: ("rogue", "assassination"),
+    260: ("rogue", "outlaw"), 261: ("rogue", "subtlety"),
+    262: ("shaman", "elemental"), 263: ("shaman", "enhancement"),
+    264: ("shaman", "restoration"), 265: ("warlock", "affliction"),
+    266: ("warlock", "demonology"), 267: ("warlock", "destruction"),
+    268: ("monk", "brewmaster"), 269: ("monk", "windwalker"),
+    270: ("monk", "mistweaver"), 577: ("demon-hunter", "havoc"),
+    581: ("demon-hunter", "vengeance"),
+    1467: ("evoker", "devastation"), 1468: ("evoker", "preservation"),
+    1473: ("evoker", "augmentation"), 1480: ("demon-hunter", "devourer"),
+}
+
 
 @dataclass(frozen=True, slots=True)
 class Settings:
@@ -26,7 +51,10 @@ class Settings:
     max_per_spec: int = 300
     max_character_level: int = 90
     min_talent_sample: int = 40
-    min_build_support: float = 0.15
+    # A complete import string includes optional utility choices, so exact strings
+    # fragment heavily even when the core build is shared. Keep the exact plurality
+    # winner once the full 40-player cohort exists and report its support.
+    min_build_support: float = 0.025
     max_age_days: int = 14
     soft_stale_days: int = 7
     hard_stale_days: int = 30

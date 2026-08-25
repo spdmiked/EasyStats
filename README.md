@@ -2,7 +2,7 @@
 
 EasyStats is a lightweight, public World of Warcraft Retail **Midnight 12.1.0** addon for Mythic+. It detects the active specialization and shows an aggregated secondary-stat priority, the four most-used trinkets, and the most popular complete talent loadout from top timed runs.
 
-These are population-level meta observations, not personalized SimulationCraft weights. EasyStats never connects to the internet from inside WoW. A separate Python pipeline uses documented Raider.IO and Blizzard Battle.net APIs, removes character identity after aggregation, and ships only anonymous recommendations in the addon update.
+These are population-level meta observations, not personalized SimulationCraft weights. EasyStats never connects to the internet from inside WoW. A separate Python pipeline uses Raider.IO's public specialization leaderboards together with Raider.IO and Blizzard Battle.net APIs, removes character identity after aggregation, and ships only anonymous recommendations in the addon update.
 
 ## Install the addon
 

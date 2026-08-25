@@ -26,7 +26,7 @@ EasyStats summarizes anonymized usage patterns from top timed Mythic+ runs. Its 
 
 Use `/easystats` or `/es` to toggle the panel. Additional commands include `show`, `hide`, `reset`, `lock`, `unlock`, `scale 0.8-1.5`, `debug`, and `version`.
 
-Data is aggregated from the documented Raider.IO Developer API and Blizzard Battle.net APIs. The addon does not connect to the internet while World of Warcraft is running.
+Data is aggregated from Raider.IO's public specialization rankings and from Raider.IO and Blizzard Battle.net APIs. The addon does not connect to the internet while World of Warcraft is running.
 
 ## AI disclosure
 

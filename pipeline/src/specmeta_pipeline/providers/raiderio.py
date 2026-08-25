@@ -5,15 +5,16 @@ import math
 from datetime import UTC, datetime
 from typing import Any
 
-from ..config import RETAIL_SPEC_IDS, Settings
+from ..config import RETAIL_SPEC_IDS, RETAIL_SPEC_SLUGS, Settings
 from ..models import CharacterRef, CharacterSnapshot, ItemVariant, Run, RunQuery
 from .base import APIClient
 
 
 class RaiderIOProvider:
-    """Adapter for documented Raider.IO API endpoints."""
+    """Raider.IO run API plus its public specialization leaderboard."""
 
     BASE = "https://raider.io/api/v1"
+    SPEC_RANKINGS = "https://raider.io/api/mythic-plus/rankings/specs"
 
     def __init__(self, settings: Settings, client: APIClient) -> None:
         self.settings = settings
@@ -44,14 +45,105 @@ class RaiderIOProvider:
         return str(season)
 
     async def get_top_runs(self, request: RunQuery) -> list[Run]:
-        # The documented runs response already includes the roster, spec and complete
-        # run loadout. Scan deeper pages until rare specs reach their regional share of
-        # the target, then enrich only the selected characters through Blizzard.
+        # The official website's specialization leaderboard is the only Raider.IO
+        # ranking surface that reliably selects every spec. It is used only for
+        # candidate discovery; Blizzard supplies stats/equipment in hybrid mode.
         regional_target = math.ceil(
-            self.settings.target_per_spec * self.settings.candidate_multiplier
-            / len(self.settings.regions)
+            self.settings.target_per_spec / len(self.settings.regions)
         )
+        leaderboard_runs = await self._get_spec_leaderboard_runs(request, regional_target)
+        counts: dict[int, int] = {spec_id: 0 for spec_id in RETAIL_SPEC_IDS}
+        for run in leaderboard_runs:
+            for member in run.members:
+                counts[member.spec_id] = counts.get(member.spec_id, 0) + 1
+        missing = {spec_id for spec_id, count in counts.items() if count < regional_target}
+        if not missing:
+            return leaderboard_runs
+
+        # A newly added leaderboard can briefly mix another spec into its first rows
+        # (observed for Devourer during Midnight). Never accept that mismatch; fill
+        # only a remaining shortfall from the documented overall-runs API.
+        fallback = await self._get_overall_runs(request, regional_target, missing, counts)
+        return [*leaderboard_runs, *fallback]
+
+    async def _get_spec_leaderboard_runs(
+        self, request: RunQuery, regional_target: int,
+    ) -> list[Run]:
+        pages = max(1, math.ceil(regional_target / 100))
+        jobs = [
+            (spec_id, page, self.client.request_json(
+                "raiderio-leaderboard", self.SPEC_RANKINGS,
+                params={
+                    "region": request.region, "season": request.season,
+                    "class": class_slug, "spec": spec_slug, "page": page,
+                },
+                cache_key=(
+                    f"spec-rankings:{request.region}:{request.season}:"
+                    f"{class_slug}:{spec_slug}:{page}"
+                ),
+            ))
+            for spec_id, (class_slug, spec_slug) in RETAIL_SPEC_SLUGS.items()
+            for page in range(pages)
+        ]
+        payloads = await asyncio.gather(*(job for _, _, job in jobs), return_exceptions=True)
+        seen: dict[int, set[str]] = {spec_id: set() for spec_id in RETAIL_SPEC_IDS}
+        result: list[Run] = []
+        observed_at = datetime.now(UTC)
+        for (requested_spec, _, _), payload in zip(jobs, payloads, strict=True):
+            if isinstance(payload, BaseException):
+                continue
+            rankings = payload.get("rankings", {})
+            for row in rankings.get("rankedCharacters", []):
+                parsed = self._parse_leaderboard_row(
+                    row, request, requested_spec, observed_at,
+                )
+                if parsed is None:
+                    continue
+                member = parsed.members[0]
+                if (member.privacy_key in seen[requested_spec]
+                        or len(seen[requested_spec]) >= regional_target):
+                    continue
+                seen[requested_spec].add(member.privacy_key)
+                result.append(parsed)
+        return result
+
+    def _parse_leaderboard_row(
+        self, row: dict[str, Any], request: RunQuery, requested_spec: int,
+        observed_at: datetime,
+    ) -> Run | None:
+        try:
+            character = row["character"]
+            spec_id = int(character["spec"]["id"])
+            if spec_id != requested_spec:
+                return None
+            region = character["region"]["slug"]
+            realm = character["realm"]["slug"]
+            best = max(
+                row.get("runs", []),
+                key=lambda run: (
+                    int(run.get("mythicLevel", 0)), float(run.get("score", 0)),
+                ),
+            )
+            member = CharacterRef(
+                region=str(region), realm=str(realm), name=str(character["name"]),
+                spec_id=spec_id, level=int(character.get("level", 0)),
+                talent_import=character.get("talentLoadoutText"),
+            )
+            return Run(
+                run_id=str(best["keystoneRunId"]), season=request.season,
+                completed_at=observed_at, key_level=int(best["mythicLevel"]),
+                timed=int(best["clearTimeMs"]) <= int(best["parTimeMs"]),
+                members=(member,),
+            )
+        except (KeyError, TypeError, ValueError):
+            return None
+
+    async def _get_overall_runs(
+        self, request: RunQuery, regional_target: int, missing: set[int],
+        initial_counts: dict[int, int],
+    ) -> list[Run]:
         unique: dict[int, set[str]] = {spec_id: set() for spec_id in RETAIL_SPEC_IDS}
+        counts = dict(initial_counts)
         result: list[Run] = []
         batch_size = 10
         for start in range(0, self.settings.raiderio_pages_per_region, batch_size):
@@ -75,19 +167,22 @@ class RaiderIOProvider:
                 parsed = self._parse_run(run, request)
                 if parsed is None:
                     continue
-                contributes = any(
-                    member.spec_id in unique
-                    and member.privacy_key not in unique[member.spec_id]
-                    and len(unique[member.spec_id]) < regional_target
-                    for member in parsed.members
+                selected_members = tuple(
+                    member for member in parsed.members
+                    if (member.spec_id in missing
+                        and member.privacy_key not in unique[member.spec_id]
+                        and counts[member.spec_id] < regional_target)
                 )
-                if not contributes:
+                if not selected_members:
                     continue
-                result.append(parsed)
-                for member in parsed.members:
-                    if member.spec_id in unique and len(unique[member.spec_id]) < regional_target:
-                        unique[member.spec_id].add(member.privacy_key)
-            if all(len(characters) >= regional_target for characters in unique.values()):
+                result.append(Run(
+                    parsed.run_id, parsed.season, parsed.completed_at,
+                    parsed.key_level, parsed.timed, selected_members,
+                ))
+                for member in selected_members:
+                    unique[member.spec_id].add(member.privacy_key)
+                    counts[member.spec_id] += 1
+            if all(counts[spec_id] >= regional_target for spec_id in missing):
                 break
         details = await asyncio.gather(*(
             self.client.request_json(
@@ -100,7 +195,15 @@ class RaiderIOProvider:
         enriched: list[Run] = []
         for fallback, detail in zip(result, details, strict=True):
             parsed = None if isinstance(detail, BaseException) else self._parse_run(detail, request)
-            enriched.append(parsed or fallback)
+            if parsed is None:
+                enriched.append(fallback)
+                continue
+            wanted = {member.privacy_key for member in fallback.members}
+            members = tuple(member for member in parsed.members if member.privacy_key in wanted)
+            enriched.append(Run(
+                parsed.run_id, parsed.season, parsed.completed_at,
+                parsed.key_level, parsed.timed, members,
+            ))
         return enriched
 
     def _parse_run(self, run: dict[str, Any], request: RunQuery) -> Run | None:
