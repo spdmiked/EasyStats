@@ -1,6 +1,6 @@
 {
   "game_version": "retail",
-  "generated_at": 1788756761,
+  "generated_at": 1788791248,
   "schema_version": 1,
   "season_slug": "season-mn-2",
   "source_mode": "hybrid",
@@ -11,8 +11,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 59,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "order": [
@@ -24,8 +24,8 @@
           "scores": {
             "CRIT": 0.2678062678062678,
             "HASTE": 0.3494450411743645,
-            "MASTERY": 0.16543026706231453,
-            "VERSATILITY": 0.2141818181818182
+            "MASTERY": 0.1649981460882462,
+            "VERSATILITY": 0.21653819201121233
           },
           "separators": [
             ">",
@@ -35,17 +35,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C4DAAAAAAAAAAAAAAAAAAAAAAYGmZZmZmFMDamZGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
-          "support": 0.07048288450688016
+          "support": 0.09068594262200107
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 59,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "items": [
@@ -58,7 +58,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 1.000000000000001
+              "usage": 1.0000000000000004
             },
             {
               "bonuses": [
@@ -68,7 +68,18 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.6270096911577143
+              "usage": 0.6071356397662229
+            },
+            {
+              "bonuses": [
+                13440,
+                6652,
+                12699,
+                12854
+              ],
+              "itemID": 250224,
+              "itemLevel": 334,
+              "usage": 0.13117141433448629
             },
             {
               "bonuses": [
@@ -79,18 +90,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.12029826705240945
-            },
-            {
-              "bonuses": [
-                13440,
-                6652,
-                12699,
-                12846
-              ],
-              "itemID": 250224,
-              "itemLevel": 321,
-              "usage": 0.10148068216156954
+              "usage": 0.09935280003715444
             }
           ]
         }
@@ -102,8 +102,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 53,
+        "generated_at": 1788791248,
+        "sample_size": 51,
         "stale": false,
         "value": {
           "order": [
@@ -113,9 +113,9 @@
             "CRIT"
           ],
           "scores": {
-            "CRIT": 0.05472822040208489,
+            "CRIT": 0.04797047970479705,
             "HASTE": 0.4778481012658228,
-            "MASTERY": 0.338940586972083,
+            "MASTERY": 0.3413566739606127,
             "VERSATILITY": 0.12124711316397228
           },
           "separators": [
@@ -126,17 +126,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGIgZmpZZbbGAgNzMjtZmZmxGAAAAAWMzMzAAAzYMzMzYmZZAYmhwYAzwYA",
-          "support": 0.09012789408355601
+          "support": 0.06366486080360852
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 53,
+        "generated_at": 1788791248,
+        "sample_size": 51,
         "stale": false,
         "value": {
           "items": [
@@ -149,7 +149,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.679244946236259
+              "usage": 0.6866697203870924
             },
             {
               "bonuses": [
@@ -160,7 +160,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.2674077888228834
+              "usage": 0.278677451460772
             },
             {
               "bonuses": [
@@ -170,7 +170,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.24519051921254836
+              "usage": 0.25481880461827544
             },
             {
               "bonuses": [
@@ -181,7 +181,7 @@
               ],
               "itemID": 273649,
               "itemLevel": 321,
-              "usage": 0.20815317877841186
+              "usage": 0.17706053032380542
             }
           ]
         }
@@ -193,21 +193,21 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 55,
         "stale": false,
         "value": {
           "order": [
-            "MASTERY",
             "CRIT",
+            "MASTERY",
             "HASTE",
             "VERSATILITY"
           ],
           "scores": {
             "CRIT": 0.3704626334519573,
             "HASTE": 0.23440860215053763,
-            "MASTERY": 0.3725085910652921,
-            "VERSATILITY": 0.027972027972027972
+            "MASTERY": 0.36319275008713836,
+            "VERSATILITY": 0.027962250961202376
           },
           "separators": [
             "\u2248",
@@ -217,16 +217,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFmZmYGmZmZmZWMzMMjZgAAAzMzssMz0GAAsAAAAWAYbbMzMDmthxMjNAAAmZDYmMGwMYA",
-          "support": 0.11009958101101057
+          "support": 0.07217846530923265
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 55,
         "stale": false,
         "value": {
@@ -240,7 +240,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.3646675735264492
+              "usage": 0.3649262417596358
             },
             {
               "bonuses": [
@@ -251,7 +251,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.32692192238917117
+              "usage": 0.3271552365432572
             },
             {
               "bonuses": [
@@ -262,7 +262,7 @@
               ],
               "itemID": 250224,
               "itemLevel": 334,
-              "usage": 0.30982952929689467
+              "usage": 0.31004969567953233
             },
             {
               "bonuses": [
@@ -273,7 +273,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.25498644583098423
+              "usage": 0.2544544461949054
             }
           ]
         }
@@ -285,8 +285,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 56,
+        "generated_at": 1788791248,
+        "sample_size": 58,
         "stale": false,
         "value": {
           "order": [
@@ -297,9 +297,9 @@
           ],
           "scores": {
             "CRIT": 0.26171875,
-            "HASTE": 0.3618649965205289,
-            "MASTERY": 0.17986624428018302,
-            "VERSATILITY": 0.187929165160824
+            "HASTE": 0.36583679114799444,
+            "MASTERY": 0.17944899478778853,
+            "VERSATILITY": 0.18580962416578856
           },
           "separators": [
             ">",
@@ -309,17 +309,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAYwyAmZWmZmlZMjhFzmZWMTTMMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxMYDYGDAwMDAGjRDA",
-          "support": 0.07079700351530412
+          "support": 0.07066337661139604
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 56,
+        "generated_at": 1788791248,
+        "sample_size": 58,
         "stale": false,
         "value": {
           "items": [
@@ -331,7 +331,7 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.6794301519189693
+              "usage": 0.6737310916477646
             },
             {
               "bonuses": [
@@ -341,7 +341,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.30425380470070873
+              "usage": 0.2934311545598255
             },
             {
               "bonuses": [
@@ -352,7 +352,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 321,
-              "usage": 0.24823110372644966
+              "usage": 0.27428710277622814
             },
             {
               "bonuses": [
@@ -363,7 +363,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 321,
-              "usage": 0.179433966421954
+              "usage": 0.1730520464328378
             }
           ]
         }
@@ -375,8 +375,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 59,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "order": [
@@ -389,7 +389,7 @@
             "CRIT": 0.3489788606234325,
             "HASTE": 0.3884057971014493,
             "MASTERY": 0.16798623063683304,
-            "VERSATILITY": 0.10204081632653061
+            "VERSATILITY": 0.09844559585492228
           },
           "separators": [
             ">",
@@ -399,17 +399,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CIEAAAAAAAAAAAAAAAAAAAAAAsZYWGzYmZmZW2GjZZWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsst0yMjFLLMDAGzshBAzMAYmBZsA",
-          "support": 0.07357836499200748
+          "support": 0.07472927682437526
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 59,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "items": [
@@ -422,7 +422,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 321,
-              "usage": 0.5073735166989232
+              "usage": 0.5071340404371019
             },
             {
               "bonuses": [
@@ -433,7 +433,7 @@
               ],
               "itemID": 250228,
               "itemLevel": 324,
-              "usage": 0.30696891149474337
+              "usage": 0.29701456041735497
             },
             {
               "bonuses": [
@@ -444,7 +444,7 @@
               ],
               "itemID": 250245,
               "itemLevel": 321,
-              "usage": 0.25335195457215476
+              "usage": 0.27756075840596134
             },
             {
               "bonuses": [
@@ -455,7 +455,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.20375256285715548
+              "usage": 0.18093206080922383
             }
           ]
         }
@@ -467,8 +467,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 76,
+        "generated_at": 1788791248,
+        "sample_size": 80,
         "stale": false,
         "value": {
           "order": [
@@ -478,10 +478,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.3335593220338983,
-            "HASTE": 0.29518950437317787,
-            "MASTERY": 0.333800350262697,
-            "VERSATILITY": 0.033198883028234566
+            "CRIT": 0.33393632416787267,
+            "HASTE": 0.29755043227665706,
+            "MASTERY": 0.33477166486875226,
+            "VERSATILITY": 0.03219971056439942
           },
           "separators": [
             "\u2248",
@@ -491,31 +491,20 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
-          "support": 0.16264743207167215
+          "support": 0.12487517721327018
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 76,
+        "generated_at": 1788791248,
+        "sample_size": 80,
         "stale": false,
         "value": {
           "items": [
-            {
-              "bonuses": [
-                13440,
-                6652,
-                12699,
-                12854
-              ],
-              "itemID": 273796,
-              "itemLevel": 334,
-              "usage": 0.4443223659722471
-            },
             {
               "bonuses": [
                 6652,
@@ -525,7 +514,18 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.43551793137550593
+              "usage": 0.45154159446849684
+            },
+            {
+              "bonuses": [
+                13440,
+                6652,
+                12699,
+                12854
+              ],
+              "itemID": 273796,
+              "itemLevel": 334,
+              "usage": 0.42252148421269564
             },
             {
               "bonuses": [
@@ -536,7 +536,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.3184891239669812
+              "usage": 0.35219029934321355
             },
             {
               "bonuses": [
@@ -547,7 +547,7 @@
               ],
               "itemID": 193701,
               "itemLevel": 298,
-              "usage": 0.22423425371805078
+              "usage": 0.22577220000503379
             }
           ]
         }
@@ -559,8 +559,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 64,
+        "generated_at": 1788791248,
+        "sample_size": 68,
         "stale": false,
         "value": {
           "order": [
@@ -570,10 +570,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.41698706745893044,
-            "HASTE": 0.3361024575977847,
-            "MASTERY": 0.21355685131195334,
-            "VERSATILITY": 0.03120617110799439
+            "CRIT": 0.41911003794411866,
+            "HASTE": 0.3406301824212272,
+            "MASTERY": 0.2114695340501792,
+            "VERSATILITY": 0.031177446102819237
           },
           "separators": [
             ">",
@@ -583,17 +583,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
-          "support": 0.15608074425846155
+          "support": 0.1819954412883505
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 64,
+        "generated_at": 1788791248,
+        "sample_size": 68,
         "stale": false,
         "value": {
           "items": [
@@ -606,7 +606,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.5160484142836548
+              "usage": 0.5583969846816025
             },
             {
               "bonuses": [
@@ -617,7 +617,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.422833798724136
+              "usage": 0.4276524045791615
             },
             {
               "bonuses": [
@@ -628,7 +628,7 @@
               ],
               "itemID": 270165,
               "itemLevel": 334,
-              "usage": 0.42221945147551304
+              "usage": 0.42707507038666653
             },
             {
               "bonuses": [
@@ -639,7 +639,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 321,
-              "usage": 0.24938629846808488
+              "usage": 0.21964228175329312
             }
           ]
         }
@@ -651,8 +651,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 58,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "order": [
@@ -662,10 +662,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.23757658270932608,
-            "HASTE": 0.35124826629681,
-            "MASTERY": 0.3454057679409792,
-            "VERSATILITY": 0.061559049849447975
+            "CRIT": 0.2246802627030764,
+            "HASTE": 0.3577793008910212,
+            "MASTERY": 0.3511627906976744,
+            "VERSATILITY": 0.06139755766621438
           },
           "separators": [
             "\u2248",
@@ -675,17 +675,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
-          "support": 0.15234498567179564
+          "support": 0.1736141400499185
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 58,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "items": [
@@ -698,7 +698,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 321,
-              "usage": 0.34327446612033874
+              "usage": 0.3593455424814746
             },
             {
               "bonuses": [
@@ -709,7 +709,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.3270044657226108
+              "usage": 0.3116163208653376
             },
             {
               "bonuses": [
@@ -719,17 +719,18 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.2618789552380922
+              "usage": 0.24903896613037088
             },
             {
               "bonuses": [
+                13440,
                 6652,
-                13335,
-                12854
+                12699,
+                12846
               ],
-              "itemID": 270165,
-              "itemLevel": 334,
-              "usage": 0.20895782842258914
+              "itemID": 250228,
+              "itemLevel": 321,
+              "usage": 0.19484184910747493
             }
           ]
         }
@@ -741,8 +742,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 67,
+        "generated_at": 1788791248,
+        "sample_size": 69,
         "stale": false,
         "value": {
           "order": [
@@ -752,10 +753,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.29452290733723735,
-            "HASTE": 0.42344322344322344,
+            "CRIT": 0.2928621413575927,
+            "HASTE": 0.4361005856011023,
             "MASTERY": 0.1284114765570329,
-            "VERSATILITY": 0.1216317365269461
+            "VERSATILITY": 0.1248191027496382
           },
           "separators": [
             ">",
@@ -765,17 +766,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxoxMmxiZmZGzwMDAAAAWmZAmxAMwGssY0YGAzWMzGwYGmZDAmZAAwAjB",
-          "support": 0.05145574222110554
+          "importString": "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxoxMGWMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGGbAwMDAAzAjB",
+          "support": 0.04880745955802614
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 67,
+        "generated_at": 1788791248,
+        "sample_size": 69,
         "stale": false,
         "value": {
           "items": [
@@ -788,7 +789,7 @@
               ],
               "itemID": 250245,
               "itemLevel": 321,
-              "usage": 0.34076498333238436
+              "usage": 0.3312471466560601
             },
             {
               "bonuses": [
@@ -799,29 +800,29 @@
               ],
               "itemID": 250228,
               "itemLevel": 331,
-              "usage": 0.3014668764218751
+              "usage": 0.2639665829604133
             },
             {
               "bonuses": [
                 13440,
-                42,
+                6652,
                 12699,
-                12854
+                12846
               ],
               "itemID": 273796,
-              "itemLevel": 334,
-              "usage": 0.2381204923490578
+              "itemLevel": 321,
+              "usage": 0.21664380693750213
             },
             {
               "bonuses": [
+                13440,
                 6652,
-                13334,
-                13696,
-                12854
+                12699,
+                12846
               ],
-              "itemID": 270173,
-              "itemLevel": 334,
-              "usage": 0.13430807506528727
+              "itemID": 250229,
+              "itemLevel": 321,
+              "usage": 0.1311264544104343
             }
           ]
         }
@@ -833,8 +834,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 55,
+        "generated_at": 1788791248,
+        "sample_size": 53,
         "stale": false,
         "value": {
           "order": [
@@ -844,10 +845,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.2748848742472547,
-            "HASTE": 0.3300900900900901,
-            "MASTERY": 0.34727592267135327,
-            "VERSATILITY": 0.03522367030644593
+            "CRIT": 0.27631578947368424,
+            "HASTE": 0.33367983367983367,
+            "MASTERY": 0.34784098697738175,
+            "VERSATILITY": 0.035179380006966215
           },
           "separators": [
             "\u2248",
@@ -857,17 +858,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmZhBjZZmlZWYmxGLzsMmZM2wwAM22mZwY2GBmAAAAsYmZmZwmhxYAAYmBLDA",
-          "support": 0.1691433202689854
+          "support": 0.169143584321154
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 55,
+        "generated_at": 1788791248,
+        "sample_size": 53,
         "stale": false,
         "value": {
           "items": [
@@ -880,7 +881,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.9272338676213068
+              "usage": 0.9245132109703992
             },
             {
               "bonuses": [
@@ -890,7 +891,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.4373195694019618
+              "usage": 0.47234760168278933
             },
             {
               "bonuses": [
@@ -900,18 +901,18 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.23630953883039538
+              "usage": 0.24513974643903244
             },
             {
               "bonuses": [
                 13440,
                 6652,
                 12699,
-                12846
+                12854
               ],
-              "itemID": 250214,
-              "itemLevel": 321,
-              "usage": 0.12680067739530146
+              "itemID": 250215,
+              "itemLevel": 334,
+              "usage": 0.11285650206311372
             }
           ]
         }
@@ -923,8 +924,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 58,
+        "generated_at": 1788791248,
+        "sample_size": 63,
         "stale": false,
         "value": {
           "order": [
@@ -934,10 +935,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.25539836187639614,
-            "HASTE": 0.30955727336612787,
+            "CRIT": 0.2532963219986121,
+            "HASTE": 0.31167477414871436,
             "MASTERY": 0.37488284910965325,
-            "VERSATILITY": 0.060564349621472814
+            "VERSATILITY": 0.05559646539027982
           },
           "separators": [
             ">",
@@ -947,17 +948,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2MzMzMGzmx2YbGzMmZAAAAYJY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
-          "support": 0.5408414423990051
+          "support": 0.4995154809513287
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 58,
+        "generated_at": 1788791248,
+        "sample_size": 63,
         "stale": false,
         "value": {
           "items": [
@@ -970,7 +971,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.33064292791417377
+              "usage": 0.3366304266988708
             },
             {
               "bonuses": [
@@ -981,7 +982,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 321,
-              "usage": 0.31048423613070114
+              "usage": 0.2858921063898859
             },
             {
               "bonuses": [
@@ -992,7 +993,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.26008109241383287
+              "usage": 0.25495255769679803
             },
             {
               "bonuses": [
@@ -1003,7 +1004,7 @@
               ],
               "itemID": 193701,
               "itemLevel": 298,
-              "usage": 0.20430264856297073
+              "usage": 0.204827690128798
             }
           ]
         }
@@ -1015,8 +1016,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 76,
+        "generated_at": 1788791248,
+        "sample_size": 79,
         "stale": false,
         "value": {
           "order": [
@@ -1026,10 +1027,10 @@
             "MASTERY"
           ],
           "scores": {
-            "CRIT": 0.2749908458440132,
-            "HASTE": 0.42739921512665,
-            "MASTERY": 0.12410256410256411,
-            "VERSATILITY": 0.17029257314328583
+            "CRIT": 0.27285714285714285,
+            "HASTE": 0.425414364640884,
+            "MASTERY": 0.12610294117647058,
+            "VERSATILITY": 0.17378711078928313
           },
           "separators": [
             ">",
@@ -1039,17 +1040,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYZbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
-          "support": 0.16456745166903022
+          "support": 0.15052466248076962
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 76,
+        "generated_at": 1788791248,
+        "sample_size": 79,
         "stale": false,
         "value": {
           "items": [
@@ -1062,17 +1063,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.431596442648795
-            },
-            {
-              "bonuses": [
-                13334,
-                13696,
-                12854
-              ],
-              "itemID": 270165,
-              "itemLevel": 334,
-              "usage": 0.26432757462385265
+              "usage": 0.45391605311378547
             },
             {
               "bonuses": [
@@ -1083,7 +1074,17 @@
               ],
               "itemID": 250228,
               "itemLevel": 334,
-              "usage": 0.2519352082866388
+              "usage": 0.28096941611715276
+            },
+            {
+              "bonuses": [
+                13334,
+                13696,
+                12854
+              ],
+              "itemID": 270165,
+              "itemLevel": 334,
+              "usage": 0.25371691791885453
             },
             {
               "bonuses": [
@@ -1094,7 +1095,7 @@
               ],
               "itemID": 250245,
               "itemLevel": 321,
-              "usage": 0.1827549582199111
+              "usage": 0.22596670200263771
             }
           ]
         }
@@ -1106,21 +1107,21 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 76,
+        "generated_at": 1788791248,
+        "sample_size": 77,
         "stale": false,
         "value": {
           "order": [
             "HASTE",
             "MASTERY",
-            "CRIT",
-            "VERSATILITY"
+            "VERSATILITY",
+            "CRIT"
           ],
           "scores": {
-            "CRIT": 0.09069920844327177,
+            "CRIT": 0.08762705923589205,
             "HASTE": 0.4554106450475855,
-            "MASTERY": 0.3571179951270449,
-            "VERSATILITY": 0.0893371757925072
+            "MASTERY": 0.36036697247706423,
+            "VERSATILITY": 0.08834274327465959
           },
           "separators": [
             ">",
@@ -1130,17 +1131,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZbMjZmxsNMMmFjNbzAAAAAAAAAAglBNbGmmZMjxsYmZmZZm8AzAAAAAAAgBAgAAAmtZ2a2mZxGjZgZmFQzAAMzAwA",
-          "support": 0.039890708315555
+          "importString": "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmFjNbzAAAAAAAAAAgFDNbzw0MD8AmFzMzYxkHYAAAAAYAAmBAgAAAmtZ2a2mZxGzMzgZmNQzAAMzAwA",
+          "support": 0.02569180505672502
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 76,
+        "generated_at": 1788791248,
+        "sample_size": 77,
         "stale": false,
         "value": {
           "items": [
@@ -1153,7 +1154,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 334,
-              "usage": 0.46071031133942314
+              "usage": 0.42899770786699043
             },
             {
               "bonuses": [
@@ -1163,7 +1164,7 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.4479637651598462
+              "usage": 0.4285047368594802
             },
             {
               "bonuses": [
@@ -1173,7 +1174,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.3015292208222876
+              "usage": 0.34944554568849007
             },
             {
               "bonuses": [
@@ -1183,7 +1184,7 @@
               ],
               "itemID": 249343,
               "itemLevel": 298,
-              "usage": 0.14540761481320807
+              "usage": 0.11832710286899448
             }
           ]
         }
@@ -1195,7 +1196,7 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 61,
         "stale": false,
         "value": {
@@ -1206,8 +1207,8 @@
             "MASTERY"
           ],
           "scores": {
-            "CRIT": 0.2928337577300837,
-            "HASTE": 0.34154807358556055,
+            "CRIT": 0.2915901579140654,
+            "HASTE": 0.346931659693166,
             "MASTERY": 0.18008987210508123,
             "VERSATILITY": 0.18454204971058905
           },
@@ -1219,16 +1220,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZxMzMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
-          "support": 0.18608609323628558
+          "support": 0.20979801262667327
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 61,
         "stale": false,
         "value": {
@@ -1242,7 +1243,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.42680578745876413
+              "usage": 0.42652840168281575
             },
             {
               "bonuses": [
@@ -1252,7 +1253,7 @@
               ],
               "itemID": 270165,
               "itemLevel": 334,
-              "usage": 0.29667835588211894
+              "usage": 0.29648425285243324
             },
             {
               "bonuses": [
@@ -1263,7 +1264,7 @@
               ],
               "itemID": 250228,
               "itemLevel": 321,
-              "usage": 0.2615529917320738
+              "usage": 0.2613845046564041
             },
             {
               "bonuses": [
@@ -1274,7 +1275,7 @@
               ],
               "itemID": 250245,
               "itemLevel": 334,
-              "usage": 0.21275281807907762
+              "usage": 0.1976608154738194
             }
           ]
         }
@@ -1286,8 +1287,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 72,
+        "generated_at": 1788791248,
+        "sample_size": 73,
         "stale": false,
         "value": {
           "order": [
@@ -1297,9 +1298,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.42928930366116297,
-            "HASTE": 0.16062544420753375,
-            "MASTERY": 0.3667262969588551,
+            "CRIT": 0.4293439077144917,
+            "HASTE": 0.16220792414493734,
+            "MASTERY": 0.36301835486063905,
             "VERSATILITY": 0.033300362677217275
           },
           "separators": [
@@ -1310,17 +1311,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMDY2mZmZmZxMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAzAD",
-          "support": 0.09899526089446978
+          "support": 0.07424495742075686
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 72,
+        "generated_at": 1788791248,
+        "sample_size": 73,
         "stale": false,
         "value": {
           "items": [
@@ -1333,7 +1334,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.542823215031023
+              "usage": 0.5624321387549911
             },
             {
               "bonuses": [
@@ -1344,7 +1345,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.29296115484432333
+              "usage": 0.28794135847197194
             },
             {
               "bonuses": [
@@ -1354,18 +1355,17 @@
               ],
               "itemID": 249344,
               "itemLevel": 298,
-              "usage": 0.18112650392107207
+              "usage": 0.19268302698016004
             },
             {
               "bonuses": [
                 6652,
-                13334,
-                12854,
-                13696
+                13335,
+                13654
               ],
-              "itemID": 270165,
-              "itemLevel": 334,
-              "usage": 0.1805759917796844
+              "itemID": 249343,
+              "itemLevel": 298,
+              "usage": 0.1910653252470306
             }
           ]
         }
@@ -1377,8 +1377,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 77,
+        "generated_at": 1788791248,
+        "sample_size": 80,
         "stale": false,
         "value": {
           "order": [
@@ -1388,10 +1388,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.44525547445255476,
-            "HASTE": 0.15691028749567024,
-            "MASTERY": 0.3766185719570847,
-            "VERSATILITY": 0.018704537582265326
+            "CRIT": 0.4437039635215714,
+            "HASTE": 0.16057866184448463,
+            "MASTERY": 0.37449017426770487,
+            "VERSATILITY": 0.01981651376146789
           },
           "separators": [
             ">",
@@ -1401,17 +1401,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMjBzyMzMTz2MzYmZMAAAAAAAAMzYYAwyMmZ2MzYmZMwAzYTjlNAbTshBMDAjZmxMYmBMjB",
-          "support": 0.046812703400251225
+          "importString": "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMjBz2MzMTz2MzYmZMAAAAAAAAMzYGDAWGmZ2mZGzMjBGYGbassBYbiNMgZAYMzMMYmBMjB",
+          "support": 0.07053452028833736
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 77,
+        "generated_at": 1788791248,
+        "sample_size": 80,
         "stale": false,
         "value": {
           "items": [
@@ -1424,17 +1424,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.49541920225513436
-            },
-            {
-              "bonuses": [
-                6652,
-                13335,
-                13654
-              ],
-              "itemID": 249344,
-              "itemLevel": 298,
-              "usage": 0.2713826541471753
+              "usage": 0.48945835853819136
             },
             {
               "bonuses": [
@@ -1445,7 +1435,17 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.2596699124925432
+              "usage": 0.2761107770837822
+            },
+            {
+              "bonuses": [
+                6652,
+                13335,
+                13654
+              ],
+              "itemID": 249344,
+              "itemLevel": 298,
+              "usage": 0.2726812763151005
             },
             {
               "bonuses": [
@@ -1455,7 +1455,7 @@
               ],
               "itemID": 249343,
               "itemLevel": 298,
-              "usage": 0.19602575571916578
+              "usage": 0.201075620884344
             }
           ]
         }
@@ -1467,8 +1467,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 60,
+        "generated_at": 1788791248,
+        "sample_size": 65,
         "stale": false,
         "value": {
           "order": [
@@ -1478,9 +1478,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.40135615111398126,
-            "HASTE": 0.11282788357887172,
-            "MASTERY": 0.41069592046623243,
+            "CRIT": 0.39542818150801773,
+            "HASTE": 0.11067580803134182,
+            "MASTERY": 0.4105718085106383,
             "VERSATILITY": 0.06298059318930795
           },
           "separators": [
@@ -1491,17 +1491,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGzYGWGTzAAAAAAAAAPwYMgZ2IgZBsNAA",
-          "support": 0.07355565427668956
+          "support": 0.10029346545287714
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 60,
+        "generated_at": 1788791248,
+        "sample_size": 65,
         "stale": false,
         "value": {
           "items": [
@@ -1514,7 +1514,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.34917647144489683
+              "usage": 0.3684559396649057
             },
             {
               "bonuses": [
@@ -1525,7 +1525,7 @@
               ],
               "itemID": 159617,
               "itemLevel": 321,
-              "usage": 0.2653473568708215
+              "usage": 0.2771024533989578
             },
             {
               "bonuses": [
@@ -1536,7 +1536,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 321,
-              "usage": 0.20065752756526653
+              "usage": 0.21802393860110506
             },
             {
               "bonuses": [
@@ -1545,9 +1545,9 @@
                 12699,
                 12846
               ],
-              "itemID": 250215,
+              "itemID": 273796,
               "itemLevel": 321,
-              "usage": 0.19933845854790855
+              "usage": 0.18696674430137739
             }
           ]
         }
@@ -1559,8 +1559,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 68,
+        "generated_at": 1788791248,
+        "sample_size": 69,
         "stale": false,
         "value": {
           "order": [
@@ -1571,9 +1571,9 @@
           ],
           "scores": {
             "CRIT": 0.47082187595478153,
-            "HASTE": 0.09577070954211814,
-            "MASTERY": 0.33954154727793695,
-            "VERSATILITY": 0.07734303912647862
+            "HASTE": 0.09651202167287504,
+            "MASTERY": 0.34081769436997317,
+            "VERSATILITY": 0.0758959943780745
           },
           "separators": [
             ">",
@@ -1583,17 +1583,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbLzMzMzMzMzCzsMMDAAgHYMGAmpNwAsxMbzYA",
-          "support": 0.09397863659645526
+          "support": 0.11874504773545748
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 68,
+        "generated_at": 1788791248,
+        "sample_size": 69,
         "stale": false,
         "value": {
           "items": [
@@ -1606,7 +1606,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.4153261439468399
+              "usage": 0.3950086473038892
             },
             {
               "bonuses": [
@@ -1617,18 +1617,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.30587469926625555
-            },
-            {
-              "bonuses": [
-                6652,
-                13334,
-                13696,
-                12854
-              ],
-              "itemID": 270168,
-              "itemLevel": 334,
-              "usage": 0.22062034977804051
+              "usage": 0.30136119748643697
             },
             {
               "bonuses": [
@@ -1639,7 +1628,18 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.20679934436960748
+              "usage": 0.20374847789257733
+            },
+            {
+              "bonuses": [
+                6652,
+                13334,
+                13696,
+                12854
+              ],
+              "itemID": 270168,
+              "itemLevel": 334,
+              "usage": 0.20260917932233216
             }
           ]
         }
@@ -1651,8 +1651,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 61,
+        "generated_at": 1788791248,
+        "sample_size": 60,
         "stale": false,
         "value": {
           "order": [
@@ -1662,9 +1662,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.2940771349862259,
-            "HASTE": 0.2715872447151559,
-            "MASTERY": 0.4023303632625086,
+            "CRIT": 0.2963215258855586,
+            "HASTE": 0.27577937649880097,
+            "MASTERY": 0.40148043708142406,
             "VERSATILITY": 0.02545715310147006
           },
           "separators": [
@@ -1675,17 +1675,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C8PAAAAAAAAAAAAAAAAAAAAAAMgxMG2ILwMM0gFzMzMzMWGAAAAAAmxMzM2mxYGzgx0MAAAADAmxyyMjFmZGjxMDYmNAMGzMbGAA",
-          "support": 0.04980704525037249
+          "support": 0.04976002628555545
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 61,
+        "generated_at": 1788791248,
+        "sample_size": 60,
         "stale": false,
         "value": {
           "items": [
@@ -1698,7 +1698,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 321,
-              "usage": 0.42406623953862876
+              "usage": 0.4313729984395483
             },
             {
               "bonuses": [
@@ -1709,7 +1709,7 @@
               ],
               "itemID": 270165,
               "itemLevel": 334,
-              "usage": 0.3912461999018445
+              "usage": 0.3483628195272592
             },
             {
               "bonuses": [
@@ -1720,7 +1720,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 334,
-              "usage": 0.23102122614799273
+              "usage": 0.25163915098189665
             },
             {
               "bonuses": [
@@ -1731,7 +1731,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.21685712982669386
+              "usage": 0.2209118454889163
             }
           ]
         }
@@ -1743,7 +1743,7 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 52,
         "stale": false,
         "value": {
@@ -1756,8 +1756,8 @@
           "scores": {
             "CRIT": 0.2502692998204668,
             "HASTE": 0.45414251619502216,
-            "MASTERY": 0.258765778401122,
-            "VERSATILITY": 0.06154910096818811
+            "MASTERY": 0.2604431529240828,
+            "VERSATILITY": 0.055437853107344635
           },
           "separators": [
             ">",
@@ -1767,16 +1767,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CAQAAAAAAAAAAAAAAAAAAAAAAADsMDWmZMmBmZbmtZmZmxMDAAAAAAAAAghZZGMzMDzYmBMNTMAzsghwYWGgxgFAAYMzMjBzAMzMTwM",
-          "support": 0.062203015252868615
+          "support": 0.06311484766979703
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 52,
         "stale": false,
         "value": {
@@ -1789,28 +1789,29 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.36583764840780403
+              "usage": 0.3652845353449937
             },
             {
               "bonuses": [
+                6652,
                 13334,
                 13696,
                 12854
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.30763688581642845
+              "usage": 0.2883045195105215
             },
             {
               "bonuses": [
                 13440,
                 6652,
                 12699,
-                12852
+                12846
               ],
               "itemID": 250214,
-              "itemLevel": 328,
-              "usage": 0.21164122090290396
+              "itemLevel": 321,
+              "usage": 0.1924526832287592
             },
             {
               "bonuses": [
@@ -1821,7 +1822,7 @@
               ],
               "itemID": 193757,
               "itemLevel": 334,
-              "usage": 0.17157939245318996
+              "usage": 0.15245214982061409
             }
           ]
         }
@@ -1833,21 +1834,21 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 53,
+        "generated_at": 1788791248,
+        "sample_size": 58,
         "stale": false,
         "value": {
           "order": [
-            "CRIT",
             "HASTE",
+            "CRIT",
             "MASTERY",
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.34363068379035056,
-            "HASTE": 0.32791777188328913,
-            "MASTERY": 0.2244677011909058,
-            "VERSATILITY": 0.11256906077348067
+            "CRIT": 0.33356570233530847,
+            "HASTE": 0.3413152251608292,
+            "MASTERY": 0.22709017889740782,
+            "VERSATILITY": 0.1126326600479288
           },
           "separators": [
             "\u2248",
@@ -1857,17 +1858,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAgZm5BmlxMjZGDzALzMzMAAAAGmlZGzMzMMPgZGAzUAMzCGCjZZAGDsYMzCgmxMjxgZAmZmBGA",
-          "support": 0.047197717003384806
+          "importString": "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYBmZWGzMmZMMDzsMzYGAAAAzYWmBzMzwMMDgZqBwMLYIMmlBYMwiZmZBQzYMGDzMAzMzAD",
+          "support": 0.047197661295805576
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 53,
+        "generated_at": 1788791248,
+        "sample_size": 58,
         "stale": false,
         "value": {
           "items": [
@@ -1879,7 +1880,7 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.6052391287642244
+              "usage": 0.6225989853960107
             },
             {
               "bonuses": [
@@ -1889,7 +1890,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.24494460568809162
+              "usage": 0.25821935236735016
             },
             {
               "bonuses": [
@@ -1900,7 +1901,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 324,
-              "usage": 0.24420128264770516
+              "usage": 0.2404171390511684
             },
             {
               "bonuses": [
@@ -1910,7 +1911,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.22696646061745226
+              "usage": 0.20753494554057875
             }
           ]
         }
@@ -1922,7 +1923,7 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 71,
         "stale": false,
         "value": {
@@ -1933,10 +1934,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.26846125863950526,
-            "HASTE": 0.33646812957157785,
-            "MASTERY": 0.37145969498910675,
-            "VERSATILITY": 0.03213927017073987
+            "CRIT": 0.2640918580375783,
+            "HASTE": 0.3413173652694611,
+            "MASTERY": 0.37282487967419475,
+            "VERSATILITY": 0.03215077605321508
           },
           "separators": [
             ">",
@@ -1946,16 +1947,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CIQAAAAAAAAAAAAAAAAAAAAAAMjZMAAAAAAAAAAAAYMLzMGbzMmZ2mZGjx2MzYmZGbIzYxMNAzMzAABY2mtlgZjBAGMmZmxsNmBzMYGMA",
-          "support": 0.04935795075935461
+          "support": 0.05014590149755911
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 71,
         "stale": false,
         "value": {
@@ -1969,7 +1970,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.5472121804713741
+              "usage": 0.5607088645977233
             },
             {
               "bonuses": [
@@ -1979,7 +1980,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.36609825596791795
+              "usage": 0.36589731389303004
             },
             {
               "bonuses": [
@@ -1990,7 +1991,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.3246816538586477
+              "usage": 0.31070475070726633
             },
             {
               "bonuses": [
@@ -2000,7 +2001,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.2843707728872278
+              "usage": 0.2698652836022938
             }
           ]
         }
@@ -2012,8 +2013,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 69,
+        "generated_at": 1788791248,
+        "sample_size": 73,
         "stale": false,
         "value": {
           "order": [
@@ -2023,9 +2024,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.4064516129032258,
-            "HASTE": 0.3363136176066025,
-            "MASTERY": 0.2066756574511126,
+            "CRIT": 0.40899122807017546,
+            "HASTE": 0.3327513966480447,
+            "MASTERY": 0.21363952679192763,
             "VERSATILITY": 0.0550098231827112
           },
           "separators": [
@@ -2036,17 +2037,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlZmZmZmxYbmZmtZWmZmHwMmZMGmZMGADsAzY0Y2AZbAbAgZmxYA",
-          "support": 0.049361178582571365
+          "importString": "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZGGMAAAAAwsMYbGAAAAAQbLzMzMzMjx2MzMbzsMzMjHYMzYmhZGjBwALwMGNmNQ2GwGAYmZMGA",
+          "support": 0.07603241769354796
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 69,
+        "generated_at": 1788791248,
+        "sample_size": 73,
         "stale": false,
         "value": {
           "items": [
@@ -2059,7 +2060,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.4528924643479318
+              "usage": 0.4560061700274149
             },
             {
               "bonuses": [
@@ -2070,7 +2071,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 321,
-              "usage": 0.3592525879343194
+              "usage": 0.3530058027455906
             },
             {
               "bonuses": [
@@ -2081,7 +2082,7 @@
               ],
               "itemID": 270168,
               "itemLevel": 334,
-              "usage": 0.2900109829572954
+              "usage": 0.27414124696221753
             },
             {
               "bonuses": [
@@ -2091,7 +2092,7 @@
               ],
               "itemID": 270165,
               "itemLevel": 334,
-              "usage": 0.2446103395102427
+              "usage": 0.23229867733884782
             }
           ]
         }
@@ -2103,8 +2104,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 55,
+        "generated_at": 1788791248,
+        "sample_size": 54,
         "stale": false,
         "value": {
           "order": [
@@ -2114,9 +2115,9 @@
             "MASTERY"
           ],
           "scores": {
-            "CRIT": 0.41948529411764707,
-            "HASTE": 0.3319298245614035,
-            "MASTERY": 0.0635196112460951,
+            "CRIT": 0.4152511745572823,
+            "HASTE": 0.3374277456647399,
+            "MASTERY": 0.06414825374198146,
             "VERSATILITY": 0.17136070580251103
           },
           "separators": [
@@ -2127,17 +2128,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMjZmtZmZMzMzsAmZbaZw2MAAAAAgZbZmZGmZmZWMzMbDAAAAjBAjZxwQGYWYhWYjBYmBDMA",
-          "support": 0.27093808140555475
+          "support": 0.2700265369242642
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 55,
+        "generated_at": 1788791248,
+        "sample_size": 54,
         "stale": false,
         "value": {
           "items": [
@@ -2150,7 +2151,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.4210509589034623
+              "usage": 0.46560395983335273
             },
             {
               "bonuses": [
@@ -2161,7 +2162,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.3620199877051998
+              "usage": 0.3504712561336732
             },
             {
               "bonuses": [
@@ -2172,7 +2173,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.3143607689107108
+              "usage": 0.32005051924029565
             },
             {
               "bonuses": [
@@ -2183,7 +2184,7 @@
               ],
               "itemID": 159617,
               "itemLevel": 321,
-              "usage": 0.21692587970496843
+              "usage": 0.2389557642706936
             }
           ]
         }
@@ -2195,8 +2196,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 73,
+        "generated_at": 1788791248,
+        "sample_size": 75,
         "stale": false,
         "value": {
           "order": [
@@ -2206,9 +2207,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.2023332118118848,
-            "HASTE": 0.2612915266890631,
-            "MASTERY": 0.40441176470588236,
+            "CRIT": 0.19855072463768117,
+            "HASTE": 0.26263997285374957,
+            "MASTERY": 0.4016750418760469,
             "VERSATILITY": 0.14256756756756755
           },
           "separators": [
@@ -2219,17 +2220,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
-          "support": 0.09440646279316635
+          "importString": "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDDzMzMzw8AbzYGbbzMzMzMjBjZ2GAAAAGMmFzyADYBsMMhMLYGmZAmxA",
+          "support": 0.09687526754876108
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 73,
+        "generated_at": 1788791248,
+        "sample_size": 75,
         "stale": false,
         "value": {
           "items": [
@@ -2242,7 +2243,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.49547417782287395
+              "usage": 0.5095506640487414
             },
             {
               "bonuses": [
@@ -2251,7 +2252,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.32836596012698177
+              "usage": 0.3195644034252174
             },
             {
               "bonuses": [
@@ -2261,7 +2262,7 @@
               ],
               "itemID": 270165,
               "itemLevel": 334,
-              "usage": 0.23576045732054066
+              "usage": 0.2431562761755673
             },
             {
               "bonuses": [
@@ -2271,7 +2272,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.23363732637130863
+              "usage": 0.22664123221586638
             }
           ]
         }
@@ -2283,8 +2284,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 59,
+        "generated_at": 1788791248,
+        "sample_size": 57,
         "stale": false,
         "value": {
           "order": [
@@ -2296,8 +2297,8 @@
           "scores": {
             "CRIT": 0.334781035106768,
             "HASTE": 0.2620713785864241,
-            "MASTERY": 0.34983736899168777,
-            "VERSATILITY": 0.04218181818181818
+            "MASTERY": 0.35239456754824877,
+            "VERSATILITY": 0.0422840621611854
           },
           "separators": [
             "\u2248",
@@ -2307,17 +2308,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZmtxyMzMjhFLzMLDjZmFAgBAmZMMMA",
-          "support": 0.0750244443077953
+          "support": 0.07386433374490582
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 59,
+        "generated_at": 1788791248,
+        "sample_size": 57,
         "stale": false,
         "value": {
           "items": [
@@ -2330,7 +2331,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.9321254279470235
+              "usage": 0.9297658910077778
             },
             {
               "bonuses": [
@@ -2340,7 +2341,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.4583318561546782
+              "usage": 0.45688402102733805
             },
             {
               "bonuses": [
@@ -2351,7 +2352,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 321,
-              "usage": 0.20295691401507954
+              "usage": 0.2100142201219802
             },
             {
               "bonuses": [
@@ -2362,7 +2363,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.18682516884096304
+              "usage": 0.19332055867827094
             }
           ]
         }
@@ -2374,8 +2375,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 74,
+        "generated_at": 1788791248,
+        "sample_size": 77,
         "stale": false,
         "value": {
           "order": [
@@ -2385,10 +2386,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.2395644283121597,
-            "HASTE": 0.33612832664965364,
+            "CRIT": 0.2498179169701384,
+            "HASTE": 0.33368019424210893,
             "MASTERY": 0.3882562277580071,
-            "VERSATILITY": 0.02852908484623935
+            "VERSATILITY": 0.03184230477634572
           },
           "separators": [
             ">",
@@ -2398,17 +2399,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
-          "support": 0.13706993388737385
+          "support": 0.1131493159658237
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 74,
+        "generated_at": 1788791248,
+        "sample_size": 77,
         "stale": false,
         "value": {
           "items": [
@@ -2421,7 +2422,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.579756277219097
+              "usage": 0.5957233227338199
             },
             {
               "bonuses": [
@@ -2432,7 +2433,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.3131953135831092
+              "usage": 0.3263737900462942
             },
             {
               "bonuses": [
@@ -2443,18 +2444,18 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.23105759805563839
+              "usage": 0.24796634655485372
             },
             {
               "bonuses": [
-                13440,
-                6652,
-                12699,
-                12846
+                42,
+                13334,
+                12854,
+                13696
               ],
-              "itemID": 250228,
-              "itemLevel": 321,
-              "usage": 0.20137981784659156
+              "itemID": 270165,
+              "itemLevel": 334,
+              "usage": 0.1945002014535026
             }
           ]
         }
@@ -2466,8 +2467,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 54,
+        "generated_at": 1788791248,
+        "sample_size": 59,
         "stale": false,
         "value": {
           "order": [
@@ -2477,10 +2478,10 @@
             "MASTERY"
           ],
           "scores": {
-            "CRIT": 0.38290788013318533,
-            "HASTE": 0.28791130185979974,
-            "MASTERY": 0.0782387190684134,
-            "VERSATILITY": 0.229893499816379
+            "CRIT": 0.3813682678311499,
+            "HASTE": 0.2822822822822823,
+            "MASTERY": 0.08436286621955524,
+            "VERSATILITY": 0.23107142857142857
           },
           "separators": [
             ">",
@@ -2490,17 +2491,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZmZGjhhFYDmxiGbDIzAbMzMY2mZmRzyyMDzYwyMmZMsMLzAAwAYmBzMAwgB",
-          "support": 0.04136688650206773
+          "importString": "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsstMmZmZMzMjhhFYDmxiGbDIzAbYmBzyMzMaWWmZWMjBLzYmxwysMAAYAMzgZGAGDG",
+          "support": 0.025719044143266978
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 54,
+        "generated_at": 1788791248,
+        "sample_size": 59,
         "stale": false,
         "value": {
           "items": [
@@ -2512,7 +2513,7 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.7773741778985667
+              "usage": 0.7288052941847627
             },
             {
               "bonuses": [
@@ -2523,7 +2524,7 @@
               ],
               "itemID": 250255,
               "itemLevel": 324,
-              "usage": 0.3534138141908024
+              "usage": 0.3405086831563202
             },
             {
               "bonuses": [
@@ -2533,7 +2534,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.25863672904461205
+              "usage": 0.25370400866858905
             },
             {
               "bonuses": [
@@ -2544,7 +2545,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 321,
-              "usage": 0.1469541681390086
+              "usage": 0.13459254599852738
             }
           ]
         }
@@ -2556,8 +2557,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 62,
+        "generated_at": 1788791248,
+        "sample_size": 63,
         "stale": false,
         "value": {
           "order": [
@@ -2567,10 +2568,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.3494897959183674,
-            "HASTE": 0.4355008787346221,
-            "MASTERY": 0.17291950886766713,
-            "VERSATILITY": 0.037518573551263
+            "CRIT": 0.34576271186440677,
+            "HASTE": 0.4380255941499086,
+            "MASTERY": 0.15808297567954221,
+            "VERSATILITY": 0.03802416488983653
           },
           "separators": [
             ">",
@@ -2580,17 +2581,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CkQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWGAAwMmlZZmZWGDAM22GYATwMsFYYbAAAYAAAYmZMjZmNGmZmZmhZYmZGAgZgB",
-          "support": 0.04866275178534556
+          "support": 0.05015910626841034
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 62,
+        "generated_at": 1788791248,
+        "sample_size": 63,
         "stale": false,
         "value": {
           "items": [
@@ -2603,7 +2604,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.5487535168451928
+              "usage": 0.5390832685147645
             },
             {
               "bonuses": [
@@ -2613,7 +2614,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.38813895277506205
+              "usage": 0.38148224345882087
             },
             {
               "bonuses": [
@@ -2624,18 +2625,18 @@
               ],
               "itemID": 250224,
               "itemLevel": 321,
-              "usage": 0.24156323978167096
+              "usage": 0.28581041297411786
             },
             {
               "bonuses": [
                 13440,
                 6652,
                 12699,
-                12851
+                12854
               ],
               "itemID": 273649,
-              "itemLevel": 324,
-              "usage": 0.24155177337035688
+              "itemLevel": 334,
+              "usage": 0.22138489723273488
             }
           ]
         }
@@ -2647,7 +2648,7 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 77,
         "stale": false,
         "value": {
@@ -2658,9 +2659,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.3611404435058078,
-            "HASTE": 0.328,
-            "MASTERY": 0.25772418990203466,
+            "CRIT": 0.353654058024238,
+            "HASTE": 0.32606401688357367,
+            "MASTERY": 0.26106346483704973,
             "VERSATILITY": 0.04991150442477876
           },
           "separators": [
@@ -2671,16 +2672,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CoQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzMzyAAAAAAAAGzYYBGYb0CNsYMzYZ2mZmxMAwMjZmxMDwYGzYDAAMmZmxwwyMGwA",
-          "support": 0.047914926034855136
+          "importString": "CoQAAAAAAAAAAAAAAAAAAAAAAwMmZGNbMz2MzYWGAAAAAAAwYGDLwAbjWohFjZGLz2MzMmBAmZMzMmZAGzYGbAAgxMzMGGWmxAGA",
+          "support": 0.09467665669060103
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 77,
         "stale": false,
         "value": {
@@ -2694,7 +2695,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.7413101918707681
+              "usage": 0.728157805512874
             },
             {
               "bonuses": [
@@ -2704,7 +2705,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.414110162556974
+              "usage": 0.42667315606975664
             },
             {
               "bonuses": [
@@ -2715,7 +2716,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.26073562029486325
+              "usage": 0.28666202351981634
             },
             {
               "bonuses": [
@@ -2725,7 +2726,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.22290051494665022
+              "usage": 0.22329766824202402
             }
           ]
         }
@@ -2737,8 +2738,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 71,
+        "generated_at": 1788791248,
+        "sample_size": 73,
         "stale": false,
         "value": {
           "order": [
@@ -2749,9 +2750,9 @@
           ],
           "scores": {
             "CRIT": 0.330412559328222,
-            "HASTE": 0.34695340501792116,
-            "MASTERY": 0.27239082161361955,
-            "VERSATILITY": 0.049682480388494585
+            "HASTE": 0.34761575673807876,
+            "MASTERY": 0.26638328019837054,
+            "VERSATILITY": 0.05349500713266762
           },
           "separators": [
             "\u2248",
@@ -2761,17 +2762,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CsQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWmNzMzsYmZZZMAAYGjZmZBMmxwCZgthFaswAAAjBDAwMDwYGzMbAAAmZmBAAzwA",
-          "support": 0.07265718673279223
+          "support": 0.07265803079489114
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 71,
+        "generated_at": 1788791248,
+        "sample_size": 73,
         "stale": false,
         "value": {
           "items": [
@@ -2784,7 +2785,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.7192709762109072
+              "usage": 0.7412248417408749
             },
             {
               "bonuses": [
@@ -2794,17 +2795,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.39759500330583364
-            },
-            {
-              "bonuses": [
-                13334,
-                13696,
-                12854
-              ],
-              "itemID": 270167,
-              "itemLevel": 334,
-              "usage": 0.18405033828232187
+              "usage": 0.3990433896471748
             },
             {
               "bonuses": [
@@ -2815,7 +2806,17 @@
               ],
               "itemID": 250224,
               "itemLevel": 334,
-              "usage": 0.16602787068278146
+              "usage": 0.2024416023129686
+            },
+            {
+              "bonuses": [
+                13334,
+                13696,
+                12854
+              ],
+              "itemID": 270167,
+              "itemLevel": 334,
+              "usage": 0.1934093862568729
             }
           ]
         }
@@ -2827,7 +2828,7 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 50,
         "stale": false,
         "value": {
@@ -2839,9 +2840,9 @@
           ],
           "scores": {
             "CRIT": 0.4517690875232775,
-            "HASTE": 0.05547850208044383,
-            "MASTERY": 0.22396416573348266,
-            "VERSATILITY": 0.27020860495436766
+            "HASTE": 0.054376163873370575,
+            "MASTERY": 0.2231007218975593,
+            "VERSATILITY": 0.2772002772002772
           },
           "separators": [
             ">",
@@ -2851,16 +2852,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2gxMzMDz2YmxYZYZ7B22mNMLAAwysMtMbzsMAAQAMsBmZATjBAAMA",
-          "support": 0.09623883544849723
+          "support": 0.11582624386447471
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 50,
         "stale": false,
         "value": {
@@ -2874,7 +2875,7 @@
               ],
               "itemID": 250245,
               "itemLevel": 334,
-              "usage": 0.504693784472296
+              "usage": 0.5438876813235467
             },
             {
               "bonuses": [
@@ -2885,7 +2886,7 @@
               ],
               "itemID": 250228,
               "itemLevel": 334,
-              "usage": 0.2973372459311199
+              "usage": 0.29780234517681514
             },
             {
               "bonuses": [
@@ -2896,18 +2897,18 @@
               ],
               "itemID": 250215,
               "itemLevel": 321,
-              "usage": 0.20109179638060137
+              "usage": 0.22099712023245927
             },
             {
               "bonuses": [
+                13440,
                 6652,
-                13334,
-                12854,
-                13696
+                12699,
+                12852
               ],
-              "itemID": 270175,
-              "itemLevel": 334,
-              "usage": 0.18075155761963294
+              "itemID": 159617,
+              "itemLevel": 328,
+              "usage": 0.16145322727677966
             }
           ]
         }
@@ -2919,8 +2920,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 67,
+        "generated_at": 1788791248,
+        "sample_size": 69,
         "stale": false,
         "value": {
           "order": [
@@ -2933,7 +2934,7 @@
             "CRIT": 0.2923021060275962,
             "HASTE": 0.2909090909090909,
             "MASTERY": 0.3637949075688873,
-            "VERSATILITY": 0.03650162631008312
+            "VERSATILITY": 0.036370183651422396
           },
           "separators": [
             ">",
@@ -2943,17 +2944,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmwMMMgZMMzMzwsxMDzyMBAswsxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
-          "support": 0.09813714182529486
+          "support": 0.09804343988047391
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 67,
+        "generated_at": 1788791248,
+        "sample_size": 69,
         "stale": false,
         "value": {
           "items": [
@@ -2966,7 +2967,7 @@
               ],
               "itemID": 270175,
               "itemLevel": 334,
-              "usage": 0.6736929537131519
+              "usage": 0.6979493044864554
             },
             {
               "bonuses": [
@@ -2977,7 +2978,17 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.29935275862639493
+              "usage": 0.29066781561031013
+            },
+            {
+              "bonuses": [
+                6652,
+                13335,
+                12854
+              ],
+              "itemID": 270165,
+              "itemLevel": 334,
+              "usage": 0.21786104962437397
             },
             {
               "bonuses": [
@@ -2988,17 +2999,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 321,
-              "usage": 0.2524882425709539
-            },
-            {
-              "bonuses": [
-                6652,
-                13335,
-                12854
-              ],
-              "itemID": 270165,
-              "itemLevel": 334,
-              "usage": 0.20972355756356026
+              "usage": 0.216151781992234
             }
           ]
         }
@@ -3010,7 +3011,7 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 73,
         "stale": false,
         "value": {
@@ -3021,9 +3022,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.26357388316151203,
-            "HASTE": 0.43327239488117003,
-            "MASTERY": 0.21065989847715735,
+            "CRIT": 0.27073932662270045,
+            "HASTE": 0.4252832861189802,
+            "MASTERY": 0.2156794425087108,
             "VERSATILITY": 0.1018867924528302
           },
           "separators": [
@@ -3034,16 +3035,16 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYMNjZAjxAGzMzMMbYGmlZCAAAAgAsYbmtZbmJAAAjBYGwAsIjZA",
-          "support": 0.05078118338364049
+          "support": 0.07478808519609437
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 73,
         "stale": false,
         "value": {
@@ -3056,7 +3057,7 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.6840990655979436
+              "usage": 0.6840992038110942
             },
             {
               "bonuses": [
@@ -3066,7 +3067,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.26094311503893636
+              "usage": 0.2748189882087303
             },
             {
               "bonuses": [
@@ -3076,7 +3077,7 @@
               ],
               "itemID": 249808,
               "itemLevel": 298,
-              "usage": 0.13660591080257697
+              "usage": 0.1366058861945341
             },
             {
               "bonuses": [
@@ -3086,7 +3087,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.09658516616930332
+              "usage": 0.09658532860853593
             }
           ]
         }
@@ -3098,8 +3099,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 83,
+        "generated_at": 1788791248,
+        "sample_size": 85,
         "stale": false,
         "value": {
           "order": [
@@ -3109,10 +3110,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.4751115688293855,
-            "HASTE": 0.0811965811965812,
-            "MASTERY": 0.40615169521146455,
-            "VERSATILITY": 0.03601997146932953
+            "CRIT": 0.47683462969225565,
+            "HASTE": 0.07810858143607706,
+            "MASTERY": 0.4033920851346857,
+            "VERSATILITY": 0.03362183754993342
           },
           "separators": [
             ">",
@@ -3122,17 +3123,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD",
-          "support": 0.25118660905645
+          "support": 0.2754008803347279
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 83,
+        "generated_at": 1788791248,
+        "sample_size": 85,
         "stale": false,
         "value": {
           "items": [
@@ -3144,7 +3145,7 @@
               ],
               "itemID": 270173,
               "itemLevel": 334,
-              "usage": 0.5568051840823879
+              "usage": 0.5786063098097234
             },
             {
               "bonuses": [
@@ -3155,7 +3156,7 @@
               ],
               "itemID": 270168,
               "itemLevel": 334,
-              "usage": 0.3028098668611197
+              "usage": 0.28198735735500186
             },
             {
               "bonuses": [
@@ -3166,7 +3167,7 @@
               ],
               "itemID": 193701,
               "itemLevel": 298,
-              "usage": 0.238499493228715
+              "usage": 0.23354768156889802
             },
             {
               "bonuses": [
@@ -3177,7 +3178,7 @@
               ],
               "itemID": 273796,
               "itemLevel": 334,
-              "usage": 0.22816724231829638
+              "usage": 0.2116051615082071
             }
           ]
         }
@@ -3189,8 +3190,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 65,
+        "generated_at": 1788791248,
+        "sample_size": 63,
         "stale": false,
         "value": {
           "order": [
@@ -3200,9 +3201,9 @@
             "MASTERY"
           ],
           "scores": {
-            "CRIT": 0.3192170818505338,
-            "HASTE": 0.40380473797559224,
-            "MASTERY": 0.14052741151977793,
+            "CRIT": 0.31610044313146235,
+            "HASTE": 0.40970350404312667,
+            "MASTERY": 0.13573508005822416,
             "VERSATILITY": 0.1453697056712132
           },
           "separators": [
@@ -3213,17 +3214,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
-          "importString": "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMwiZMDmZMzYmHYmZGDzMzM2mZGjxMAAAAAAACYmZsBAAAgBmZmZmt2mZmBAAAAAYA",
-          "support": 0.03828763115194443
+          "importString": "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMYWMjZwMjZGz8AzMzYwMzM2egZmtxYGAAAAAAABMzM2AAAAwAzMzMzWbzMzAAAAAAMA",
+          "support": 0.03915460532246448
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 65,
+        "generated_at": 1788791248,
+        "sample_size": 63,
         "stale": false,
         "value": {
           "items": [
@@ -3236,7 +3237,7 @@
               ],
               "itemID": 250228,
               "itemLevel": 321,
-              "usage": 0.4753927529897514
+              "usage": 0.42812951728562587
             },
             {
               "bonuses": [
@@ -3247,7 +3248,7 @@
               ],
               "itemID": 250245,
               "itemLevel": 334,
-              "usage": 0.23108876358837893
+              "usage": 0.2695149054626521
             },
             {
               "bonuses": [
@@ -3258,18 +3259,18 @@
               ],
               "itemID": 270165,
               "itemLevel": 334,
-              "usage": 0.20167645533699682
+              "usage": 0.20817455755985667
             },
             {
               "bonuses": [
                 13440,
                 6652,
                 12699,
-                12854
+                12853
               ],
               "itemID": 250215,
-              "itemLevel": 334,
-              "usage": 0.19927820662693801
+              "itemLevel": 331,
+              "usage": 0.18896709390342725
             }
           ]
         }
@@ -3281,8 +3282,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 67,
+        "generated_at": 1788791248,
+        "sample_size": 71,
         "stale": false,
         "value": {
           "order": [
@@ -3292,8 +3293,8 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.39331152308251544,
-            "HASTE": 0.2586830680173661,
+            "CRIT": 0.3922323303009097,
+            "HASTE": 0.26017699115044246,
             "MASTERY": 0.27965540092776675,
             "VERSATILITY": 0.0620384047267356
           },
@@ -3305,39 +3306,30 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZAMzwMwYGjZaMzMNjZ2mxMzMzMzMzAMzMGzMLzMDMwYwGsMGN2GQmBBbYGMzghB",
-          "support": 0.15390714684661375
+          "support": 0.1366907218381324
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 67,
+        "generated_at": 1788791248,
+        "sample_size": 71,
         "stale": false,
         "value": {
           "items": [
             {
               "bonuses": [
+                13440,
                 6652,
-                12851,
-                13696
+                12699,
+                12851
               ],
               "itemID": 273796,
               "itemLevel": 324,
-              "usage": 0.5959045280046209
-            },
-            {
-              "bonuses": [
-                13334,
-                12854,
-                13696
-              ],
-              "itemID": 270167,
-              "itemLevel": 334,
-              "usage": 0.376606428062281
+              "usage": 0.6181019055328246
             },
             {
               "bonuses": [
@@ -3347,7 +3339,17 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.37543734246011484
+              "usage": 0.38244675007811796
+            },
+            {
+              "bonuses": [
+                13334,
+                12854,
+                13696
+              ],
+              "itemID": 270167,
+              "itemLevel": 334,
+              "usage": 0.3697538912963721
             },
             {
               "bonuses": [
@@ -3358,7 +3360,7 @@
               ],
               "itemID": 250224,
               "itemLevel": 321,
-              "usage": 0.23625949357041875
+              "usage": 0.23675944110902133
             }
           ]
         }
@@ -3370,21 +3372,21 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 69,
+        "generated_at": 1788791248,
+        "sample_size": 70,
         "stale": false,
         "value": {
           "order": [
             "CRIT",
-            "MASTERY",
             "HASTE",
+            "MASTERY",
             "VERSATILITY"
           ],
           "scores": {
             "CRIT": 0.32392426850258177,
-            "HASTE": 0.29336734693877553,
-            "MASTERY": 0.2956152758132956,
-            "VERSATILITY": 0.0876143560872625
+            "HASTE": 0.29519368723098993,
+            "MASTERY": 0.28203292770221905,
+            "VERSATILITY": 0.0963944076526858
           },
           "separators": [
             ">",
@@ -3394,17 +3396,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZ2WGzYYMzsZGw2AAAYGzYGjhZiZmBAAAMzMTzYmZegxMzAAjZgFwGYGmQ2YsZYAMzMGA",
-          "support": 0.048484212204636896
+          "support": 0.04839252538900019
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 69,
+        "generated_at": 1788791248,
+        "sample_size": 70,
         "stale": false,
         "value": {
           "items": [
@@ -3417,7 +3419,7 @@
               ],
               "itemID": 270162,
               "itemLevel": 334,
-              "usage": 0.6547463250321434
+              "usage": 0.6454181918433588
             },
             {
               "bonuses": [
@@ -3428,7 +3430,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.3486701265180444
+              "usage": 0.34396539222517425
             },
             {
               "bonuses": [
@@ -3439,7 +3441,7 @@
               ],
               "itemID": 250214,
               "itemLevel": 321,
-              "usage": 0.202720787143516
+              "usage": 0.18511813185534576
             },
             {
               "bonuses": [
@@ -3450,7 +3452,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.15899834766078222
+              "usage": 0.14205666883093485
             }
           ]
         }
@@ -3462,8 +3464,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 54,
+        "generated_at": 1788791248,
+        "sample_size": 58,
         "stale": false,
         "value": {
           "order": [
@@ -3473,10 +3475,10 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.32219061166429586,
-            "HASTE": 0.1804678796880802,
-            "MASTERY": 0.41174426685198057,
-            "VERSATILITY": 0.05371753824261829
+            "CRIT": 0.31986899563318777,
+            "HASTE": 0.19093504639543182,
+            "MASTERY": 0.4062389223679546,
+            "VERSATILITY": 0.06441281138790035
           },
           "separators": [
             ">",
@@ -3486,17 +3488,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxAjpGzMzAAAAgZmZMmZWGzMwMMwYGLsQGYGGaELYMzMDAM",
-          "support": 0.06011520785639719
+          "support": 0.060376917980237865
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 54,
+        "generated_at": 1788791248,
+        "sample_size": 59,
         "stale": false,
         "value": {
           "items": [
@@ -3509,7 +3511,7 @@
               ],
               "itemID": 250224,
               "itemLevel": 334,
-              "usage": 0.6496762841900365
+              "usage": 0.6488097977450874
             },
             {
               "bonuses": [
@@ -3519,7 +3521,7 @@
               ],
               "itemID": 270161,
               "itemLevel": 334,
-              "usage": 0.35385510708761553
+              "usage": 0.32224072346991994
             },
             {
               "bonuses": [
@@ -3530,18 +3532,18 @@
               ],
               "itemID": 250215,
               "itemLevel": 321,
-              "usage": 0.2017031455989882
+              "usage": 0.198752570810174
             },
             {
               "bonuses": [
                 13440,
                 6652,
                 12699,
-                12846
+                12854
               ],
               "itemID": 250214,
-              "itemLevel": 321,
-              "usage": 0.1840043617367572
+              "itemLevel": 334,
+              "usage": 0.16594464690970812
             }
           ]
         }
@@ -3553,8 +3555,8 @@
         "regionCount": 4
       },
       "stats": {
-        "generated_at": 1788756761,
-        "sample_size": 64,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "order": [
@@ -3564,9 +3566,9 @@
             "VERSATILITY"
           ],
           "scores": {
-            "CRIT": 0.2833577712609971,
-            "HASTE": 0.3480622962694676,
-            "MASTERY": 0.35201465201465204,
+            "CRIT": 0.2800829875518672,
+            "HASTE": 0.35043041606886655,
+            "MASTERY": 0.35425531914893615,
             "VERSATILITY": 0.03297872340425532
           },
           "separators": [
@@ -3577,17 +3579,17 @@
         }
       },
       "talents": {
-        "generated_at": 1788756761,
+        "generated_at": 1788791248,
         "sample_size": 40,
         "stale": false,
         "value": {
           "importString": "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzMzMGmBAAAAAAgxsNYGAAAAAAAAmxMMzMzMzMzMzYmFzYsolFmZmZ2abmZGADDABMGMmB",
-          "support": 0.3337780713195276
+          "support": 0.3101179582544152
         }
       },
       "trinkets": {
-        "generated_at": 1788756761,
-        "sample_size": 64,
+        "generated_at": 1788791248,
+        "sample_size": 61,
         "stale": false,
         "value": {
           "items": [
@@ -3600,7 +3602,7 @@
               ],
               "itemID": 250215,
               "itemLevel": 334,
-              "usage": 0.7660912899339127
+              "usage": 0.7874300654475715
             },
             {
               "bonuses": [
@@ -3610,7 +3612,7 @@
               ],
               "itemID": 270164,
               "itemLevel": 334,
-              "usage": 0.4702955944497259
+              "usage": 0.4607903006275858
             },
             {
               "bonuses": [
@@ -3620,7 +3622,7 @@
               ],
               "itemID": 270167,
               "itemLevel": 334,
-              "usage": 0.3892325581946835
+              "usage": 0.4244972346660746
             },
             {
               "bonuses": [
@@ -3630,7 +3632,7 @@
               ],
               "itemID": 249343,
               "itemLevel": 298,
-              "usage": 0.12500109177342844
+              "usage": 0.1309140778541961
             }
           ]
         }
