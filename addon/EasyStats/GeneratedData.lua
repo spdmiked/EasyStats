@@ -3388,8 +3388,8 @@ EasyStatsGeneratedDB = {
         },
     },
     gameVersion = "retail",
-    generatedAt = 1789417851,
+    generatedAt = 1789448746,
     schemaVersion = 1,
-    seasonSlug = "season-mn-2",
+    seasonSlug = "18",
     sourceMode = "hybrid",
 }
