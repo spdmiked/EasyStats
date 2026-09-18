@@ -8,19 +8,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 76,
+                    sampleSize = 77,
                     scores = {
-                        CRIT = 0.29094,
-                        HASTE = 0.312543,
-                        MASTERY = 0.356491,
-                        VERSATILITY = 0.038398,
+                        CRIT = 0.295626,
+                        HASTE = 0.314646,
+                        MASTERY = 0.35662,
+                        VERSATILITY = 0.037158,
                     },
                     separators = {
                         ">",
@@ -30,14 +30,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CYGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWoMbNjxMDwsYmZmZhhZMLzsMzCzM2YZmlxMjxGGGgx22MDGz2IwEAAAgFmZmZwmhxYAAYmBLDA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.096233,
+                    support = 0.097638,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -48,7 +48,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.80082,
+                            usage = 0.816668,
                         },
                         {
                             bonuses = {
@@ -58,7 +58,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.501282,
+                            usage = 0.507578,
                         },
                         {
                             bonuses = {
@@ -68,7 +68,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.368149,
+                            usage = 0.363634,
                         },
                         {
                             bonuses = {
@@ -79,10 +79,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.173067,
+                            usage = 0.157575,
                         },
                     },
-                    sampleSize = 76,
+                    sampleSize = 77,
                     stale = false,
                 },
             },
@@ -92,19 +92,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 63,
+                    sampleSize = 62,
                     scores = {
-                        CRIT = 0.268968,
-                        HASTE = 0.288197,
+                        CRIT = 0.270068,
+                        HASTE = 0.287185,
                         MASTERY = 0.394558,
-                        VERSATILITY = 0.063992,
+                        VERSATILITY = 0.067067,
                     },
                     separators = {
                         ">",
@@ -114,14 +114,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CcGAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmZ2YmZmxY2M2mZZGzMmZAAAAYJY2M8AmZUzYWMzMzsMmhBAAAAAwADAAAgmZZWmZmBEYBmZGgFGMAAAmZDD",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.410174,
+                    support = 0.436191,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -132,7 +132,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.7165,
+                            usage = 0.696089,
                         },
                         {
                             bonuses = {
@@ -143,17 +143,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.319479,
-                        },
-                        {
-                            bonuses = {
-                                6652,
-                                13335,
-                                12854,
-                            },
-                            itemID = 270164,
-                            itemLevel = 334,
-                            usage = 0.220843,
+                            usage = 0.324717,
                         },
                         {
                             bonuses = {
@@ -163,10 +153,20 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.206576,
+                            usage = 0.209963,
+                        },
+                        {
+                            bonuses = {
+                                6652,
+                                13335,
+                                12854,
+                            },
+                            itemID = 270164,
+                            itemLevel = 334,
+                            usage = 0.2087,
                         },
                     },
-                    sampleSize = 63,
+                    sampleSize = 62,
                     stale = false,
                 },
             },
@@ -176,36 +176,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                         "MASTERY",
                     },
-                    sampleSize = 77,
+                    sampleSize = 79,
                     scores = {
-                        CRIT = 0.282571,
+                        CRIT = 0.287928,
                         HASTE = 0.407077,
-                        MASTERY = 0.137956,
-                        VERSATILITY = 0.170574,
+                        MASTERY = 0.13959,
+                        VERSATILITY = 0.161838,
                     },
                     separators = {
                         ">",
                         ">",
-                        ">",
+                        "≈",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CgGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgZmxsYmZMziZxMmZZZgZzwoJamZWmZmZmlxMAAAAAAMjNDYZbmBjZZAMFAAAYDzMALGDDYxCAzMAG",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.193292,
+                    support = 0.246564,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -216,7 +216,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.444042,
+                            usage = 0.433028,
                         },
                         {
                             bonuses = {
@@ -227,7 +227,18 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250245,
                             itemLevel = 334,
-                            usage = 0.247197,
+                            usage = 0.265868,
+                        },
+                        {
+                            bonuses = {
+                                13440,
+                                6652,
+                                12699,
+                                12854,
+                            },
+                            itemID = 250215,
+                            itemLevel = 334,
+                            usage = 0.238104,
                         },
                         {
                             bonuses = {
@@ -237,21 +248,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.231436,
-                        },
-                        {
-                            bonuses = {
-                                13440,
-                                6652,
-                                12699,
-                                12854,
-                            },
-                            itemID = 273796,
-                            itemLevel = 334,
-                            usage = 0.207534,
+                            usage = 0.212799,
                         },
                     },
-                    sampleSize = 77,
+                    sampleSize = 79,
                     stale = false,
                 },
             },
@@ -261,19 +261,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "MASTERY",
                         "VERSATILITY",
                         "CRIT",
                     },
-                    sampleSize = 82,
+                    sampleSize = 83,
                     scores = {
-                        CRIT = 0.068954,
+                        CRIT = 0.068845,
                         HASTE = 0.473684,
-                        MASTERY = 0.349614,
-                        VERSATILITY = 0.105886,
+                        MASTERY = 0.346491,
+                        VERSATILITY = 0.106568,
                     },
                     separators = {
                         ">",
@@ -283,14 +283,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNz8AMmNsZbGAAAAAAAAAAsZoZbGmmZAmFzMzYxEGAAAAADAwMAAEAAwsNzWz2ML2YmZmhZmNDaGAgZGAGA",
+                    generatedAt = 1789737060,
+                    importString = "CkGAAAAAAAAAAAAAAAAAAAAAAMMmZZMjZmxsNMMmlZsZbGAAAAAAAAAAsMoZzw0MjZwsYmZmZZm8AzAAAAAAAgBAgAAAmtZ2a2mZxGjZGYmFQzAAMzAwA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.025722,
+                    support = 0.050477,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -300,7 +300,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.670308,
+                            usage = 0.662597,
                         },
                         {
                             bonuses = {
@@ -310,7 +310,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.514016,
+                            usage = 0.519478,
                         },
                         {
                             bonuses = {
@@ -321,7 +321,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250214,
                             itemLevel = 334,
-                            usage = 0.280283,
+                            usage = 0.276862,
                         },
                         {
                             bonuses = {
@@ -331,10 +331,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.133969,
+                            usage = 0.120603,
                         },
                     },
-                    sampleSize = 82,
+                    sampleSize = 83,
                     stale = false,
                 },
             },
@@ -344,17 +344,17 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 53,
+                    sampleSize = 54,
                     scores = {
-                        CRIT = 0.397922,
-                        HASTE = 0.259161,
+                        CRIT = 0.397784,
+                        HASTE = 0.257251,
                         MASTERY = 0.287151,
                         VERSATILITY = 0.060414,
                     },
@@ -366,14 +366,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMgBjZaMzMNzM2mZmZmZmZmZGwMmZGzMLzMDMwYwGsMGN2GQmBBbYgZGMjHA",
+                    generatedAt = 1789737060,
+                    importString = "CsbBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjZwMDzwMDMYMTjZmpZmx2MzMzMzMzMzAmZmxYmZZmZgBGD2glxox2AyMIYDDMzghHA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.095888,
+                    support = 0.075587,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -383,7 +383,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.681582,
+                            usage = 0.687411,
                         },
                         {
                             bonuses = {
@@ -393,7 +393,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.6786,
+                            usage = 0.666182,
                         },
                         {
                             bonuses = {
@@ -404,7 +404,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.415358,
+                            usage = 0.426056,
                         },
                         {
                             bonuses = {
@@ -415,10 +415,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250224,
                             itemLevel = 334,
-                            usage = 0.09396,
+                            usage = 0.09224,
                         },
                     },
-                    sampleSize = 53,
+                    sampleSize = 54,
                     stale = false,
                 },
             },
@@ -428,36 +428,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 65,
+                    sampleSize = 67,
                     scores = {
-                        CRIT = 0.338608,
-                        HASTE = 0.293367,
-                        MASTERY = 0.292032,
-                        VERSATILITY = 0.084236,
+                        CRIT = 0.332981,
+                        HASTE = 0.303746,
+                        MASTERY = 0.276764,
+                        VERSATILITY = 0.088959,
                     },
                     separators = {
                         ">",
-                        "≈",
+                        ">",
                         ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CwbBAAAAAAAAAAAAAAAAAAAAAAAAAAAMzMDmZMYGzmhZmZbAAAMjZMYGzIzMDAAAwMzMZmZmxsMzMAYGzAbgFwMMhsZYzwAYmZMA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.049611,
+                    support = 0.049563,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -468,7 +468,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.710224,
+                            usage = 0.689554,
                         },
                         {
                             bonuses = {
@@ -478,7 +478,17 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.461595,
+                            usage = 0.477122,
+                        },
+                        {
+                            bonuses = {
+                                6652,
+                                13335,
+                                12854,
+                            },
+                            itemID = 270167,
+                            itemLevel = 334,
+                            usage = 0.224764,
                         },
                         {
                             bonuses = {
@@ -489,20 +499,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250214,
                             itemLevel = 321,
-                            usage = 0.229278,
-                        },
-                        {
-                            bonuses = {
-                                6652,
-                                13335,
-                                12854,
-                            },
-                            itemID = 270167,
-                            itemLevel = 334,
-                            usage = 0.20145,
+                            usage = 0.222415,
                         },
                     },
-                    sampleSize = 65,
+                    sampleSize = 67,
                     stale = false,
                 },
             },
@@ -512,18 +512,18 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "CRIT",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 69,
+                    sampleSize = 70,
                     scores = {
-                        CRIT = 0.319044,
-                        HASTE = 0.176292,
-                        MASTERY = 0.461593,
+                        CRIT = 0.322527,
+                        HASTE = 0.175325,
+                        MASTERY = 0.463094,
                         VERSATILITY = 0.036245,
                     },
                     separators = {
@@ -534,14 +534,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CEcBAAAAAAAAAAAAAAAAAAAAAMMzMbzMzgZYmZZGzMjZ2AAAAAAAAYmhxMYM1YmZGAAAAMjZMmZWGzMwMMwYGLsQGYGGaELYMmZAgB",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.088964,
+                    support = 0.073841,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -552,7 +552,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250224,
                             itemLevel = 334,
-                            usage = 0.550371,
+                            usage = 0.592979,
                         },
                         {
                             bonuses = {
@@ -562,7 +562,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270161,
                             itemLevel = 334,
-                            usage = 0.490503,
+                            usage = 0.476697,
                         },
                         {
                             bonuses = {
@@ -572,7 +572,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.245256,
+                            usage = 0.247201,
                         },
                         {
                             bonuses = {
@@ -583,7 +583,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270168,
                             itemLevel = 334,
-                            usage = 0.220394,
+                            usage = 0.234477,
                         },
                     },
                     sampleSize = 70,
@@ -596,36 +596,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 52,
+                    sampleSize = 55,
                     scores = {
                         CRIT = 0.291468,
-                        HASTE = 0.316154,
-                        MASTERY = 0.359167,
-                        VERSATILITY = 0.034471,
+                        HASTE = 0.319762,
+                        MASTERY = 0.357981,
+                        VERSATILITY = 0.034127,
                     },
                     separators = {
                         ">",
-                        "≈",
+                        ">",
                         ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CgcBAAAAAAAAAAAAAAAAAAAAAAA2mxMzMzYmxwMAAAAAAAMmthZGAAAAAAAAmxMMzMzMzMzMzYmFzYsolFmZmZ2abmZGADDABMGMmB",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.192514,
+                    support = 0.183919,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -636,7 +636,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.807488,
+                            usage = 0.800001,
                         },
                         {
                             bonuses = {
@@ -646,7 +646,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.618028,
+                            usage = 0.638989,
                         },
                         {
                             bonuses = {
@@ -656,21 +656,20 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.478991,
+                            usage = 0.452707,
                         },
                         {
                             bonuses = {
-                                13440,
                                 6652,
-                                12699,
-                                12846,
+                                13334,
+                                13653,
                             },
-                            itemID = 250214,
-                            itemLevel = 321,
-                            usage = 0.038197,
+                            itemID = 249346,
+                            itemLevel = 285,
+                            usage = 0.018051,
                         },
                     },
-                    sampleSize = 52,
+                    sampleSize = 55,
                     stale = false,
                 },
             },
@@ -680,19 +679,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                         "MASTERY",
                     },
-                    sampleSize = 58,
+                    sampleSize = 59,
                     scores = {
-                        CRIT = 0.318292,
-                        HASTE = 0.354981,
-                        MASTERY = 0.155094,
-                        VERSATILITY = 0.172897,
+                        CRIT = 0.309963,
+                        HASTE = 0.356132,
+                        MASTERY = 0.154309,
+                        VERSATILITY = 0.16587,
                     },
                     separators = {
                         ">",
@@ -702,14 +701,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CoPAAAAAAAAAAAAAAAAAAAAAAwMzyMzwMmZmhZbmZmmZxMzMzMAAAAAmhZmZmZMzYAAzMzMzAAAYgBmxiGLbgsNgNAzYAAAmZAMA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.146858,
+                    support = 0.146717,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -719,7 +718,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 344,
-                            usage = 0.897261,
+                            usage = 0.899058,
                         },
                         {
                             bonuses = {
@@ -729,7 +728,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.397255,
+                            usage = 0.407129,
                         },
                         {
                             bonuses = {
@@ -739,21 +738,21 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 344,
-                            usage = 0.257537,
+                            usage = 0.253704,
                         },
                         {
                             bonuses = {
-                                13440,
                                 6652,
-                                12699,
+                                13335,
                                 12854,
+                                13696,
                             },
-                            itemID = 250245,
+                            itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.103426,
+                            usage = 0.102962,
                         },
                     },
-                    sampleSize = 58,
+                    sampleSize = 59,
                     stale = false,
                 },
             },
@@ -763,19 +762,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 73,
+                    sampleSize = 74,
                     scores = {
                         CRIT = 0.449333,
-                        HASTE = 0.16779,
-                        MASTERY = 0.360815,
-                        VERSATILITY = 0.03318,
+                        HASTE = 0.169023,
+                        MASTERY = 0.356578,
+                        VERSATILITY = 0.033202,
                     },
                     separators = {
                         ">",
@@ -785,14 +784,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CsPAAAAAAAAAAAAAAAAAAAAAAMAzMjZMjBz2MzMzMbzMjmZMGDzMGMzMzMzMzMDAAAAAAAAAjZbgBsAWGmQGLYmxMzADADzMAAD",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.049462,
+                    support = 0.050286,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -803,7 +802,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.959173,
+                            usage = 0.959728,
                         },
                         {
                             bonuses = {
@@ -814,7 +813,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.463411,
+                            usage = 0.457111,
                         },
                         {
                             bonuses = {
@@ -824,7 +823,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.29162,
+                            usage = 0.287654,
                         },
                         {
                             bonuses = {
@@ -834,10 +833,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.082186,
+                            usage = 0.094666,
                         },
                     },
-                    sampleSize = 73,
+                    sampleSize = 74,
                     stale = false,
                 },
             },
@@ -847,19 +846,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 67,
+                    sampleSize = 71,
                     scores = {
                         CRIT = 0.447422,
-                        HASTE = 0.156843,
-                        MASTERY = 0.354474,
-                        VERSATILITY = 0.032744,
+                        HASTE = 0.157718,
+                        MASTERY = 0.354379,
+                        VERSATILITY = 0.032877,
                     },
                     separators = {
                         ">",
@@ -869,14 +868,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CwPAAAAAAAAAAAAAAAAAAAAAAAYmhZMjBz2MzMTz2MzYmZMAAAAAAAAMzYMDAWGmZ2mZGzMjBGYGLassBYbiNMgZAYMzMMYmBGjB",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.036595,
+                    support = 0.037659,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -887,7 +886,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.775869,
+                            usage = 0.816405,
                         },
                         {
                             bonuses = {
@@ -898,18 +897,17 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.567708,
+                            usage = 0.592074,
                         },
                         {
                             bonuses = {
-                                13440,
                                 6652,
-                                12699,
-                                12851,
+                                13335,
+                                12854,
                             },
-                            itemID = 250228,
-                            itemLevel = 324,
-                            usage = 0.104673,
+                            itemID = 270165,
+                            itemLevel = 334,
+                            usage = 0.098775,
                         },
                         {
                             bonuses = {
@@ -920,10 +918,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273797,
                             itemLevel = 321,
-                            usage = 0.104672,
+                            usage = 0.098773,
                         },
                     },
-                    sampleSize = 67,
+                    sampleSize = 71,
                     stale = false,
                 },
             },
@@ -933,19 +931,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 62,
+                    sampleSize = 64,
                     scores = {
-                        CRIT = 0.42314,
-                        HASTE = 0.090549,
-                        MASTERY = 0.402585,
-                        VERSATILITY = 0.077465,
+                        CRIT = 0.419335,
+                        HASTE = 0.08851,
+                        MASTERY = 0.400704,
+                        VERSATILITY = 0.079413,
                     },
                     separators = {
                         "≈",
@@ -955,14 +953,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "C0PAAAAAAAAAAAAAAAAAAAAAAAMmxwCsAzohG2AAwMmZmZ5BmxMzMzYmBzMmZYmxMzM2mZGzYGWGaGAAAAAAAAYGjBMzGBMLgtBA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.134524,
+                    support = 0.107105,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -973,7 +971,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.726343,
+                            usage = 0.720223,
                         },
                         {
                             bonuses = {
@@ -984,7 +982,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270168,
                             itemLevel = 334,
-                            usage = 0.289641,
+                            usage = 0.296526,
                         },
                         {
                             bonuses = {
@@ -994,21 +992,21 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.17775,
+                            usage = 0.188585,
                         },
                         {
                             bonuses = {
                                 13440,
                                 6652,
                                 12699,
-                                12846,
+                                12854,
                             },
-                            itemID = 159617,
-                            itemLevel = 321,
-                            usage = 0.145781,
+                            itemID = 250214,
+                            itemLevel = 334,
+                            usage = 0.156324,
                         },
                     },
-                    sampleSize = 62,
+                    sampleSize = 64,
                     stale = false,
                 },
             },
@@ -1018,36 +1016,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 61,
+                    sampleSize = 60,
                     scores = {
                         CRIT = 0.476141,
-                        HASTE = 0.077834,
-                        MASTERY = 0.363782,
-                        VERSATILITY = 0.058016,
+                        HASTE = 0.082523,
+                        MASTERY = 0.365894,
+                        VERSATILITY = 0.056224,
                     },
                     separators = {
                         ">",
                         ">",
-                        "≈",
+                        ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "C4PAAAAAAAAAAAAAAAAAAAAAAwGMwMGNWGQmBbAAAAAAAAgZMzMjtZMzMmhlx0MGMLbbzMzMzMzMzCzsMMDAAgHYMGAmpNwAsxMbzYA",
+                    generatedAt = 1789737060,
+                    importString = "C4PAAAAAAAAAAAAAAAAAAAAAAwCMwMGNWGQmBbAAAAAAAAgZMjZW2mxMzYG8AmmxgZbzMzMzMzMzgZWGmZAAAjZmxAYm2YYA2YmtZMA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.095544,
+                    support = 0.09649,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1058,7 +1056,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.608921,
+                            usage = 0.635348,
                         },
                         {
                             bonuses = {
@@ -1069,18 +1067,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270168,
                             itemLevel = 334,
-                            usage = 0.543631,
-                        },
-                        {
-                            bonuses = {
-                                13440,
-                                6652,
-                                12699,
-                                12854,
-                            },
-                            itemID = 273796,
-                            itemLevel = 334,
-                            usage = 0.195216,
+                            usage = 0.502624,
                         },
                         {
                             bonuses = {
@@ -1091,10 +1078,21 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.146739,
+                            usage = 0.14915,
+                        },
+                        {
+                            bonuses = {
+                                13440,
+                                41,
+                                12699,
+                                12854,
+                            },
+                            itemID = 273796,
+                            itemLevel = 334,
+                            usage = 0.148488,
                         },
                     },
-                    sampleSize = 61,
+                    sampleSize = 60,
                     stale = false,
                 },
             },
@@ -1104,19 +1102,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "CRIT",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 59,
+                    sampleSize = 61,
                     scores = {
-                        CRIT = 0.303785,
-                        HASTE = 0.270251,
+                        CRIT = 0.303811,
+                        HASTE = 0.270911,
                         MASTERY = 0.402551,
-                        VERSATILITY = 0.028836,
+                        VERSATILITY = 0.026884,
                     },
                     separators = {
                         ">",
@@ -1126,14 +1124,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz2MAAAAAAmxMzM2mxYGzgx0MAAAADAwy2MjlZMzYMGDAzYDLGDzsZAA",
+                    generatedAt = 1789737060,
+                    importString = "C8PAAAAAAAAAAAAAAAAAAAAAAMWgBmxoxyAYmgtZmZmxMz2MAAAAAAmxMzM2mxYGzgx0MAAAADAwy2MjlZMzYMmZAYGbgxwMbGAA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.049174,
+                    support = 0.073831,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1144,7 +1142,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.43962,
+                            usage = 0.425896,
                         },
                         {
                             bonuses = {
@@ -1155,7 +1153,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.408947,
+                            usage = 0.378873,
                         },
                         {
                             bonuses = {
@@ -1166,7 +1164,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.339557,
+                            usage = 0.360823,
                         },
                         {
                             bonuses = {
@@ -1177,10 +1175,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 321,
-                            usage = 0.338892,
+                            usage = 0.344071,
                         },
                     },
-                    sampleSize = 59,
+                    sampleSize = 61,
                     stale = false,
                 },
             },
@@ -1190,7 +1188,7 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "MASTERY",
@@ -1199,10 +1197,10 @@ EasyStatsGeneratedDB = {
                     },
                     sampleSize = 73,
                     scores = {
-                        CRIT = 0.219101,
-                        HASTE = 0.473217,
-                        MASTERY = 0.257841,
-                        VERSATILITY = 0.052723,
+                        CRIT = 0.218423,
+                        HASTE = 0.468128,
+                        MASTERY = 0.260706,
+                        VERSATILITY = 0.056902,
                     },
                     separators = {
                         ">",
@@ -1212,14 +1210,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CAQAAAAAAAAAAAAAAAAAAAAAAADsYYWmZMmZmxMbzYmZmZYAAAAAAAAAAYYWmBzMzgxMjhZamYAmZDDhxsMAjBLAAwYmZGDmBYmZEMD",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.048724,
+                    support = 0.049281,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1229,7 +1227,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.510614,
+                            usage = 0.482808,
                         },
                         {
                             bonuses = {
@@ -1239,7 +1237,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.343943,
+                            usage = 0.384451,
                         },
                         {
                             bonuses = {
@@ -1250,7 +1248,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270169,
                             itemLevel = 334,
-                            usage = 0.151278,
+                            usage = 0.152305,
                         },
                         {
                             bonuses = {
@@ -1260,7 +1258,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.124732,
+                            usage = 0.139077,
                         },
                     },
                     sampleSize = 73,
@@ -1273,19 +1271,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 80,
+                    sampleSize = 83,
                     scores = {
-                        CRIT = 0.345865,
-                        HASTE = 0.331114,
-                        MASTERY = 0.227289,
-                        VERSATILITY = 0.094181,
+                        CRIT = 0.346375,
+                        HASTE = 0.346,
+                        MASTERY = 0.219202,
+                        VERSATILITY = 0.099364,
                     },
                     separators = {
                         "≈",
@@ -1295,14 +1293,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAYzwMzyYmxMjZMDsMzMzAAAAYYWmZMzMzw8AmZAMTBwMLYIMmtBYMwixMLAaGzMGDmBYmZGYA",
+                    generatedAt = 1789737060,
+                    importString = "CEQAAAAAAAAAAAAAAAAAAAAAAADAAAAAAgxMzsNmZMzYYGGLzMzMAAAAGzsMDmZmx2MmZAMTBwMbYIMmlBYMwiZGA0MMjxgZAmZmBGA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.040301,
+                    support = 0.039429,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1312,7 +1310,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.826001,
+                            usage = 0.808377,
                         },
                         {
                             bonuses = {
@@ -1322,7 +1320,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.448688,
+                            usage = 0.44398,
                         },
                         {
                             bonuses = {
@@ -1332,7 +1330,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.20137,
+                            usage = 0.194916,
                         },
                         {
                             bonuses = {
@@ -1341,12 +1339,12 @@ EasyStatsGeneratedDB = {
                                 12699,
                                 12854,
                             },
-                            itemID = 250214,
+                            itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.137829,
+                            usage = 0.143598,
                         },
                     },
-                    sampleSize = 80,
+                    sampleSize = 83,
                     stale = false,
                 },
             },
@@ -1356,19 +1354,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 70,
+                    sampleSize = 69,
                     scores = {
                         CRIT = 0.267819,
-                        HASTE = 0.318505,
-                        MASTERY = 0.387153,
-                        VERSATILITY = 0.034447,
+                        HASTE = 0.318748,
+                        MASTERY = 0.38253,
+                        VERSATILITY = 0.034708,
                     },
                     separators = {
                         ">",
@@ -1378,14 +1376,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CIQAAAAAAAAAAAAAAAAAAAAAAMMDDAAAAAAAAAAAAmZxMmZbmxMz2MGzw2MzYmZGbIDLmpxAzAMzmZ0sZAIjxCAmZAjZmZMbMz2yAMDGA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.049957,
+                    support = 0.04991,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1396,7 +1394,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.541967,
+                            usage = 0.535689,
                         },
                         {
                             bonuses = {
@@ -1406,7 +1404,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.487889,
+                            usage = 0.494577,
                         },
                         {
                             bonuses = {
@@ -1416,7 +1414,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.397741,
+                            usage = 0.403764,
                         },
                         {
                             bonuses = {
@@ -1427,10 +1425,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 328,
-                            usage = 0.313809,
+                            usage = 0.318111,
                         },
                     },
-                    sampleSize = 70,
+                    sampleSize = 69,
                     stale = false,
                 },
             },
@@ -1440,18 +1438,18 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 79,
+                    sampleSize = 81,
                     scores = {
-                        CRIT = 0.402721,
-                        HASTE = 0.326251,
-                        MASTERY = 0.225447,
+                        CRIT = 0.404423,
+                        HASTE = 0.323056,
+                        MASTERY = 0.226301,
                         VERSATILITY = 0.044025,
                     },
                     separators = {
@@ -1462,14 +1460,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAotlZmZmZmxYZmZmtZWmZmHwMmZMGmZMGADsAzY0Y2AZbAbAgZmxYA",
+                    generatedAt = 1789737060,
+                    importString = "CMQAAAAAAAAAAAAAAAAAAAAAAYmlZmFDGAAAAAYWGsNDAAAAAIbzMzMzMjx2MzMbzsMzMPgZMzYMMzYMALmlBGwSwywEYYxgZGgxYA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.071379,
+                    support = 0.049922,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1479,7 +1477,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.88745,
+                            usage = 0.902459,
                         },
                         {
                             bonuses = {
@@ -1490,7 +1488,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270168,
                             itemLevel = 334,
-                            usage = 0.406047,
+                            usage = 0.371316,
                         },
                         {
                             bonuses = {
@@ -1500,20 +1498,21 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.352507,
+                            usage = 0.368907,
                         },
                         {
                             bonuses = {
                                 6652,
                                 13334,
                                 12854,
+                                13696,
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.077341,
+                            usage = 0.087879,
                         },
                     },
-                    sampleSize = 79,
+                    sampleSize = 81,
                     stale = false,
                 },
             },
@@ -1523,19 +1522,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
                         "VERSATILITY",
                         "MASTERY",
                     },
-                    sampleSize = 50,
+                    sampleSize = 82,
                     scores = {
-                        CRIT = 0.420842,
-                        HASTE = 0.327472,
-                        MASTERY = 0.061628,
-                        VERSATILITY = 0.19111,
+                        CRIT = 0.418287,
+                        HASTE = 0.329161,
+                        MASTERY = 0.071189,
+                        VERSATILITY = 0.181086,
                     },
                     separators = {
                         ">",
@@ -1545,14 +1544,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CQQAAAAAAAAAAAAAAAAAAAAAAAgx2MMzMzMzsNzMzMzMjFGPwMbTLD2mBAAAAAMbLzMzwMjZWMzMbDAAAAjBAjZxwQGYWYhWYjBYmBD8AA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.163479,
+                    support = 0.195945,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1562,7 +1561,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.741909,
+                            usage = 0.68602,
                         },
                         {
                             bonuses = {
@@ -1573,7 +1572,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.621152,
+                            usage = 0.516048,
                         },
                         {
                             bonuses = {
@@ -1584,21 +1583,21 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 159617,
                             itemLevel = 321,
-                            usage = 0.200473,
+                            usage = 0.207745,
                         },
                         {
                             bonuses = {
+                                13440,
                                 6652,
-                                13334,
+                                12699,
                                 12854,
-                                13696,
                             },
-                            itemID = 270165,
+                            itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.159433,
+                            usage = 0.156752,
                         },
                     },
-                    sampleSize = 50,
+                    sampleSize = 82,
                     stale = false,
                 },
             },
@@ -1608,19 +1607,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 59,
+                    sampleSize = 63,
                     scores = {
-                        CRIT = 0.190781,
-                        HASTE = 0.251302,
+                        CRIT = 0.189803,
+                        HASTE = 0.253456,
                         MASTERY = 0.381933,
-                        VERSATILITY = 0.170756,
+                        VERSATILITY = 0.172904,
                     },
                     separators = {
                         ">",
@@ -1630,14 +1629,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CUQAAAAAAAAAAAAAAAAAAAAAAAgx2MAAAAAwsMGLTMbbjxMDjZmZmZGGbzYGbLzMzMzMjBjZ2GAAAAGMmNzyADYBsMMhMLYGmZAmxA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.138655,
+                    support = 0.142774,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1648,17 +1647,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.731835,
-                        },
-                        {
-                            bonuses = {
-                                13334,
-                                13696,
-                                12854,
-                            },
-                            itemID = 270173,
-                            itemLevel = 334,
-                            usage = 0.339497,
+                            usage = 0.764086,
                         },
                         {
                             bonuses = {
@@ -1668,7 +1657,17 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.324306,
+                            usage = 0.334983,
+                        },
+                        {
+                            bonuses = {
+                                13334,
+                                13696,
+                                12854,
+                            },
+                            itemID = 270173,
+                            itemLevel = 334,
+                            usage = 0.333746,
                         },
                         {
                             bonuses = {
@@ -1679,10 +1678,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 324,
-                            usage = 0.166447,
+                            usage = 0.156037,
                         },
                     },
-                    sampleSize = 59,
+                    sampleSize = 63,
                     stale = false,
                 },
             },
@@ -1692,19 +1691,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "CRIT",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 58,
+                    sampleSize = 61,
                     scores = {
-                        CRIT = 0.342047,
+                        CRIT = 0.338831,
                         HASTE = 0.2545,
                         MASTERY = 0.348383,
-                        VERSATILITY = 0.042521,
+                        VERSATILITY = 0.041875,
                     },
                     separators = {
                         "≈",
@@ -1714,14 +1713,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CYQAAAAAAAAAAAAAAAAAAAAAAAAAAAzMbbzMGjZZbZMmhZAAAAgFzsBDYAzGTIzCAMbzMzYstYajZGjlZmZGDLzyMzywYmZBAYAgZGDDD",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.048216,
+                    support = 0.048906,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1732,7 +1731,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.965069,
+                            usage = 0.94987,
                         },
                         {
                             bonuses = {
@@ -1742,7 +1741,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.723972,
+                            usage = 0.753905,
                         },
                         {
                             bonuses = {
@@ -1752,7 +1751,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.15548,
+                            usage = 0.131511,
                         },
                         {
                             bonuses = {
@@ -1763,10 +1762,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250214,
                             itemLevel = 321,
-                            usage = 0.05137,
+                            usage = 0.048828,
                         },
                     },
-                    sampleSize = 58,
+                    sampleSize = 61,
                     stale = false,
                 },
             },
@@ -1776,19 +1775,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 72,
+                    sampleSize = 74,
                     scores = {
-                        CRIT = 0.252503,
-                        HASTE = 0.32365,
-                        MASTERY = 0.393642,
-                        VERSATILITY = 0.033127,
+                        CRIT = 0.250368,
+                        HASTE = 0.319716,
+                        MASTERY = 0.394244,
+                        VERSATILITY = 0.033874,
                     },
                     separators = {
                         ">",
@@ -1798,14 +1797,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CcQAAAAAAAAAAAAAAAAAAAAAAMzMzgZmZmZmhZmZAAAAAAAAA2AsZGDbkFYGGawCAz2MmxYZZGbMzsNWmZmZYsMmBAYGGzMMCMzgBjB",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.099091,
+                    support = 0.100483,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1816,7 +1815,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.584058,
+                            usage = 0.541111,
                         },
                         {
                             bonuses = {
@@ -1827,7 +1826,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.402838,
+                            usage = 0.419098,
                         },
                         {
                             bonuses = {
@@ -1838,7 +1837,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.359719,
+                            usage = 0.404247,
                         },
                         {
                             bonuses = {
@@ -1849,10 +1848,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.278926,
+                            usage = 0.271084,
                         },
                     },
-                    sampleSize = 72,
+                    sampleSize = 74,
                     stale = false,
                 },
             },
@@ -1862,36 +1861,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
                         "VERSATILITY",
                         "MASTERY",
                     },
-                    sampleSize = 54,
+                    sampleSize = 56,
                     scores = {
                         CRIT = 0.414781,
-                        HASTE = 0.273025,
+                        HASTE = 0.274176,
                         MASTERY = 0.080351,
-                        VERSATILITY = 0.247592,
+                        VERSATILITY = 0.251677,
                     },
                     separators = {
                         ">",
-                        ">",
+                        "≈",
                         ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNjZGjZGzMYsAbwMW0YbAZGYzMMDzyYMTzyyMzmZMbsYmZGDmlBAAAmZGMzAADmB",
+                    generatedAt = 1789737060,
+                    importString = "CgQAAAAAAAAAAAAAAAAAAAAAAAAAAgBAAAAzMzsssNzMDjZGzMgFYDmxiGbDIzAbGDDWGzMTz2yMzmZMbsMzYGDmlBAADwMzgZGAYwM",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.02577,
+                    support = 0.039915,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1901,7 +1900,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.963209,
+                            usage = 0.929027,
                         },
                         {
                             bonuses = {
@@ -1912,7 +1911,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250255,
                             itemLevel = 334,
-                            usage = 0.389259,
+                            usage = 0.41093,
                         },
                         {
                             bonuses = {
@@ -1922,7 +1921,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.333332,
+                            usage = 0.303762,
                         },
                         {
                             bonuses = {
@@ -1933,10 +1932,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.11111,
+                            usage = 0.107167,
                         },
                     },
-                    sampleSize = 54,
+                    sampleSize = 56,
                     stale = false,
                 },
             },
@@ -1946,19 +1945,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 78,
+                    sampleSize = 81,
                     scores = {
                         CRIT = 0.34826,
-                        HASTE = 0.43164,
+                        HASTE = 0.430307,
                         MASTERY = 0.166427,
-                        VERSATILITY = 0.051517,
+                        VERSATILITY = 0.054336,
                     },
                     separators = {
                         ">",
@@ -1968,14 +1967,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CkQAAAAAAAAAAAAAAAAAAAAAAwMjZGNbmx2MzYWGAAwMzsMLmZ2GDAM2WGYATwMsFYYbAAAYGAAAzMjZMzsNGzYMzMzYYmZGAgBMA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.085464,
+                    support = 0.048392,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -1986,7 +1985,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.6544,
+                            usage = 0.666826,
                         },
                         {
                             bonuses = {
@@ -1996,7 +1995,17 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.451508,
+                            usage = 0.471311,
+                        },
+                        {
+                            bonuses = {
+                                13334,
+                                13696,
+                                12854,
+                            },
+                            itemID = 270167,
+                            itemLevel = 334,
+                            usage = 0.195034,
                         },
                         {
                             bonuses = {
@@ -2007,20 +2016,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250224,
                             itemLevel = 334,
-                            usage = 0.232224,
-                        },
-                        {
-                            bonuses = {
-                                13334,
-                                13696,
-                                12854,
-                            },
-                            itemID = 270167,
-                            itemLevel = 334,
-                            usage = 0.17703,
+                            usage = 0.186902,
                         },
                     },
-                    sampleSize = 78,
+                    sampleSize = 81,
                     stale = false,
                 },
             },
@@ -2030,19 +2029,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 71,
+                    sampleSize = 72,
                     scores = {
                         CRIT = 0.372273,
-                        HASTE = 0.319374,
-                        MASTERY = 0.251123,
-                        VERSATILITY = 0.051491,
+                        HASTE = 0.320187,
+                        MASTERY = 0.249641,
+                        VERSATILITY = 0.05186,
                     },
                     separators = {
                         ">",
@@ -2052,14 +2051,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CoQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzMz2AAAAAAAAGzYYBGYb0CNsYMzYZ2mZmxMAwMjZmxMDwYGzYDAAMmZmxwwyMGwA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.07007,
+                    support = 0.071113,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2069,7 +2068,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.704342,
+                            usage = 0.694671,
                         },
                         {
                             bonuses = {
@@ -2080,7 +2079,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.648668,
+                            usage = 0.639762,
                         },
                         {
                             bonuses = {
@@ -2091,7 +2090,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.225499,
+                            usage = 0.222403,
                         },
                         {
                             bonuses = {
@@ -2102,10 +2101,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.223276,
+                            usage = 0.206482,
                         },
                     },
-                    sampleSize = 71,
+                    sampleSize = 72,
                     stale = false,
                 },
             },
@@ -2115,19 +2114,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
-                        "HASTE",
                         "CRIT",
+                        "HASTE",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 64,
+                    sampleSize = 65,
                     scores = {
-                        CRIT = 0.336619,
-                        HASTE = 0.344415,
-                        MASTERY = 0.281293,
-                        VERSATILITY = 0.036634,
+                        CRIT = 0.336213,
+                        HASTE = 0.336019,
+                        MASTERY = 0.282476,
+                        VERSATILITY = 0.036875,
                     },
                     separators = {
                         "≈",
@@ -2137,14 +2136,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CsQAAAAAAAAAAAAAAAAAAAAAAwMMzoZzMz2MzYWmNzMzsYmZZZMAAYGjZmZBMmxwCZgthFaswAAAjBDAwMDwYGzMbAAAmZmBAAzwA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.095107,
+                    support = 0.090648,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2155,7 +2154,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.735237,
+                            usage = 0.695256,
                         },
                         {
                             bonuses = {
@@ -2165,7 +2164,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.564213,
+                            usage = 0.539893,
                         },
                         {
                             bonuses = {
@@ -2175,7 +2174,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.295189,
+                            usage = 0.290338,
                         },
                         {
                             bonuses = {
@@ -2186,10 +2185,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250224,
                             itemLevel = 334,
-                            usage = 0.107123,
+                            usage = 0.120578,
                         },
                     },
-                    sampleSize = 64,
+                    sampleSize = 65,
                     stale = false,
                 },
             },
@@ -2199,19 +2198,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "VERSATILITY",
                         "MASTERY",
                         "HASTE",
                     },
-                    sampleSize = 71,
+                    sampleSize = 67,
                     scores = {
-                        CRIT = 0.434044,
-                        HASTE = 0.041038,
+                        CRIT = 0.437567,
+                        HASTE = 0.041504,
                         MASTERY = 0.234833,
-                        VERSATILITY = 0.283981,
+                        VERSATILITY = 0.286056,
                     },
                     separators = {
                         ">",
@@ -2221,14 +2220,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CwQAAAAAAAAAAAAAAAAAAAAAAAAAAgZbzYGGzyMzGzMjBAAAAAAYZBzEzMwMM2MwMzMDzmtZGjlhltHYbb2wsAAALzy0ysNzyAAABwwGYmBMNGAAwA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.101312,
+                    support = 0.098205,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2239,7 +2238,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250245,
                             itemLevel = 334,
-                            usage = 0.648488,
+                            usage = 0.641875,
                         },
                         {
                             bonuses = {
@@ -2250,17 +2249,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.452488,
-                        },
-                        {
-                            bonuses = {
-                                13334,
-                                13696,
-                                12854,
-                            },
-                            itemID = 270173,
-                            itemLevel = 334,
-                            usage = 0.196545,
+                            usage = 0.449087,
                         },
                         {
                             bonuses = {
@@ -2271,10 +2260,20 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.171704,
+                            usage = 0.181921,
+                        },
+                        {
+                            bonuses = {
+                                13334,
+                                13696,
+                                12854,
+                            },
+                            itemID = 270173,
+                            itemLevel = 334,
+                            usage = 0.179062,
                         },
                     },
-                    sampleSize = 71,
+                    sampleSize = 67,
                     stale = false,
                 },
             },
@@ -2284,19 +2283,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 68,
+                    sampleSize = 69,
                     scores = {
-                        CRIT = 0.281022,
-                        HASTE = 0.289612,
-                        MASTERY = 0.375587,
-                        VERSATILITY = 0.03387,
+                        CRIT = 0.284621,
+                        HASTE = 0.285714,
+                        MASTERY = 0.376941,
+                        VERSATILITY = 0.033995,
                     },
                     separators = {
                         ">",
@@ -2306,14 +2305,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "C0QAAAAAAAAAAAAAAAAAAAAAAMzYMgxYZmZ2mBAAAAAAAAAAAYZYmmxMMMghhZmZGmNmZwyMBAswsxMmZmZAAsYmlZbMBBAMjBwMAjlBiZmZzA",
                     sampleSize = 40,
                     stale = false,
                     support = 0.075729,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2324,7 +2323,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.927163,
+                            usage = 0.89971,
                         },
                         {
                             bonuses = {
@@ -2335,7 +2334,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 344,
-                            usage = 0.486126,
+                            usage = 0.50769,
                         },
                         {
                             bonuses = {
@@ -2345,7 +2344,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.206356,
+                            usage = 0.189172,
                         },
                         {
                             bonuses = {
@@ -2355,10 +2354,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.116763,
+                            usage = 0.1151,
                         },
                     },
-                    sampleSize = 68,
+                    sampleSize = 69,
                     stale = false,
                 },
             },
@@ -2368,36 +2367,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "MASTERY",
                         "CRIT",
                         "VERSATILITY",
                     },
-                    sampleSize = 75,
+                    sampleSize = 77,
                     scores = {
-                        CRIT = 0.208206,
+                        CRIT = 0.21243,
                         HASTE = 0.4535,
-                        MASTERY = 0.233598,
-                        VERSATILITY = 0.102735,
+                        MASTERY = 0.230846,
+                        VERSATILITY = 0.098682,
                     },
                     separators = {
                         ">",
-                        ">",
+                        "≈",
                         ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYMNjZADGAzMzMMbYGmlZCAAAAgAsYbmlZbmJAAMYMAzAGDsIjZA",
+                    generatedAt = 1789737060,
+                    importString = "C4QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgBWmZZML2mxMz2mBmhZzMbLLzMWYMNjZAjxAYmZmhZDzwsMTAAAAAEgFbzsNbzMBAgBjBYGwAsIjZA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.050097,
+                    support = 0.049084,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2408,7 +2407,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.786727,
+                            usage = 0.805505,
                         },
                         {
                             bonuses = {
@@ -2418,7 +2417,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.533713,
+                            usage = 0.545822,
                         },
                         {
                             bonuses = {
@@ -2428,21 +2427,20 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.108206,
+                            usage = 0.105396,
                         },
                         {
                             bonuses = {
-                                13440,
                                 6652,
-                                12699,
-                                12846,
+                                13335,
+                                13654,
                             },
-                            itemID = 193757,
-                            itemLevel = 321,
-                            usage = 0.081024,
+                            itemID = 249808,
+                            itemLevel = 298,
+                            usage = 0.078919,
                         },
                     },
-                    sampleSize = 75,
+                    sampleSize = 77,
                     stale = false,
                 },
             },
@@ -2452,18 +2450,18 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 54,
+                    sampleSize = 55,
                     scores = {
-                        CRIT = 0.457489,
-                        HASTE = 0.08246,
-                        MASTERY = 0.416524,
+                        CRIT = 0.45658,
+                        HASTE = 0.079588,
+                        MASTERY = 0.42038,
                         VERSATILITY = 0.033093,
                     },
                     separators = {
@@ -2474,14 +2472,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CEkAAAAAAAAAAAAAAAAAAAAAAYmZGzMz2MmZmxYmMmZAAAAAAAzixsNDzMwMWmZmZYmBzyALzmZMMLaaMzMmxGAAAwAAAAYmBDAAAAD",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.173741,
+                    support = 0.17374,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2491,7 +2489,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 344,
-                            usage = 0.851799,
+                            usage = 0.854469,
                         },
                         {
                             bonuses = {
@@ -2502,7 +2500,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270168,
                             itemLevel = 334,
-                            usage = 0.536315,
+                            usage = 0.526655,
                         },
                         {
                             bonuses = {
@@ -2513,7 +2511,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.371977,
+                            usage = 0.365277,
                         },
                         {
                             bonuses = {
@@ -2523,10 +2521,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270166,
                             itemLevel = 334,
-                            usage = 0.092444,
+                            usage = 0.090779,
                         },
                     },
-                    sampleSize = 54,
+                    sampleSize = 55,
                     stale = false,
                 },
             },
@@ -2536,19 +2534,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
                         "VERSATILITY",
                         "MASTERY",
                     },
-                    sampleSize = 71,
+                    sampleSize = 72,
                     scores = {
-                        CRIT = 0.299119,
-                        HASTE = 0.433919,
-                        MASTERY = 0.127194,
-                        VERSATILITY = 0.136502,
+                        CRIT = 0.297161,
+                        HASTE = 0.422748,
+                        MASTERY = 0.127416,
+                        VERSATILITY = 0.138511,
                     },
                     separators = {
                         ">",
@@ -2558,14 +2556,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CUkAAAAAAAAAAAAAAAAAAAAAAAAMjZmZMMjMzMwiZMDmZMzYmZmZGDmZmx2DMzsNGzAAAAAAAIgZmxGAAAAGYmZmZ2abmZGAAAAAgB",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.063158,
+                    support = 0.062153,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2576,7 +2574,17 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.368771,
+                            usage = 0.376842,
+                        },
+                        {
+                            bonuses = {
+                                6652,
+                                13335,
+                                12854,
+                            },
+                            itemID = 270165,
+                            itemLevel = 334,
+                            usage = 0.304747,
                         },
                         {
                             bonuses = {
@@ -2587,31 +2595,21 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250245,
                             itemLevel = 334,
-                            usage = 0.310078,
+                            usage = 0.278534,
                         },
                         {
                             bonuses = {
                                 6652,
-                                13335,
+                                13334,
+                                13696,
                                 12854,
                             },
-                            itemID = 270165,
+                            itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.280727,
-                        },
-                        {
-                            bonuses = {
-                                13440,
-                                6652,
-                                12699,
-                                12846,
-                            },
-                            itemID = 250228,
-                            itemLevel = 321,
-                            usage = 0.209853,
+                            usage = 0.194973,
                         },
                     },
-                    sampleSize = 71,
+                    sampleSize = 72,
                     stale = false,
                 },
             },
@@ -2621,7 +2619,7 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
@@ -2630,9 +2628,9 @@ EasyStatsGeneratedDB = {
                     },
                     sampleSize = 56,
                     scores = {
-                        CRIT = 0.27391,
-                        HASTE = 0.341877,
-                        MASTERY = 0.175661,
+                        CRIT = 0.269683,
+                        HASTE = 0.341759,
+                        MASTERY = 0.1752,
                         VERSATILITY = 0.22457,
                     },
                     separators = {
@@ -2643,14 +2641,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "C4DAAAAAAAAAAAAAAAAAAAAAAYGGLzMzsgZGamZGAAAGAwMz0sssMDAEbAAsBzMDbWmxMLzYMzMzMswMzMzMAADAAwAMzAMAYYmZA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.129329,
+                    support = 0.083361,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2661,7 +2659,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.96383,
+                            usage = 0.981574,
                         },
                         {
                             bonuses = {
@@ -2671,7 +2669,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.74681,
+                            usage = 0.729273,
                         },
                         {
                             bonuses = {
@@ -2682,7 +2680,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.145388,
+                            usage = 0.145284,
                         },
                         {
                             bonuses = {
@@ -2693,7 +2691,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250224,
                             itemLevel = 321,
-                            usage = 0.054609,
+                            usage = 0.05457,
                         },
                     },
                     sampleSize = 56,
@@ -2706,7 +2704,7 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "MASTERY",
@@ -2715,9 +2713,9 @@ EasyStatsGeneratedDB = {
                     },
                     sampleSize = 55,
                     scores = {
-                        CRIT = 0.047033,
-                        HASTE = 0.458302,
-                        MASTERY = 0.332777,
+                        CRIT = 0.045875,
+                        HASTE = 0.457603,
+                        MASTERY = 0.331733,
                         VERSATILITY = 0.143641,
                     },
                     separators = {
@@ -2728,14 +2726,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "C8DAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzIzMzMAAAGIgZmpZZbbGAgNzMjtZmZmxGAAAAAWMzMzAAAzYMzMzYmZZAYmhwYAzwYA",
                     sampleSize = 40,
                     stale = false,
                     support = 0.096296,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2746,7 +2744,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.747858,
+                            usage = 0.74857,
                         },
                         {
                             bonuses = {
@@ -2756,7 +2754,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.346873,
+                            usage = 0.346874,
                         },
                         {
                             bonuses = {
@@ -2766,7 +2764,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.235044,
+                            usage = 0.271369,
                         },
                         {
                             bonuses = {
@@ -2777,7 +2775,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273649,
                             itemLevel = 334,
-                            usage = 0.217239,
+                            usage = 0.199432,
                         },
                     },
                     sampleSize = 55,
@@ -2790,36 +2788,36 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "MASTERY",
                         "CRIT",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 59,
+                    sampleSize = 60,
                     scores = {
-                        CRIT = 0.367729,
+                        CRIT = 0.359214,
                         HASTE = 0.22789,
-                        MASTERY = 0.387529,
+                        MASTERY = 0.390203,
                         VERSATILITY = 0.02952,
                     },
                     separators = {
-                        "≈",
+                        ">",
                         ">",
                         ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CAEAAAAAAAAAAAAAAAAAAAAAAMzwYZmZmFMzEzMmZmZmZWMzMzMzMzsMTzMbzCAAAaBAA2AAAAAYbZMzMDmtZMzM2WAAAAzMYmMGwAYA",
                     sampleSize = 40,
                     stale = false,
                     support = 0.051911,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2830,7 +2828,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.574865,
+                            usage = 0.565417,
                         },
                         {
                             bonuses = {
@@ -2841,7 +2839,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250215,
                             itemLevel = 334,
-                            usage = 0.39372,
+                            usage = 0.370811,
                         },
                         {
                             bonuses = {
@@ -2851,7 +2849,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.340243,
+                            usage = 0.367524,
                         },
                         {
                             bonuses = {
@@ -2862,10 +2860,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250224,
                             itemLevel = 334,
-                            usage = 0.153074,
+                            usage = 0.150559,
                         },
                     },
-                    sampleSize = 59,
+                    sampleSize = 60,
                     stale = false,
                 },
             },
@@ -2875,7 +2873,7 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
@@ -2884,9 +2882,9 @@ EasyStatsGeneratedDB = {
                     },
                     sampleSize = 57,
                     scores = {
-                        CRIT = 0.247071,
+                        CRIT = 0.248043,
                         HASTE = 0.373786,
-                        MASTERY = 0.152842,
+                        MASTERY = 0.150819,
                         VERSATILITY = 0.210997,
                     },
                     separators = {
@@ -2897,14 +2895,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAgZBAmBAAWGwMzyMzsMjZMsY2MziZaixMmZmxY2yAwAwGYjNzMAIAgZmlllWmZYjtxDMYDYGDAwMDAzYMaA",
+                    generatedAt = 1789737060,
+                    importString = "CEEAAAAAAAAAAAAAAAAAAAAAAAAAALAwMAAD2mZGmZMzMLwMDLjNzsY0EzixMzwY2yAwAwGYjtZmZWmtZmZrBAAEwCbA2MDmZDmBAwMDzYMaA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.046723,
+                    support = 0.04668,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2914,7 +2912,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270162,
                             itemLevel = 334,
-                            usage = 0.913012,
+                            usage = 0.930459,
                         },
                         {
                             bonuses = {
@@ -2924,7 +2922,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270164,
                             itemLevel = 334,
-                            usage = 0.492,
+                            usage = 0.491658,
                         },
                         {
                             bonuses = {
@@ -2934,7 +2932,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270167,
                             itemLevel = 334,
-                            usage = 0.194152,
+                            usage = 0.194016,
                         },
                         {
                             bonuses = {
@@ -2945,7 +2943,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250214,
                             itemLevel = 321,
-                            usage = 0.13918,
+                            usage = 0.156469,
                         },
                     },
                     sampleSize = 57,
@@ -2958,19 +2956,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
-                        "CRIT",
                         "HASTE",
+                        "CRIT",
                         "MASTERY",
                         "VERSATILITY",
                     },
-                    sampleSize = 51,
+                    sampleSize = 49,
                     scores = {
-                        CRIT = 0.365706,
-                        HASTE = 0.359168,
-                        MASTERY = 0.153578,
-                        VERSATILITY = 0.095919,
+                        CRIT = 0.369438,
+                        HASTE = 0.370735,
+                        MASTERY = 0.154168,
+                        VERSATILITY = 0.09583,
                     },
                     separators = {
                         "≈",
@@ -2980,14 +2978,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CIEAAAAAAAAAAAAAAAAAAAAAAsZsNLjZMzMzMLbjxYWmlZMAADAAAAAAaamZZmxMDDbtBgBGwMYDAAgAMzsst0yMjFLLMDgBzshBAzMAYmBZsA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.049868,
+                    support = 0.062634,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -2998,7 +2996,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.391919,
+                            usage = 0.387861,
                         },
                         {
                             bonuses = {
@@ -3009,7 +3007,18 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250228,
                             itemLevel = 334,
-                            usage = 0.27449,
+                            usage = 0.265583,
+                        },
+                        {
+                            bonuses = {
+                                6652,
+                                13334,
+                                12854,
+                                13696,
+                            },
+                            itemID = 270175,
+                            itemLevel = 334,
+                            usage = 0.263965,
                         },
                         {
                             bonuses = {
@@ -3020,21 +3029,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 321,
-                            usage = 0.273716,
-                        },
-                        {
-                            bonuses = {
-                                6652,
-                                13334,
-                                13696,
-                                12854,
-                            },
-                            itemID = 270165,
-                            itemLevel = 334,
-                            usage = 0.256612,
+                            usage = 0.243725,
                         },
                     },
-                    sampleSize = 51,
+                    sampleSize = 49,
                     stale = false,
                 },
             },
@@ -3044,19 +3042,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "MASTERY",
                         "HASTE",
                         "VERSATILITY",
                     },
-                    sampleSize = 81,
+                    sampleSize = 82,
                     scores = {
-                        CRIT = 0.341365,
+                        CRIT = 0.342485,
                         HASTE = 0.277447,
                         MASTERY = 0.338955,
-                        VERSATILITY = 0.031475,
+                        VERSATILITY = 0.030807,
                     },
                     separators = {
                         "≈",
@@ -3066,14 +3064,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CYEAAAAAAAAAAAAAAAAAAAAAAAAAAAwoZbbmZWGzMzAAAAAAYmyYGmZsNmthZ2mxYMGmxCbAYWmtZmZrBBAAsAYAwYGGYGzMbAzMDjZMYA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.175952,
+                    support = 0.17578,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -3084,7 +3082,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 344,
-                            usage = 0.717278,
+                            usage = 0.708768,
                         },
                         {
                             bonuses = {
@@ -3095,7 +3093,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.521485,
+                            usage = 0.539537,
                         },
                         {
                             bonuses = {
@@ -3106,7 +3104,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 334,
-                            usage = 0.295405,
+                            usage = 0.315809,
                         },
                         {
                             bonuses = {
@@ -3116,10 +3114,10 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.111328,
+                            usage = 0.109451,
                         },
                     },
-                    sampleSize = 81,
+                    sampleSize = 82,
                     stale = false,
                 },
             },
@@ -3129,7 +3127,7 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "CRIT",
                         "HASTE",
@@ -3138,10 +3136,10 @@ EasyStatsGeneratedDB = {
                     },
                     sampleSize = 71,
                     scores = {
-                        CRIT = 0.420314,
-                        HASTE = 0.331981,
+                        CRIT = 0.419397,
+                        HASTE = 0.332776,
                         MASTERY = 0.21472,
-                        VERSATILITY = 0.035138,
+                        VERSATILITY = 0.03505,
                     },
                     separators = {
                         ">",
@@ -3151,14 +3149,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGzMbmZmZGmxMDAAAAgxyMDMhxy2ALgBMDTIzgNwMDDDmlZ2GgZGAMDDA",
+                    generatedAt = 1789737060,
+                    importString = "CcEAAAAAAAAAAAAAAAAAAAAAAgZmZmFzYmZGAAAghphZGmZbZmZmZYGzMAAAAAGLzMwEGLbDsAGwMMhMD2AzMMMYWmZbAmZAwMMA",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.113294,
+                    support = 0.13721,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -3168,7 +3166,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 344,
-                            usage = 0.802343,
+                            usage = 0.816404,
                         },
                         {
                             bonuses = {
@@ -3178,7 +3176,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.549413,
+                            usage = 0.549106,
                         },
                         {
                             bonuses = {
@@ -3189,7 +3187,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.324401,
+                            usage = 0.324221,
                         },
                         {
                             bonuses = {
@@ -3200,7 +3198,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 321,
-                            usage = 0.112229,
+                            usage = 0.098773,
                         },
                     },
                     sampleSize = 71,
@@ -3213,7 +3211,7 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "MASTERY",
@@ -3222,27 +3220,27 @@ EasyStatsGeneratedDB = {
                     },
                     sampleSize = 54,
                     scores = {
-                        CRIT = 0.247319,
-                        HASTE = 0.361292,
-                        MASTERY = 0.34376,
-                        VERSATILITY = 0.04356,
+                        CRIT = 0.239737,
+                        HASTE = 0.368873,
+                        MASTERY = 0.34322,
+                        VERSATILITY = 0.041092,
                     },
                     separators = {
-                        "≈",
+                        ">",
                         ">",
                         ">",
                     },
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     importString = "CgEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgGDjxMzmZmZmZmZMzMzMzMzDsMjxMjZzMzMAAQMW2GYBMBzwEYG2AmZYAAAmZYMLDjBjB",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.327438,
+                    support = 0.375036,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -3253,7 +3251,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.743779,
+                            usage = 0.762429,
                         },
                         {
                             bonuses = {
@@ -3264,7 +3262,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.461934,
+                            usage = 0.442984,
                         },
                         {
                             bonuses = {
@@ -3274,7 +3272,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270165,
                             itemLevel = 334,
-                            usage = 0.241582,
+                            usage = 0.260967,
                         },
                         {
                             bonuses = {
@@ -3285,7 +3283,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 273796,
                             itemLevel = 321,
-                            usage = 0.166175,
+                            usage = 0.165931,
                         },
                     },
                     sampleSize = 54,
@@ -3298,19 +3296,19 @@ EasyStatsGeneratedDB = {
                     regionCount = 4,
                 },
                 stats = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     order = {
                         "HASTE",
                         "CRIT",
-                        "VERSATILITY",
                         "MASTERY",
+                        "VERSATILITY",
                     },
-                    sampleSize = 57,
+                    sampleSize = 60,
                     scores = {
-                        CRIT = 0.292796,
-                        HASTE = 0.444009,
+                        CRIT = 0.29398,
+                        HASTE = 0.435002,
                         MASTERY = 0.127573,
-                        VERSATILITY = 0.130435,
+                        VERSATILITY = 0.126158,
                     },
                     separators = {
                         ">",
@@ -3320,14 +3318,14 @@ EasyStatsGeneratedDB = {
                     stale = false,
                 },
                 talents = {
-                    generatedAt = 1789707331,
-                    importString = "CkEAAAAAAAAAAAAAAAAAAAAAAkBAAGzYmZmZmxsZmZZGjxoxMGWMzMzYGmZAAAAwyMDwMGgB2glFjGzAYWiZ2AmZGMbAwMDAAzAjB",
+                    generatedAt = 1789737060,
+                    importString = "CkEAAAAAAAAAAAAAAAAAAAAAA0yAAAjZYmZmZGzmZmlZMGjGzYYxMzMjZYmBAAAALzMAzYAGYDWWMaMDgZJmZDYmZYsBAzMAAMDMG",
                     sampleSize = 40,
                     stale = false,
-                    support = 0.076085,
+                    support = 0.049314,
                 },
                 trinkets = {
-                    generatedAt = 1789707331,
+                    generatedAt = 1789737060,
                     items = {
                         {
                             bonuses = {
@@ -3338,7 +3336,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250245,
                             itemLevel = 334,
-                            usage = 0.331949,
+                            usage = 0.332678,
                         },
                         {
                             bonuses = {
@@ -3349,7 +3347,7 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 270173,
                             itemLevel = 334,
-                            usage = 0.297293,
+                            usage = 0.299142,
                         },
                         {
                             bonuses = {
@@ -3360,28 +3358,27 @@ EasyStatsGeneratedDB = {
                             },
                             itemID = 250228,
                             itemLevel = 334,
-                            usage = 0.246017,
+                            usage = 0.249837,
                         },
                         {
                             bonuses = {
-                                13440,
                                 6652,
-                                12699,
+                                13334,
                                 12854,
                             },
-                            itemID = 273796,
+                            itemID = 270175,
                             itemLevel = 334,
-                            usage = 0.227998,
+                            usage = 0.218277,
                         },
                     },
-                    sampleSize = 57,
+                    sampleSize = 60,
                     stale = false,
                 },
             },
         },
     },
     gameVersion = "retail",
-    generatedAt = 1789707331,
+    generatedAt = 1789737060,
     schemaVersion = 1,
     seasonSlug = "season-mn-2",
     sourceMode = "hybrid",
